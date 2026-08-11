@@ -1,0 +1,31 @@
+# Vũ Quang Thịnh — Senior Software Engineer
+
+Canonical portfolio: https://vuquangthinh.github.io/
+GitHub: https://github.com/vuquangthinh
+LinkedIn: https://www.linkedin.com/in/vuquangthinh
+Location: Hanoi, Vietnam (GMT+7)
+
+## Summary
+Vũ Quang Thịnh is a senior software engineer and full-stack systems builder with 13+ years of professional experience. His work spans product engineering, backend platforms, frontend applications, infrastructure, fintech, blockchain/Web3, mobile apps, data pipelines, and developer tooling.
+
+He specializes in taking ambiguous or difficult product and system problems and turning them into production software. His stack includes Python, FastAPI, Node.js, NestJS, Go, React, Next.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, Kubernetes/k3s, Solidity, Hardhat, and OpenZeppelin.
+
+## Selected work
+- Quantizero — high-performance financial analytics and trading-signal platform using Python/FastAPI, React, TypeScript and k3s.
+- IMPT — mobile-first Web2/Web3 product using Expo, Next.js, Solidity, Slither and Tenderly.
+- DarePlay — blockchain gaming platform spanning APIs, marketplace flows, smart contracts and Web3 integration across Node.js, Python and Go.
+- Knight War — blockchain event indexer synchronized with PostgreSQL plus marketplace and NFT-farming smart contracts.
+- VitaminSpy — ad-intelligence product using NestJS, Next.js, RabbitMQ, PostgreSQL and MongoDB.
+- Zmooz Stories — interactive publishing and content tooling with a custom WYSIWYG editor, content conversion and social integrations.
+
+## Experience
+- 2022–present: Senior Software Engineer, independent/freelance.
+- 2015–2021: Senior Software Engineer at Agiletech.
+- 2014–2015: Senior Software Developer, freelance.
+- 2012–2014: Software Developer at Muasam3D while studying at Hanoi Open University.
+
+## Areas of expertise
+Backend systems; distributed systems; product frontend; data infrastructure; cloud and container deployment; fintech; blockchain/Web3; smart contracts; developer tooling; system architecture; production delivery.
+
+## Contact
+Email: quangthinh.dev@gmail.com
