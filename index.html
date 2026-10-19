@@ -451,13 +451,15 @@
       .case-bg {
         position: absolute;
         inset: 0;
+        z-index: 0;
       }
 
       .case-sheet {
         position: relative;
+        z-index: 1;
         width: min(800px, 100%);
         max-height: calc(100vh - 104px);
-        margin: 0 auto;
+        margin: 0 auto 24px;
         background: var(--panel-2);
         border: 1px solid var(--line);
         border-radius: 28px;
