@@ -440,6 +440,8 @@
         background: rgba(9, 11, 18, 0.72);
         backdrop-filter: blur(12px);
         padding: 52px 16px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
       }
 
       .case-modal:target {
@@ -454,12 +456,14 @@
       .case-sheet {
         position: relative;
         width: min(800px, 100%);
+        max-height: calc(100vh - 104px);
         margin: 0 auto;
         background: var(--panel-2);
         border: 1px solid var(--line);
         border-radius: 28px;
         padding: 26px 26px 20px;
         box-shadow: 0 30px 120px rgba(0,0,0,0.45);
+        overflow-y: auto;
       }
 
       .case-close {
