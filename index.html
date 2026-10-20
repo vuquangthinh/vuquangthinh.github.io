@@ -9,7 +9,7 @@
       content="Senior software engineer in Hanoi. Backend, frontend, infrastructure, fintech, distributed systems and Web3."
     />
     <meta name="author" content="Vũ Quang Thịnh" />
-    <meta name="theme-color" content="#0a0a0b" />
+    <meta name="theme-color" content="#0b1020" />
     <link rel="canonical" href="https://vuquangthinh.github.io/" />
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,15 +20,22 @@
     />
     <style>
       :root {
-        --bg: #0c0d12;
-        --panel: #11141b;
-        --panel-2: #171b24;
-        --text: #edf2f7;
-        --muted: #b7c1cf;
-        --line: rgba(255, 255, 255, 0.08);
-        --accent: #79e0c3;
-        --accent-2: #8fb8ff;
-        --shadow: rgba(0, 0, 0, 0.35);
+        --bg: #0a0f1b;
+        --bg-2: #111827;
+        --panel: rgba(17, 24, 39, 0.82);
+        --panel-strong: #101827;
+        --panel-soft: rgba(148, 163, 184, 0.06);
+        --line: rgba(148, 163, 184, 0.16);
+        --line-strong: rgba(148, 163, 184, 0.28);
+        --text: #edf2ff;
+        --muted: #a6b0c3;
+        --muted-2: #7d8aa3;
+        --accent: #73f0c8;
+        --accent-2: #88a8ff;
+        --accent-3: #c084fc;
+        --shadow: rgba(10, 15, 27, 0.7);
+        --card-radius: 26px;
+        --container: min(1180px, calc(100% - 32px));
       }
 
       * { box-sizing: border-box; }
@@ -36,7 +43,10 @@
       body {
         margin: 0;
         font-family: "Inter", sans-serif;
-        background: var(--bg);
+        background:
+          radial-gradient(circle at top left, rgba(115, 240, 200, 0.12), transparent 24%),
+          radial-gradient(circle at top right, rgba(136, 168, 255, 0.12), transparent 28%),
+          linear-gradient(180deg, #090d16 0%, #0a0f1b 100%);
         color: var(--text);
         line-height: 1.6;
       }
@@ -44,20 +54,21 @@
       a { color: inherit; text-decoration: none; }
       img { max-width: 100%; display: block; }
       p, ul, li, h1, h2, h3 { margin-top: 0; }
+      ul { padding-left: 1.2rem; }
 
-      .top {
+      header.top {
         position: sticky;
         top: 0;
-        z-index: 50;
-        backdrop-filter: blur(12px);
-        background: rgba(12, 13, 18, 0.72);
+        z-index: 40;
+        background: rgba(10, 15, 27, 0.64);
+        backdrop-filter: blur(14px);
         border-bottom: 1px solid var(--line);
       }
 
       .top-inner,
-      main,
+      .container,
       footer {
-        width: min(1100px, calc(100% - 32px));
+        width: var(--container);
         margin: 0 auto;
       }
 
@@ -65,26 +76,43 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 72px;
+        min-height: 76px;
+        gap: 18px;
       }
 
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.82rem;
         font-family: "DM Mono", monospace;
-        font-weight: 700;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .brand-mark {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 18px rgba(115, 240, 200, 0.7);
       }
 
       nav {
         display: flex;
         align-items: center;
-        gap: 22px;
+        gap: 28px;
       }
 
       nav a {
+        font-size: 0.92rem;
         color: var(--muted);
-        font-size: 0.94rem;
+        transition: color 180ms ease;
       }
+
+      nav a:hover { color: var(--text); }
 
       .actions {
         display: flex;
@@ -93,235 +121,298 @@
       }
 
       .lang-switch {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
+        appearance: none;
         border: 1px solid var(--line);
-        border-radius: 999px;
+        background: rgba(255,255,255,0.02);
         color: var(--muted);
-        font-size: 0.8rem;
+        border-radius: 999px;
+        padding: 9px 12px;
+        font-size: 0.76rem;
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.08em;
       }
 
-      .pdf-link {
-        display: inline-block;
-        padding: 0.8rem 1.2rem;
+      .pdf-link, .button-primary, .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
         border-radius: 999px;
-        background: rgba(255,255,255,0.03);
-        border: 1px solid var(--line);
         font-weight: 600;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .pdf-link,
+      .button-secondary {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, rgba(115, 240, 200, 0.18), rgba(136, 168, 255, 0.18));
+        border: 1px solid rgba(115, 240, 200, 0.35);
+        color: var(--text);
+        box-shadow: 0 10px 30px rgba(136, 168, 255, 0.16);
+      }
+
+      .pdf-link:hover,
+      .button-primary:hover,
+      .button-secondary:hover {
+        transform: translateY(-1px);
+      }
+
+      main {
+        padding-bottom: 40px;
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
-        gap: 40px;
+        grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
         align-items: center;
-        padding: 80px 0 48px;
+        gap: 46px;
+        padding: 72px 0 40px;
       }
 
-      .kicker {
+      .eyebrow {
         font-family: "DM Mono", monospace;
         font-size: 0.8rem;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
         color: var(--accent);
-        margin-bottom: 12px;
+        margin-bottom: 14px;
       }
 
       h1 {
-        font-size: clamp(2.5rem, 5vw, 5rem);
+        font-size: clamp(3rem, 6vw, 5.3rem);
         line-height: 0.94;
-        letter-spacing: -0.06em;
-        margin-bottom: 20px;
+        letter-spacing: -0.075em;
+        margin-bottom: 18px;
       }
 
-      h1 span {
+      h1 .sub {
         display: block;
-        font-weight: 400;
         color: var(--muted);
+        font-weight: 400;
       }
 
       .intro {
-        max-width: 760px;
+        max-width: 710px;
         color: var(--muted);
-        font-size: 1.06rem;
-        margin-bottom: 26px;
+        font-size: 1.08rem;
+        margin-bottom: 30px;
       }
 
-      .hero-links {
+      .hero-actions {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 16px;
+        gap: 14px 16px;
+        margin-bottom: 18px;
       }
 
-      .hero-links a {
-        font-weight: 600;
-        color: var(--text);
-      }
-
-      .hero-links a + a {
+      .secondary-link {
         color: var(--muted);
+        font-weight: 600;
       }
 
-      .portrait {
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        color: var(--muted-2);
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-family: "DM Mono", monospace;
+      }
+
+      .portrait-card {
         position: relative;
-        margin: 0;
+        background: linear-gradient(180deg, rgba(115, 240, 200, 0.12), rgba(136, 168, 255, 0.06));
+        border: 1px solid var(--line);
         border-radius: 28px;
         overflow: hidden;
-        background: linear-gradient(180deg, rgba(121,224,195,0.12), rgba(143,184,255,0.08));
-        border: 1px solid var(--line);
-        box-shadow: 0 20px 80px var(--shadow);
+        box-shadow: 0 30px 80px var(--shadow);
       }
 
-      .portrait img {
+      .portrait-card::before {
+        content: "";
+        position: absolute;
+        inset: 18px 18px auto auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(136,168,255,0.35), transparent 66%);
+        filter: blur(20px);
+      }
+
+      .portrait-card img {
         width: 100%;
-        aspect-ratio: 1 / 1.2;
+        aspect-ratio: 1 / 1.18;
         object-fit: cover;
-        filter: saturate(1.05) contrast(1.03);
+        display: block;
       }
 
-      .portrait figcaption {
+      .portrait-card .caption {
         display: grid;
         gap: 6px;
-        padding: 18px 20px 20px;
+        padding: 18px 20px 22px;
         border-top: 1px solid var(--line);
-        background: rgba(17,20,27,.8);
+        background: rgba(10, 15, 27, 0.84);
       }
 
-      .portrait figcaption span:first-child {
-        font-weight: 700;
+      .portrait-card .caption strong {
+        font-size: 1.02rem;
       }
 
-      .portrait figcaption span:last-child {
+      .portrait-card .caption span {
         color: var(--muted);
         font-size: 0.92rem;
       }
 
       .section {
-        padding: 36px 0 54px;
+        padding: 42px 0 24px;
       }
 
-      .section-header {
+      .section-head {
         display: flex;
         align-items: end;
         justify-content: space-between;
-        gap: 20px;
-        margin-bottom: 24px;
+        gap: 22px;
+        margin-bottom: 26px;
       }
 
-      .section-header span {
+      .section-head .num {
         font-family: "DM Mono", monospace;
+        font-size: 0.82rem;
+        letter-spacing: 0.12em;
         color: var(--accent);
-        font-size: 0.9rem;
+        text-transform: uppercase;
       }
 
-      .section-header h2 {
-        font-size: clamp(2rem, 3vw, 3rem);
+      .section-head h2 {
+        font-size: clamp(2.2rem, 4vw, 3.1rem);
+        letter-spacing: -0.07em;
         margin: 0;
-        letter-spacing: -0.05em;
       }
 
-      .section-header p {
+      .section-head p {
+        margin: 0;
+        max-width: 620px;
         color: var(--muted);
-        max-width: 560px;
       }
 
-      .featured {
+      .featured-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 18px;
       }
 
-      .feature {
+      .feature-card {
+        position: relative;
         display: block;
-        min-height: 320px;
-        background: var(--panel);
+        min-height: 330px;
+        background: linear-gradient(180deg, rgba(17,24,39,0.96), rgba(13,18,28,0.95));
         border: 1px solid var(--line);
-        border-radius: 24px;
-        padding: 18px 18px 14px;
-        transition: transform 180ms ease, border-color 180ms ease;
+        border-radius: var(--card-radius);
+        overflow: hidden;
+        padding: 20px 20px 18px;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
       }
 
-      .feature:hover {
-        transform: translateY(-3px);
-        border-color: rgba(121,224,195,0.5);
+      .feature-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(115, 240, 200, 0.5);
+        box-shadow: 0 25px 55px rgba(0,0,0,0.25);
       }
 
       .feature-art {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 122px;
-        border-radius: 16px;
+        min-height: 120px;
         margin-bottom: 18px;
-        background: linear-gradient(135deg, rgba(143,184,255,0.16), rgba(121,224,195,0.12));
-        border: 1px solid rgba(255,255,255,0.04);
+        border-radius: 18px;
+        border: 1px solid rgba(255,255,255,0.05);
+        background: linear-gradient(135deg, rgba(136,168,255,0.16), rgba(115,240,200,0.12));
+        font-size: 0.76rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
         font-family: "DM Mono", monospace;
-        font-size: 0.88rem;
+        color: var(--text);
+      }
+
+      .feature-tag {
+        display: inline-flex;
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.02);
+        color: var(--muted);
+        font-size: 0.72rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-      }
-
-      .feature small {
-        display: inline-block;
-        padding: 7px 10px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: var(--muted);
-        background: rgba(255,255,255,0.02);
         margin-bottom: 16px;
       }
 
-      .feature h3 {
+      .feature-card h3 {
         margin: 0 0 10px;
-        font-size: clamp(1.7rem, 2vw, 2.1rem);
-        letter-spacing: -0.05em;
+        font-size: clamp(1.8rem, 2.2vw, 2.3rem);
+        letter-spacing: -0.06em;
       }
 
-      .feature p {
+      .feature-card p {
         color: var(--muted);
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
 
-      .feature b {
+      .feature-card .stack {
         display: inline-block;
+        font-size: 0.82rem;
         color: var(--text);
-        font-size: 0.9rem;
+        font-weight: 600;
       }
 
-      .feature .detail-link {
+      .detail-link {
         display: inline-flex;
         align-items: center;
+        margin-top: 16px;
         color: var(--accent);
-        margin-top: 10px;
         font-weight: 600;
       }
 
       .archive-list {
         display: grid;
-        gap: 16px;
+        gap: 0;
+        background: rgba(255,255,255,0.01);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        overflow: hidden;
       }
 
       .archive-item {
         display: grid;
-        grid-template-columns: 110px 1fr 250px;
-        gap: 18px;
+        grid-template-columns: 150px minmax(0, 1fr) minmax(200px, 260px);
+        gap: 22px;
         align-items: start;
-        padding: 22px 0;
+        padding: 22px 24px;
         border-top: 1px solid var(--line);
       }
 
+      .archive-item:first-child { border-top: 0; }
+
       .archive-item time {
         color: var(--muted);
-        font-size: 0.9rem;
+        font-family: "DM Mono", monospace;
+        font-size: 0.85rem;
       }
 
       .archive-item h3 {
         margin: 0 0 8px;
         font-size: clamp(1.3rem, 2vw, 1.8rem);
-        letter-spacing: -0.04em;
+        letter-spacing: -0.045em;
       }
 
       .archive-item p {
@@ -329,29 +420,32 @@
         color: var(--muted);
       }
 
-      .archive-item b {
+      .archive-item .stack {
         color: var(--text);
-        font-size: 0.85rem;
-        letter-spacing: 0.02em;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
+        font-family: "DM Mono", monospace;
+        text-align: right;
       }
 
       .timeline {
         display: grid;
-        gap: 24px;
+        gap: 20px;
       }
 
       .timeline-item {
         display: grid;
-        grid-template-columns: 120px 1fr;
+        grid-template-columns: 140px minmax(0, 1fr);
         gap: 26px;
-        padding: 0 0 18px;
+        padding: 18px 0 18px;
         border-bottom: 1px solid var(--line);
       }
 
       .timeline-item time {
         color: var(--muted);
         font-family: "DM Mono", monospace;
+        font-size: 0.84rem;
       }
 
       .timeline-item h3 {
@@ -361,17 +455,17 @@
       }
 
       .timeline-item p {
-        color: var(--muted);
         margin: 0;
+        color: var(--muted);
       }
 
       .about-grid {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 28px;
+        grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+        gap: 26px;
       }
 
-      .about-text {
+      .about-copy {
         display: grid;
         gap: 18px;
         color: var(--muted);
@@ -383,7 +477,7 @@
       }
 
       .skill-group {
-        background: var(--panel);
+        background: rgba(255,255,255,0.02);
         border: 1px solid var(--line);
         border-radius: 18px;
         padding: 16px 18px;
@@ -401,16 +495,16 @@
         color: var(--muted);
       }
 
-      .contact {
+      .contact-cta {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
-        padding: 32px 0 52px;
+        gap: 24px;
+        padding: 30px 0 58px;
         border-top: 1px solid var(--line);
       }
 
-      .contact p {
+      .contact-cta p {
         margin: 0;
         color: var(--muted);
         max-width: 620px;
@@ -419,6 +513,7 @@
       .contact-links {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 16px;
       }
 
@@ -427,9 +522,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 12px;
-        padding: 12px 0 44px;
         color: var(--muted);
         border-top: 1px solid var(--line);
+        padding: 16px 0 40px;
       }
 
       .case-modal {
@@ -437,9 +532,9 @@
         position: fixed;
         inset: 0;
         z-index: 100;
-        background: rgba(9, 11, 18, 0.72);
+        background: rgba(5, 8, 14, 0.72);
         backdrop-filter: blur(12px);
-        padding: 52px 16px;
+        padding: 48px 16px;
       }
 
       .case-modal:target {
@@ -455,10 +550,10 @@
         position: relative;
         width: min(800px, 100%);
         margin: 0 auto;
-        background: var(--panel-2);
+        background: linear-gradient(180deg, rgba(21, 29, 42, 0.96), rgba(14, 18, 30, 0.96));
         border: 1px solid var(--line);
         border-radius: 28px;
-        padding: 26px 26px 20px;
+        padding: 24px 24px 22px;
         box-shadow: 0 30px 120px rgba(0,0,0,0.45);
       }
 
@@ -468,7 +563,7 @@
         top: 18px;
         border: 1px solid var(--line);
         border-radius: 999px;
-        padding: 7px 10px;
+        padding: 7px 12px;
         font-size: 0.8rem;
         color: var(--muted);
       }
@@ -478,43 +573,33 @@
         margin-bottom: 8px;
         color: var(--accent);
         font-family: "DM Mono", monospace;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
       }
 
       .case-sheet h2 {
         margin: 0 0 12px;
-        font-size: clamp(2rem, 3vw, 2.6rem);
+        font-size: clamp(2rem, 4vw, 2.8rem);
         letter-spacing: -0.06em;
       }
 
       .case-lead {
         color: var(--text);
-        font-size: 1.08rem;
-      }
-
-      .lang-en, .lang-vi {
-        display: grid;
-        gap: 12px;
-      }
-
-      .lang-vi {
-        margin-top: 10px;
+        font-size: 1.06rem;
       }
 
       .case-sheet h3 {
-        margin-top: 14px;
+        margin-top: 18px;
         font-size: 1.1rem;
       }
 
       .case-sheet ul {
-        padding-left: 18px;
         color: var(--muted);
       }
 
       .case-sheet code {
         display: block;
-        margin-top: 18px;
+        margin-top: 20px;
         padding: 12px 14px;
         border-radius: 12px;
         background: rgba(255,255,255,0.03);
@@ -526,7 +611,7 @@
       @media (max-width: 900px) {
         .hero,
         .about-grid,
-        .featured {
+        .featured-grid {
           grid-template-columns: 1fr;
         }
 
@@ -534,13 +619,41 @@
           grid-template-columns: 1fr;
         }
 
+        .archive-item .stack {
+          text-align: left;
+        }
+
         nav {
           display: none;
         }
 
-        .contact {
+        .contact-cta {
           flex-direction: column;
           align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .top-inner {
+          min-height: 68px;
+        }
+
+        .actions .lang-switch {
+          display: none;
+        }
+
+        .hero {
+          padding-top: 54px;
+        }
+
+        .section-head {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .timeline-item {
+          grid-template-columns: 1fr;
+          gap: 8px;
         }
       }
     </style>
@@ -548,233 +661,249 @@
   <body>
     <header class="top">
       <div class="top-inner">
-        <a class="brand" href="#top">Vũ Quang Thịnh</a>
+        <a class="brand" href="#top">
+          <span class="brand-mark"></span>
+          <span>Vũ Quang Thịnh</span>
+        </a>
         <nav>
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>
           <a href="#about">About</a>
         </nav>
         <div class="actions">
-          <button class="lang-switch" aria-label="Language switch">
-            <span>EN</span>
-            <span>/</span>
-            <span>VI</span>
-          </button>
+          <button class="lang-switch" aria-label="Language switch">EN / VI</button>
           <a class="pdf-link" href="data:application/pdf;base64,PCFkb2N0eXBlIGh0bWw+VnUtUXVhbmcgVGjhu4tOSCBDV1JUSU5ETy5wZGY=" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="kicker">Senior software engineer</p>
-          <h1>
-            I build software
-            <span>across the stack.</span>
-          </h1>
-          <p class="intro">
-            Backend, frontend, infrastructure and system design. Recent work includes fintech platforms,
-            distributed systems and Web3 products. I enjoy turning ambiguous business problems into reliable,
-            measurable software products.
-          </p>
-          <div class="hero-links">
-            <a href="#work">Selected work →</a>
-            <a href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
+      <div class="container">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior software engineer</p>
+            <h1>
+              I build software
+              <span class="sub">across the stack.</span>
+            </h1>
+            <p class="intro">
+              Backend, frontend, infrastructure and system design. Recent work includes fintech platforms,
+              distributed systems and Web3 products. I enjoy turning ambiguous business problems into reliable,
+              measurable software products.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#work">Selected work →</a>
+              <a class="button-secondary" href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
+            </div>
+            <div class="hero-meta">
+              <span>Full-stack</span>
+              <span>System design</span>
+              <span>Infra</span>
+            </div>
           </div>
-        </div>
 
-        <figure class="portrait">
-          <img src="assets/images/resume-profile.png" alt="Vũ Quang Thịnh" />
-          <figcaption>
-            <span>Software engineer</span>
-            <span>Professional since 2012</span>
-          </figcaption>
-        </figure>
-      </section>
+          <figure class="portrait-card">
+            <img src="assets/images/resume-profile.png" alt="Vũ Quang Thịnh" />
+            <figcaption class="caption">
+              <strong>Software engineer</strong>
+              <span>Professional since 2012</span>
+            </figcaption>
+          </figure>
+        </section>
+      </div>
 
       <section id="work" class="section">
-        <header class="section-header">
-          <span>01</span>
-          <h2>Selected work</h2>
-          <p>A few projects where I worked directly on implementation, architecture or production delivery.</p>
-        </header>
+        <div class="container">
+          <header class="section-head">
+            <span class="num">01</span>
+            <h2>Selected work</h2>
+            <p>A few projects where I worked directly on implementation, architecture or production delivery.</p>
+          </header>
 
-        <div class="featured">
-          <a class="feature" href="#case-ambusun">
-            <div class="feature-art">Healthcare / RCM</div>
-            <small>FULLSTACK / REPORTING / AI</small>
-            <h3>AmbuSun</h3>
-            <p>
-              Healthcare revenue cycle management platform focused on denials, payer follow-up, KPI reporting,
-              analytics and AI-assisted workflows for billing teams.
-            </p>
-            <b>Node.js · React · PostgreSQL · AI Chat</b>
-            <span class="detail-link">View case study →</span>
-          </a>
+          <div class="featured-grid">
+            <a class="feature-card" href="#case-ambusun">
+              <div class="feature-art">Healthcare / RCM</div>
+              <span class="feature-tag">Fullstack / Reporting / AI</span>
+              <h3>AmbuSun</h3>
+              <p>
+                Healthcare revenue cycle management platform focused on denials, payer follow-up, KPI reporting,
+                analytics and AI-assisted workflows for billing teams.
+              </p>
+              <span class="stack">Node.js · React · PostgreSQL · AI Chat</span>
+              <span class="detail-link">View case study →</span>
+            </a>
 
-          <a class="feature" href="#case-quantizero">
-            <div class="feature-art">DATA / API</div>
-            <small>FINTECH / ANALYTICS</small>
-            <h3>Quantizero</h3>
-            <p>Financial analytics and trading-signal system with FastAPI services, React dashboards and k3s deployment.</p>
-            <b>Python · FastAPI · React · TypeScript · k3s</b>
-            <span class="detail-link">View case study →</span>
-          </a>
+            <a class="feature-card" href="#case-quantizero">
+              <div class="feature-art">Data / API</div>
+              <span class="feature-tag">Fintech / Analytics</span>
+              <h3>Quantizero</h3>
+              <p>Financial analytics and trading-signal system with FastAPI services, React dashboards and k3s deployment.</p>
+              <span class="stack">Python · FastAPI · React · TypeScript · k3s</span>
+              <span class="detail-link">View case study →</span>
+            </a>
 
-          <a class="feature" href="#case-impt">
-            <div class="feature-art">WEB / WEB3</div>
-            <small>WEB2 / WEB3</small>
-            <h3>IMPT</h3>
-            <p>Mobile and web product with Expo, Next.js and Solidity smart-contract integration.</p>
-            <b>Expo · Next.js · Solidity · Tenderly</b>
-            <span class="detail-link">View case study →</span>
-          </a>
+            <a class="feature-card" href="#case-impt">
+              <div class="feature-art">Web / Web3</div>
+              <span class="feature-tag">Web2 / Web3</span>
+              <h3>IMPT</h3>
+              <p>Mobile and web product with Expo, Next.js and Solidity smart-contract integration.</p>
+              <span class="stack">Expo · Next.js · Solidity · Tenderly</span>
+              <span class="detail-link">View case study →</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <header class="section-header">
-          <span>02</span>
-          <h2>Project archive</h2>
-          <p>Earlier work across Web, blockchain, fintech and intelligent systems.</p>
-        </header>
+        <div class="container">
+          <header class="section-head">
+            <span class="num">02</span>
+            <h2>Project archive</h2>
+            <p>Earlier work across Web, blockchain, fintech and intelligent systems.</p>
+          </header>
 
-        <div class="archive-list">
-          <div class="archive-item">
-            <time>2021 — 2023</time>
-            <div>
-              <h3>DarkPlay / DarenFT</h3>
-              <p>Blockchain gaming platform: backend APIs, Web3 integration, marketplace and launch contracts.</p>
+          <div class="archive-list">
+            <div class="archive-item">
+              <time>2021 — 2023</time>
+              <div>
+                <h3>DarkPlay / DarenFT</h3>
+                <p>Blockchain gaming platform: backend APIs, Web3 integration, marketplace and launch contracts.</p>
+              </div>
+              <div class="stack">Next.js · Go · Solidity · React</div>
             </div>
-            <b>Next.js · Go · Solidity · React</b>
-          </div>
 
-          <div class="archive-item">
-            <time>2023</time>
-            <div>
-              <h3>Untangled Finance</h3>
-              <p>DeFi product: Solidity smart contracts and Vue.js frontend integration.</p>
+            <div class="archive-item">
+              <time>2023</time>
+              <div>
+                <h3>Untangled Finance</h3>
+                <p>DeFi product: Solidity smart contracts and Vue.js frontend integration.</p>
+              </div>
+              <div class="stack">Vue.js · Solidity</div>
             </div>
-            <b>Vue.js · Solidity</b>
-          </div>
 
-          <div class="archive-item">
-            <time>2022</time>
-            <div>
-              <h3>H3ROVERSE</h3>
-              <p>NFT and marketplace contracts, OpenSea scripts and React frontend implementation.</p>
+            <div class="archive-item">
+              <time>2022</time>
+              <div>
+                <h3>H3ROVERSE</h3>
+                <p>NFT and marketplace contracts, OpenSea scripts and React frontend implementation.</p>
+              </div>
+              <div class="stack">Solidity · React · Unity</div>
             </div>
-            <b>Solidity · React · Unity</b>
-          </div>
 
-          <div class="archive-item">
-            <time>2017 — 2021</time>
-            <div>
-              <h3>Zmooz Stories</h3>
-              <p>Interactive publishing platform with APIs, format conversion, social integrations and a custom WYSIWYG editor.</p>
+            <div class="archive-item">
+              <time>2017 — 2021</time>
+              <div>
+                <h3>Zmooz Stories</h3>
+                <p>Interactive publishing platform with APIs, format conversion, social integrations and a custom WYSIWYG editor.</p>
+              </div>
+              <div class="stack">React · LoopBack · Python · GCP</div>
             </div>
-            <b>React · LoopBack · Python · GCP</b>
           </div>
         </div>
       </section>
 
       <section id="experience" class="section">
-        <header class="section-header">
-          <span>03</span>
-          <h2>Experience</h2>
-        </header>
+        <div class="container">
+          <header class="section-head">
+            <span class="num">03</span>
+            <h2>Experience</h2>
+          </header>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <time>2022 — now</time>
-            <div>
-              <h3>Senior software engineer · Independent</h3>
-              <p>Full-stack and system engineering across Python, Node.js, React, infrastructure and Solitidy.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <time>2022 — now</time>
+              <div>
+                <h3>Senior software engineer · Independent</h3>
+                <p>Full-stack and system engineering across Python, Node.js, React, infrastructure and Solidity.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <time>2015 — 2021</time>
-            <div>
-              <h3>Senior software engineer · Agiletech</h3>
-              <p>Node.js product development, blockchain applications and internal technical training.</p>
+            <div class="timeline-item">
+              <time>2015 — 2021</time>
+              <div>
+                <h3>Senior software engineer · Agiletech</h3>
+                <p>Node.js product development, blockchain applications and internal technical training.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <time>2014 — 2015</time>
-            <div>
-              <h3>Senior software developer · Freelancer</h3>
-              <p>PHP, CodeIgniter, Yii, WordPress and custom web systems for clients.</p>
+            <div class="timeline-item">
+              <time>2014 — 2015</time>
+              <div>
+                <h3>Senior software developer · Freelancer</h3>
+                <p>PHP, CodeIgniter, Yii, WordPress and custom web systems for clients.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="timeline-item">
-            <time>2012 — 2014</time>
-            <div>
-              <h3>Software developer · Muasam3D</h3>
-              <p>Full-stack development while studying at Hanoi Open University.</p>
+            <div class="timeline-item">
+              <time>2012 — 2014</time>
+              <div>
+                <h3>Software developer · Muasam3D</h3>
+                <p>Full-stack development while studying at Hanoi Open University.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
-        <header class="section-header">
-          <span>04</span>
-          <h2>About</h2>
-        </header>
+        <div class="container">
+          <header class="section-head">
+            <span class="num">04</span>
+            <h2>About</h2>
+          </header>
 
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I have worked professionally in software since 2012. My work covers backend services, frontend
-              applications, system design and infrastructure. I have also built blockchain applications and smart
-              contracts.
-            </p>
-            <p>
-              I usually work across more than one layer of a product: architecture, implementation, deployment,
-              performance debugging and production support. This includes working directly with business logic,
-              analytics, APIs and operational workflows.
-            </p>
-          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I have worked professionally in software since 2012. My work covers backend services, frontend
+                applications, system design and infrastructure. I have also built blockchain applications and smart contracts.
+              </p>
+              <p>
+                I usually work across more than one layer of a product: architecture, implementation, deployment,
+                performance debugging and production support. This includes working directly with business logic,
+                analytics, APIs and operational workflows.
+              </p>
+              <p>
+                I enjoy taking ambiguous business problems and turning them into resilient, measurable software systems that balance speed, maintenance and long-term quality.
+              </p>
+            </div>
 
-          <div class="skills">
-            <div class="skill-group">
-              <span>Backend</span>
-              <p>Python · FastAPI · Node.js · NestJS · Express.js · Go · PHP · GraphQL</p>
-            </div>
-            <div class="skill-group">
-              <span>Frontend</span>
-              <p>React · Next.js · Vue · React Native · Expo · TypeScript</p>
-            </div>
-            <div class="skill-group">
-              <span>Data / Infra</span>
-              <p>PostgreSQL · MySQL · MongoDB · Redis · RabbitMQ · Docker · Kubernetes · k3s · GCP · AWS</p>
-            </div>
-            <div class="skill-group">
-              <span>Blockchain</span>
-              <p>Solidity · Hardhat · OpenZeppelin · Tenderly · Indexers</p>
+            <div class="skills">
+              <div class="skill-group">
+                <span>Backend</span>
+                <p>Python · FastAPI · Node.js · NestJS · Express.js · Go · PHP · GraphQL</p>
+              </div>
+              <div class="skill-group">
+                <span>Frontend</span>
+                <p>React · Next.js · Vue · React Native · Expo · TypeScript</p>
+              </div>
+              <div class="skill-group">
+                <span>Data / Infra</span>
+                <p>PostgreSQL · MySQL · MongoDB · Redis · RabbitMQ · Docker · Kubernetes · k3s · GCP · AWS</p>
+              </div>
+              <div class="skill-group">
+                <span>Blockchain</span>
+                <p>Solidity · Hardhat · OpenZeppelin · Tenderly · Indexers</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact">
-        <p>
-          Available for software engineering, architecture and product work.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
-          <a href="https://github.com/vuquangthinh" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/vuquangthinh" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://www.npmjs.com/~vuquangthinh" target="_blank" rel="noreferrer">npm</a>
-        </div>
-      </section>
+      <div class="container">
+        <section class="contact-cta">
+          <p>Available for software engineering, architecture and product work.</p>
+          <div class="contact-links">
+            <a class="button-secondary" href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
+            <a class="secondary-link" href="https://github.com/vuquangthinh" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="secondary-link" href="https://www.linkedin.com/in/vuquangthinh" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="secondary-link" href="https://www.npmjs.com/~vuquangthinh" target="_blank" rel="noreferrer">npm</a>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer class="container">
       <span>Vũ Quang Thịnh — HANOI</span>
       <span id="year"></span>
     </footer>
@@ -786,7 +915,7 @@
         <small>Healthcare / RCM</small>
         <h2>AmbuSun | RCM Services</h2>
 
-        <div class="lang-en">
+        <div>
           <p class="case-lead">
             AmbuSun is a healthcare revenue cycle management platform focused on helping providers streamline
             claims, denials, payer follow-up, reimbursement workflows and revenue visibility. It brings together
@@ -817,7 +946,7 @@
           </ul>
         </div>
 
-        <div class="lang-vi">
+        <div>
           <h3>Mô tả ngắn gọn</h3>
           <p>
             AmbuSun là nền tảng quản lý doanh thu y tế (RCM) giúp các cơ sở chăm sóc sức khỏe tối ưu hóa quy
