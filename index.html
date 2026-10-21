@@ -130,6 +130,7 @@
         font-size: 0.76rem;
         font-family: "DM Mono", monospace;
         letter-spacing: 0.08em;
+        cursor: pointer;
       }
 
       .pdf-link, .button-primary, .button-secondary {
@@ -535,6 +536,7 @@
         background: rgba(5, 8, 14, 0.72);
         backdrop-filter: blur(12px);
         padding: 48px 16px;
+        overflow-y: auto;
       }
 
       .case-modal:target {
@@ -555,6 +557,8 @@
         border-radius: 28px;
         padding: 24px 24px 22px;
         box-shadow: 0 30px 120px rgba(0,0,0,0.45);
+        max-height: calc(100vh - 96px);
+        overflow-y: auto;
       }
 
       .case-close {
@@ -671,8 +675,8 @@
           <a href="#about">About</a>
         </nav>
         <div class="actions">
-          <button class="lang-switch" aria-label="Language switch">EN / VI</button>
-          <a class="pdf-link" href="data:application/pdf;base64,PCFkb2N0eXBlIGh0bWw+VnUtUXVhbmcgVGjhu4tOSCBDV1JUSU5ETy5wZGY=" target="_blank" rel="noreferrer">Resume</a>
+          <button class="lang-switch" type="button" aria-label="Language switch">EN / VI</button>
+          <a class="pdf-link" href="data:application/pdf;base64,PCFkb2N0eXBlIGh0bWw+VnUtUXVhbmcgVGjhu4tOSBDV1JUSU5ETy5wZGY=" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </div>
     </header>
@@ -986,6 +990,73 @@
     </section>
 
     <script>
+      const langButton = document.querySelector('.lang-switch');
+      let currentLang = 'en';
+
+      const translations = {
+        en: {
+          navWork: 'Work',
+          navExperience: 'Experience',
+          navAbout: 'About',
+          navResume: 'Resume',
+          heroEyebrow: 'Senior software engineer',
+          heroTitle: 'I build software',
+          heroSubtitle: 'across the stack.',
+          heroIntro: 'Backend, frontend, infrastructure and system design. Recent work includes fintech platforms, distributed systems and Web3 products. I enjoy turning ambiguous business problems into reliable, measurable software products.',
+          heroCta: 'Selected work →',
+          metaFullstack: 'Full-stack',
+          metaSystemDesign: 'System design',
+          metaInfra: 'Infra',
+          portraitRole: 'Software engineer',
+          portraitSince: 'Professional since 2012'
+        },
+        vi: {
+          navWork: 'Công việc',
+          navExperience: 'Kinh nghiệm',
+          navAbout: 'Giới thiệu',
+          navResume: 'CV',
+          heroEyebrow: 'Kỹ sư phần mềm cấp cao',
+          heroTitle: 'Tôi xây dựng phần mềm',
+          heroSubtitle: 'trên nhiều lớp công nghệ.',
+          heroIntro: 'Backend, frontend, hạ tầng và thiết kế hệ thống. Công việc gần đây bao gồm nền tảng fintech, hệ thống phân tán và sản phẩm Web3. Tôi thích biến các vấn đề nghiệp vụ mơ hồ thành các sản phẩm phần mềm đáng tin cậy và có thể đo lường được.',
+          heroCta: 'Dự án đã làm →',
+          metaFullstack: 'Đa lớp',
+          metaSystemDesign: 'Thiết kế hệ thống',
+          metaInfra: 'Hạ tầng',
+          portraitRole: 'Kỹ sư phần mềm',
+          portraitSince: 'Làm việc từ năm 2012'
+        }
+      };
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks[0].textContent = translations[lang].navWork;
+        navLinks[1].textContent = translations[lang].navExperience;
+        navLinks[2].textContent = translations[lang].navAbout;
+
+        document.querySelector('.pdf-link').textContent = translations[lang].navResume;
+        document.querySelector('.eyebrow').textContent = translations[lang].heroEyebrow;
+        document.querySelector('h1').innerHTML = `${translations[lang].heroTitle}<span class="sub">${translations[lang].heroSubtitle}</span>`;
+        document.querySelector('.intro').textContent = translations[lang].heroIntro;
+        document.querySelector('.button-primary').textContent = translations[lang].heroCta;
+        document.querySelectorAll('.hero-meta span')[0].textContent = translations[lang].metaFullstack;
+        document.querySelectorAll('.hero-meta span')[1].textContent = translations[lang].metaSystemDesign;
+        document.querySelectorAll('.hero-meta span')[2].textContent = translations[lang].metaInfra;
+        document.querySelector('.portrait-card .caption strong').textContent = translations[lang].portraitRole;
+        document.querySelector('.portrait-card .caption span').textContent = translations[lang].portraitSince;
+
+        langButton.textContent = lang === 'en' ? 'EN / VI' : 'VI / EN';
+        langButton.setAttribute('aria-label', lang === 'en' ? 'Switch to Vietnamese' : 'Chuyển sang tiếng Anh');
+      }
+
+      langButton.addEventListener('click', () => {
+        applyLanguage(currentLang === 'en' ? 'vi' : 'en');
+      });
+
+      applyLanguage(currentLang);
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
