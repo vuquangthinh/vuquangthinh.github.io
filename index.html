@@ -221,7 +221,7 @@ body{font-family:Outfit,system-ui,sans-serif}
 <button type="button" class="building b6" data-room="archive" aria-label="View project archive"><span class="roof"></span><span class="glyph">●</span><strong>Other Projects</strong><small>PREVIOUS WORK</small></button>
 <div class="player" id="player" aria-hidden="true"><div class="head"></div><div class="hair"></div><div class="eye"></div><div class="body"></div><div class="feet"></div></div>
 </div><div class="tip" id="tip" role="status">Use arrows or scroll to explore the portfolio</div></div>
-<div class="instructions"><div><span class="key">W A S D</span> / <span class="key">↑ ← ↓ →</span> Move &nbsp; <span class="key">E</span> Interact</div><span>Or click any building</span></div><div class="touch" aria-label="Mobile movement controls"><button type="button" data-dir="left" aria-label="Move left">←</button><button type="button" data-dir="up" aria-label="Move up">↑</button><button type="button" data-dir="down" aria-label="Move down">↓</button><button type="button" data-dir="right" aria-label="Move right">→</button></div>
+<div class="instructions"><div><span class="key">A D</span> / <span class="key">← →</span> Move &nbsp; Scroll horizontally · Details appear automatically</div><span>Or click any building</span></div><div class="touch" aria-label="Mobile movement controls"><button type="button" data-dir="left" aria-label="Move left">←</button><button type="button" data-dir="right" aria-label="Move right">→</button></div>
 </div></main>
 <aside class="panel quests"><div class="pad"><div class="eyebrow">Portfolio sections</div><h2 style="margin-top:9px">Browse sections</h2><p class="intro" style="margin-top:-8px">A quick way to navigate my work and experience.</p><div class="questgrid" id="questlist">
 <button class="quest" data-room="about"><span class="ico">●</span><span><strong>About</strong><small>Who I am</small></span><span class="check" data-check="about">○</span></button>
@@ -243,7 +243,7 @@ skills:{title:"Skills",label:"TECHNOLOGIES",html:'<div class="entry"><strong>Bac
 archive:{title:"Other Projects",label:"OTHER PROJECTS",html:'<div class="entry"><small>2021 — 2023</small><br><strong>DarkPlay / DarenFT</strong><p>Blockchain gaming platform, APIs, marketplace, Web3 integration, launch contracts.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">Go</span><span class="tag">Solidity</span></div></div><div class="entry"><small>2023</small><br><strong>Untangled Finance</strong><p>DeFi product: Solidity contract development and Vue.js frontend integration.</p></div><div class="entry"><small>2022</small><br><strong>H3ROVERSE</strong><p>NFT and marketplace contracts, OpenSea automation and React integration.</p></div><div class="entry"><small>2017 — 2021</small><br><strong>Zmooz Stories</strong><p>Interactive publishing, APIs, custom WYSIWYG editor, format conversion and social integrations.</p></div>'},
 contact:{title:"Contact",label:"GET IN TOUCH",html:'<p>Open to discussing full-stack, backend, frontend, Web3, software architecture and product engineering opportunities, including remote collaboration.</p><div class="linkrow"><a href="mailto:quangthinh.dev@gmail.com">✉ Email me</a><a href="https://github.com/vuquangthinh" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/vuquangthinh" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.npmjs.com/~vuquangthinh" target="_blank" rel="noopener noreferrer">npm ↗</a></div><p class="muted">Hanoi, Vietnam · GMT+7</p>'}
 };
-const modal=document.getElementById('modal'),world=document.getElementById('world'),viewport=document.getElementById('viewport'),player=document.getElementById('player'),tip=document.getElementById('tip');let x=550,y=420,scale=1,keys=new Set(),visited=new Set();let nearest=null,lastFocus=null;
+const modal=document.getElementById('modal'),world=document.getElementById('world'),viewport=document.getElementById('viewport'),player=document.getElementById('player'),tip=document.getElementById('tip');let x=550,y=650,scale=1,keys=new Set(),visited=new Set();let nearest=null,lastFocus=null;
 try{const saved=JSON.parse(localStorage.getItem('thinhquest-visited')||'[]');visited=new Set(saved.filter(k=>Object.hasOwn(rooms,k)))}catch(e){}
 function paintProgress(){document.getElementById('count').textContent=visited.size+' / 6 sections viewed';document.getElementById('progressfill').style.width=(visited.size/6*100)+'%';document.querySelectorAll('[data-check]').forEach(e=>e.textContent=visited.has(e.dataset.check)?'✓':'○')}
 
@@ -436,7 +436,7 @@ scenery.forEach(el=>{const cloned=el.cloneNode(true);if(cloned.id)cloned.removeA
 world.appendChild(copy);
 }
 world.querySelectorAll('.loop-copy .building').forEach(b=>b.addEventListener('click',()=>openRoom(b.dataset.room)));
-const buildings=chapters.map(c=>{const e=world.querySelector('.building[data-room="'+c.id+'"]');return {e,id:c.id,cx:c.x,cy:400}});
+const buildings=chapters.map(c=>{const e=world.querySelector('.building[data-room="'+c.id+'"]');return {e,id:c.id,cx:c.x,cy:620}});
 let screenX=0;let scrollMomentum=0;
 function wrappedDiff(a,b){let d=(a-b+WORLD_W/2)%WORLD_W;if(d<0)d+=WORLD_W;return d-WORLD_W/2}
 function activeChapter(){let best=Infinity,item=chapters[0];for(const c of chapters){const d=Math.abs(wrappedDiff(x,c.x));if(d<best){best=d;item=c}}return item}
@@ -466,18 +466,18 @@ if(closeEnough){
 
 }
 function travel(delta){unwrappedX+=delta;x=((unwrappedX%WORLD_W)+WORLD_W)%WORLD_W;draw()}
-function jumpTo(id){const c=chapters.find(q=>q.id===id);if(!c)return;const distance=wrappedDiff(c.x,x);travel(distance);y=530;viewport.focus();draw()}
+function jumpTo(id){const c=chapters.find(q=>q.id===id);if(!c)return;const distance=wrappedDiff(c.x,x);travel(distance);y=650;viewport.focus();draw()}
 chapterNav.addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(b)jumpTo(b.dataset.jump)});
 document.querySelectorAll('#questlist [data-room]').forEach(b=>b.addEventListener('contextmenu',e=>e.preventDefault()));
-document.getElementById('reset').onclick=()=>{x=500;unwrappedX=500;y=540;closeRoom(false);visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
-x=500;y=540;
+document.getElementById('reset').onclick=()=>{x=500;unwrappedX=500;y=650;closeRoom(false);visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
+x=500;y=650;
 let previous=performance.now();
 
 function tick(t){
  const dt=Math.min((t-previous)/1000,.05);previous=t;
  const dx=Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft'));
- const dy=Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'));
- if(dx||dy){travel(dx*350*dt);y=Math.max(365,Math.min(680,y+dy*180*dt));player.classList.add('walk')}
+ const dy=0; // Side-scrolling movement is horizontal only; ground elevation is fixed.
+ if(dx){travel(dx*350*dt);y=650;player.classList.add('walk')}
  else{player.classList.remove('walk');if(Math.abs(scrollMomentum)>.3){travel(scrollMomentum*dt);scrollMomentum*=Math.pow(.065,dt)}}
  draw();
  requestAnimationFrame(tick);
@@ -486,7 +486,7 @@ document.addEventListener('keydown',e=>{
 if(e.key==='Escape'){closeRoom(true);return}
 const k=e.key.toLowerCase();
 if(/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName))return;
-if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k)}
+if(['a','d','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k)}
 if(k==='e'&&nearest&&Math.hypot(wrappedDiff(x,nearest.cx),y-nearest.cy)<210){e.preventDefault();openRoom(nearest.id)}
 if(k==='enter'&&document.activeElement===viewport&&nearest&&Math.hypot(wrappedDiff(x,nearest.cx),y-nearest.cy)<210){e.preventDefault();openRoom(nearest.id)}
 });
@@ -497,7 +497,7 @@ let startTouch=null;
 viewport.addEventListener('touchstart',e=>{if(e.target.closest('button,a,.touch,.chapter-map'))return;startTouch={x:e.touches[0].clientX,y:e.touches[0].clientY}}, {passive:true});
 viewport.addEventListener('touchmove',e=>{if(!startTouch)return;const now=e.touches[0];const dx=now.clientX-startTouch.x;travel(-dx/scale);startTouch={x:now.clientX,y:now.clientY};e.preventDefault()}, {passive:false});
 viewport.addEventListener('touchend',()=>{startTouch=null});
-document.querySelectorAll('[data-dir]').forEach(b=>{const code={left:'a',right:'d',up:'w',down:'s'}[b.dataset.dir];b.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(code);b.setPointerCapture(e.pointerId)});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>b.addEventListener(ev,()=>keys.delete(code)))});
+document.querySelectorAll('[data-dir]').forEach(b=>{const code={left:'a',right:'d'}[b.dataset.dir];b.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(code);b.setPointerCapture(e.pointerId)});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>b.addEventListener(ev,()=>keys.delete(code)))});
 window.addEventListener('resize',draw);
 document.getElementById('year').textContent=new Date().getFullYear();
 paintProgress();draw();requestAnimationFrame(tick);
