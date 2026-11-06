@@ -122,6 +122,49 @@ body{font-family:Outfit,system-ui,sans-serif}
 .biome-label small{letter-spacing:1.4px!important}
 @media(prefers-reduced-motion:reduce){.player.walk,.player.walk .pixel-leg{animation:none!important}}
 
+
+/* V3 visual overhaul: six strongly differentiated pixel landscapes */
+.profile,.quests{display:none!important}
+.map{background:none!important;overflow:visible}
+.map:before{display:none!important}
+.road.h{z-index:4!important;top:640px!important;height:100px!important;background:repeating-linear-gradient(90deg,#cda77a 0 38px,#c59d70 38px 44px,#d2ad80 44px 82px)!important;box-shadow:inset 0 16px #e9cc9a,inset 0 -13px #ad875f,0 -15px #7aaf86!important}
+.road.h:after{content:"";position:absolute;top:-18px;left:0;right:0;height:18px;background:repeating-linear-gradient(90deg,#518f73 0 16px,#76ac7e 16px 29px,#90bd86 29px 45px)}
+.zone{position:absolute;top:0;width:900px;height:780px;overflow:hidden;pointer-events:none}
+.zone:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 0 50%,#ffffff1b 50% 53%,transparent 53%);background-size:100% 82px;opacity:.24}
+.zone .sun{position:absolute;top:91px;right:130px;width:100px;height:100px;background:#fff2bb;box-shadow:0 0 0 18px #fff2bb30;clip-path:polygon(10% 0,90% 0,90% 10%,100% 10%,100% 90%,90% 90%,90% 100%,10% 100%,10% 90%,0 90%,0 10%,10% 10%)}
+.zone .hills{position:absolute;bottom:135px;left:-5%;width:110%;height:320px;clip-path:polygon(0 65%,13% 48%,22% 61%,33% 19%,43% 61%,55% 31%,68% 59%,83% 22%,100% 57%,100% 100%,0 100%);background:var(--hill)}
+.zone .hills.far{bottom:185px;height:250px;opacity:.4;transform:scaleX(-1);background:var(--far)}
+.zone .soil{position:absolute;bottom:0;width:100%;height:160px;background:var(--soil)}
+.zone .soil:before{content:"";position:absolute;left:0;right:0;top:20px;height:140px;background:repeating-linear-gradient(90deg,transparent 0 62px,#ffffff15 62px 65px,transparent 65px 126px)}
+.zone .decor{position:absolute;left:5%;right:5%;bottom:137px;height:210px;opacity:.7}
+.zone[data-zone="about"]{background:linear-gradient(#a4cfd2 0%,#e5dfaf 62%,#9ec995 100%);--hill:#74ae95;--far:#d4ceac;--soil:#7aaa7e}
+.zone[data-zone="work"]{background:linear-gradient(#b5cbd6,#e6d7aa 66%,#8da8a5);--hill:#7d9da8;--far:#adb5b4;--soil:#718e88}
+.zone[data-zone="experience"]{background:linear-gradient(#b3b4d8,#edd7c2 64%,#b8b79d);--hill:#949fc3;--far:#c7b8bc;--soil:#8f9f9c}
+.zone[data-zone="skills"]{background:linear-gradient(#8cc3b3,#bedcbb 65%,#89bbaa);--hill:#5eac9b;--far:#a2d7b7;--soil:#598d7a}
+.zone[data-zone="archive"]{background:linear-gradient(#d5bac5,#f1dbb8 64%,#c6ae9e);--hill:#ad99b4;--far:#d5b1bb;--soil:#a48b87}
+.zone[data-zone="contact"]{background:linear-gradient(#829eba,#b8bdcc 57%,#ddbe9c);--hill:#728da0;--far:#a2a6bd;--soil:#7b9e9a}
+.zone[data-zone="contact"] .sun{background:#fff3c9;box-shadow:0 0 0 26px #fff9db36}
+.zone[data-zone="skills"] .sun{background:#e2f7c2}
+.building{top:322px!important;width:360px!important;height:310px!important;z-index:6!important;justify-content:end}
+.building .house-art{width:350px!important;height:265px!important;image-rendering:pixelated!important;filter:drop-shadow(8px 12px 0 #294f4852)}
+.building strong{margin-top:-8px;min-width:175px!important;max-width:270px!important;font-size:15px!important;padding:10px 18px!important;border-radius:7px!important}
+.building:hover .house-art,.building:focus-visible .house-art{transform:translateY(-9px) scale(1.03)!important}
+.biome-label{top:130px!important;font-size:43px!important;z-index:2!important;text-shadow:3px 4px #f7f4d496!important}
+.biome-label small{font-size:13px!important;color:#445e5d!important}
+.tree,.scene-flower,.bush,.mountain,.pond,.sign{display:none!important}
+.player{width:73px!important;height:96px!important;z-index:9!important}
+.chapter-map{top:95px!important;background:#173d37cc!important}
+.header{background:linear-gradient(#1d3b3ee6,transparent)!important}
+.gamehead{display:none!important}
+.tip{bottom:105px!important;background:#fff9eeef!important;border:2px solid #4f6a62!important;box-shadow:4px 5px 0 #355c516c!important}
+.instructions{bottom:28px!important}
+.scroll-guide{bottom:157px!important}
+.scene-chip{position:absolute;top:230px;font:800 12px 'DM Mono',monospace;letter-spacing:1px;color:#355248b3}
+@media(max-width:750px){
+.header{height:65px!important}.chapter-map{top:68px!important}.biome-label{font-size:34px!important;top:180px!important}
+.building{top:300px!important}.tip{bottom:155px!important}.scroll-guide{bottom:205px!important}
+}
+
 </style>
 </head>
 <body>
@@ -184,85 +227,68 @@ const P={
 outline:'#344d4c',shadow:'#496e5d',cream:'#f8edcd',gold:'#ebc56f',coral:'#e98f80',
 mint:'#81c1a0',blue:'#91b9cf',lavender:'#b09ccb',brown:'#a87c62',dark:'#466368',white:'#fdf9e5'
 };
+
 function pixelSprite(id){
-const parts=[];
-const R=(x,y,w,h,c)=>parts.push('<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+c+'"/>');
-const Q=(x,y,w,h,c,b=P.outline)=>{R(x-1,y-1,w+2,h+2,b);R(x,y,w,h,c)};
-const accent=(x,y,c)=>{R(x,y,2,2,c);R(x+3,y-2,1,1,P.white)};
-R(6,45,52,3,P.shadow);
-R(11,43,40,2,'#619b73');
-switch(id){
-case 'about':{
-// Camp with a banner and an illustrated character board.
-Q(10,35,44,8,P.brown);
-R(13,33,38,2,P.cream);
-R(15,29,34,4,P.coral);
-R(18,25,28,4,P.gold);
-R(21,21,22,4,P.coral);
-R(24,17,16,4,P.gold);
-R(27,13,10,4,P.coral);
-R(29,10,6,3,P.cream);
-Q(30,28,5,15,P.outline);
-R(30,34,5,4,P.white);
-Q(51,13,3,30,P.brown);
-R(39,10,13,9,P.mint);R(40,11,11,7,P.cream);
-R(42,13,6,2,P.outline);R(44,15,2,2,P.gold);
-accent(7,17,P.gold);break}
-case 'work':{
-// Workshop with dual-screen workstation and tower, identifiable at a glance.
-Q(6,30,52,13,P.brown);
-Q(10,16,20,15,P.outline);R(12,18,16,10,P.blue);
-R(14,19,12,3,P.white);R(14,24,8,2,P.mint);
-Q(33,12,21,19,P.outline);R(35,14,17,13,P.mint);
-R(37,17,11,2,P.white);R(37,22,7,2,P.gold);
-R(18,32,4,7,P.outline);R(41,32,4,7,P.outline);
-R(8,40,50,4,P.coral);R(27,34,10,3,P.cream);
-Q(48,31,8,9,P.dark);R(50,34,2,2,P.gold);R(50,38,4,1,P.mint);
-accent(5,12,P.gold);break}
-case 'experience':{
-// Stepped clock tower with a flag: distinct tall vertical landmark.
-Q(20,13,26,31,P.cream);
-R(16,21,34,4,P.brown);R(17,24,32,3,P.gold);
-R(24,16,18,5,P.blue);
-Q(26,1,14,14,P.lavender);
-R(30,3,6,8,P.cream);R(32,5,2,5,P.outline);
-R(33,5,3,2,P.outline);
-R(32,0,2,4,P.outline);R(34,0,9,4,P.coral);
-Q(26,31,14,13,P.brown);R(29,34,8,10,P.dark);
-R(20,40,26,4,P.gold);
-Q(12,29,8,15,P.blue);Q(46,29,8,15,P.blue);
-accent(7,13,P.gold);break}
-case 'skills':{
-// Glowing technology skill-tree / circuit installation.
-Q(28,22,8,23,P.brown);R(30,19,4,22,P.gold);
-R(13,24,38,4,P.outline);R(16,22,4,2,P.outline);R(44,22,4,2,P.outline);
-R(30,12,4,15,P.outline);R(9,11,4,13,P.outline);R(51,11,4,13,P.outline);
-R(11,11,20,4,P.outline);R(34,11,20,4,P.outline);
-Q(3,5,17,16,P.mint);Q(25,1,15,16,P.gold);Q(45,5,16,16,P.blue);
-R(8,9,7,3,P.white);R(9,13,5,3,P.outline);
-R(30,5,5,8,P.white);R(48,11,9,3,P.white);R(51,15,4,2,P.outline);
-R(19,42,27,3,P.shadow);accent(22,25,P.gold);break}
-case 'archive':{
-// Tall pixel shelves and books, with stepped library arch.
-Q(7,14,50,30,P.brown);
-R(7,11,50,5,P.dark);R(11,7,42,4,P.lavender);R(15,4,34,3,P.cream);
-for(const yy of [18,30]){R(10,yy+8,44,2,P.cream);for(let j=0;j<9;j++){const colors=[P.coral,P.blue,P.gold,P.mint,P.cream,P.lavender];R(12+j*5,yy,3,8,colors[(j+yy)%colors.length]);R(12+j*5,yy+1,3,1,P.white)}}
-R(11,41,43,3,P.dark);
-Q(24,0,16,7,P.cream);R(28,2,8,3,P.gold);accent(4,7,P.gold);break}
-case 'contact':{
-// Pixel postal station, envelope box, and antenna mast.
-Q(13,15,39,29,P.blue);
-R(17,19,31,21,P.cream);
-Q(20,21,25,16,P.white);
-R(21,22,23,2,P.gold);R(23,25,19,2,P.coral);
-R(25,27,15,2,P.outline);R(28,29,9,2,P.gold);
-R(23,35,20,2,P.mint);
-Q(44,3,3,15,P.dark);R(41,1,9,3,P.gold);
-R(40,6,3,2,P.gold);R(49,6,3,2,P.gold);
-R(9,35,6,10,P.brown);R(51,36,6,9,P.brown);
-accent(5,14,P.cream);break}
+const g=[];
+function rect(x,y,w,h,c){g.push('<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+c+'"/>')}
+function block(x,y,w,h,c){rect(x-2,y-2,w+4,h+4,'#344d4c');rect(x,y,w,h,c)}
+function line(x1,y1,x2,y2,c,w=3){g.push('<path d="M'+x1+' '+y1+'L'+x2+' '+y2+'" stroke="'+c+'" stroke-width="'+w+'" fill="none" stroke-linecap="square"/>')}
+const D='#344d4c',W='#fff0d0',G='#f3ce76',B='#7bbbc1',R='#d98383',N='#7ab68e',P='#a79dc8';
+rect(8,100,116,5,'#527968');
+if(id==='about'){
+// A campsite & illustrated profile sign: canvas canopy, campfire, tree.
+block(24,57,79,38,'#d88a7e');rect(30,62,67,23,'#f3cf9b');
+g.push('<path d="M11 57L64 9L115 57Z" fill="#e7b86c" stroke="'+D+'" stroke-width="4"/>');
+g.push('<path d="M64 13L64 57L103 57Z" fill="#d58b77"/>');
+block(54,63,19,32,'#536b64');rect(60,67,8,28,'#f2d7a2');
+block(9,28,5,69,'#765e55');block(6,22,29,17,'#f9e5b3');rect(11,27,20,3,'#d18a6b');rect(14,33,15,2,D);
+block(106,58,6,37,'#765e55');rect(106,50,6,13,'#7bb889');
+rect(12,98,23,4,'#e2c08f');rect(17,91,12,7,'#f29d64');rect(20,85,6,7,'#ffe29a');
+}else if(id==='work'){
+// Technology workshop: large dual monitors, desk, terminal server and lights.
+block(11,41,108,59,'#627d88');rect(17,48,96,45,'#c2c6bb');
+block(18,15,42,46,D);rect(22,19,34,37,'#71b9b1');rect(26,24,25,4,W);rect(26,33,18,3,G);rect(26,40,22,4,W);
+block(69,10,43,51,D);rect(73,14,35,43,'#89b0ce');rect(78,21,25,4,W);rect(78,31,19,4,G);rect(78,41,23,4,N);
+rect(38,62,6,14,D);rect(87,62,6,14,D);
+block(15,78,104,8,'#c89470');block(17,87,7,14,'#765f58');block(110,87,7,14,'#765f58');
+block(51,75,28,5,D);rect(55,76,20,2,'#f6dfb1');
+}else if(id==='experience'){
+// Huge clock monument/tower with stairs and time markers.
+block(31,27,66,73,'#c8b6aa');rect(35,31,58,65,'#efe0c5');
+block(40,5,48,44,'#738bb1');rect(45,10,38,34,'#e3d7ca');
+g.push('<circle cx="64" cy="27" r="15" fill="'+W+'" stroke="'+D+'" stroke-width="4"/>');
+line(64,27,64,16,D,3);line(64,27,73,30,D,3);
+block(25,18,9,83,'#8c9ba9');block(94,18,9,83,'#8c9ba9');
+block(50,63,28,36,'#796a6a');rect(54,69,20,30,'#a4adba');
+rect(21,94,86,8,'#9a8f8b');rect(15,101,98,6,'#6c797a');
+block(61,0,5,7,D);rect(66,1,17,5,R);
+}else if(id==='skills'){
+// Circuit tree / branching console with six luminous processor modules.
+block(56,40,15,59,'#66776e');rect(60,43,7,56,G);
+line(63,48,30,35,D,6);line(63,48,98,35,D,6);line(63,63,19,56,D,6);line(63,63,109,56,D,6);
+block(9,39,26,26,'#74b7ac');block(90,39,26,26,'#7b9ec9');block(18,13,27,27,'#93c29c');block(83,12,28,28,'#b5a4cf');block(47,2,34,34,'#edce85');
+for(const [xx,yy] of [[17,47],[98,47],[26,21],[91,20],[56,10]]){rect(xx,yy,11,4,W);rect(xx+3,yy+7,5,3,D)}
+block(23,92,82,10,'#587b76');rect(43,96,42,3,'#e5dfb7');
+}else if(id==='archive'){
+// Open air library temple: book towers, stairs and a central reading arch.
+block(12,30,104,69,'#907c8d');rect(16,34,96,61,'#eed9bc');
+g.push('<path d="M4 32L64 4L124 32Z" fill="#b398b2" stroke="'+D+'" stroke-width="5"/>');
+block(19,40,26,51,'#7a6279');block(83,40,26,51,'#7a6279');
+for(let row=0;row<3;row++){for(let i=0;i<4;i++){rect(23+i*5,45+row*15,4,12,[R,G,B,N,P][(row+i)%5]);rect(87+i*5,45+row*15,4,12,[P,N,R,G,B][(row+i)%5])}rect(19,56+row*15,26,3,W);rect(83,56+row*15,26,3,W)}
+g.push('<path d="M52 95V57Q52 45 64 45Q76 45 76 57V95Z" fill="#6b7778" stroke="'+D+'" stroke-width="4"/>');
+rect(48,96,32,5,'#d2b08b');rect(42,102,44,4,'#9a8b83');
+}else if(id==='contact'){
+// Coastal communication pier and oversized modern postal beacon.
+block(23,46,83,51,'#e6d4b9');
+g.push('<path d="M18 47L65 19L112 47Z" fill="#8aadc1" stroke="'+D+'" stroke-width="5"/>');
+block(39,55,52,38,W);rect(44,61,42,28,'#8cb8c4');
+g.push('<path d="M44 61L65 77L86 61" stroke="'+D+'" fill="none" stroke-width="3"/>');
+block(97,8,6,82,'#546f77');block(93,4,15,9,G);rect(95,1,10,4,W);
+line(90,14,83,22,W,3);line(110,14,118,22,W,3);
+block(10,87,109,11,'#a77c65');for(let i=0;i<6;i++)rect(14+i*18,98,5,9,'#785e56');
+rect(38,101,47,3,'#d3b389');
 }
-return '<svg class="house-art pixel-sprite" viewBox="0 0 64 49" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shape-rendering="crispEdges">'+parts.join('')+'</svg>';
+return '<svg class="house-art pixel-sprite" viewBox="0 0 128 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shape-rendering="crispEdges">'+g.join('')+'</svg>'
 }
 document.querySelectorAll('.building').forEach(el=>{
 const glyph=el.querySelector('.glyph');
@@ -282,6 +308,23 @@ avatar.innerHTML='<svg viewBox="0 0 26 35" xmlns="http://www.w3.org/2000/svg" sh
 '<rect x="23" y="20" width="3" height="8" fill="#e1a37e"/>'+
 '<g class="pixel-leg left"><rect x="6" y="29" width="7" height="5" fill="#43515d"/><rect x="5" y="33" width="8" height="2" fill="#303b44"/></g>'+
 '<g class="pixel-leg right"><rect x="15" y="29" width="7" height="5" fill="#43515d"/><rect x="15" y="33" width="8" height="2" fill="#303b44"/></g></svg>';
+
+const sceneDefinitions=[
+['about','About','01 / Background'],
+['work','Projects','02 / Selected Work'],
+['experience','Experience','03 / Career'],
+['skills','Skills','04 / Technology'],
+['archive','Other Projects','05 / Archive'],
+['contact','Contact','06 / Get in touch']
+];
+const environment=document.createDocumentFragment();
+for(let i=0;i<sceneDefinitions.length;i++){
+const [id,title,subtitle]=sceneDefinitions[i];
+const zone=document.createElement('div');zone.className='zone';zone.dataset.zone=id;zone.style.left=(i*900)+'px';
+zone.innerHTML='<div class="sun"></div><div class="hills far"></div><div class="hills"></div><div class="soil"></div>';
+environment.appendChild(zone);
+}
+world.insertBefore(environment,world.firstChild);
 const mapLayer=world;
 const WORLD_W=5400;
 const chapters=[
@@ -296,9 +339,9 @@ const chapterNav=document.createElement('nav');chapterNav.className='chapter-map
 const scrollGuide=document.createElement('div');scrollGuide.className='scroll-guide';scrollGuide.textContent='← Scroll horizontally to browse portfolio →';viewport.appendChild(scrollGuide);
 for(const [i,c] of chapters.entries()){
 const b=world.querySelector('.building[data-room="'+c.id+'"]');
-b.style.left=(c.x-104)+'px';
+b.style.left=(c.x-180)+'px';
 b.style.top='310px';
-const label=document.createElement('div');label.className='biome-label';label.style.left=(c.x-145)+'px';label.textContent=c.name;
+const label=document.createElement('div');label.className='biome-label';label.style.left=(c.x-155)+'px';label.textContent=c.name;
 const sub=document.createElement('small');sub.textContent=('0'+(i+1))+' / '+c.sub;label.appendChild(sub);world.appendChild(label);
 }
 for(let i=0;i<6;i++){
