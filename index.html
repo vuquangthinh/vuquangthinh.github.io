@@ -65,6 +65,30 @@ body{background:#345b51}
 .game{height:100dvh}.modalpanel{padding:17px}.modalhead h2{font-size:24px}}
 @media(max-width:380px){.quest strong{font-size:8px}.profile{width:167px}.profile h1{font-size:19px}.topnav .pill{font-size:9px;padding:7px}}
 
+
+/* Infinite horizontal travel: six hand-drawn chapters across one seamless loop */
+.map{width:5400px!important;height:780px!important;background-color:#96cba5;background-image:radial-gradient(#b9d9a0 2px,transparent 3px),radial-gradient(#6daf89 2px,transparent 3px);background-size:97px 81px,143px 131px;overflow:visible}
+.road.h{left:-150px!important;top:515px!important;width:5700px!important;height:125px!important;border-radius:0!important;box-shadow:inset 0 14px #f6db9f,inset 0 -12px #cfa877,0 0 0 22px #a5c99c!important}
+.road.v,.road.side{display:none!important}
+.pond{left:4870px!important;top:160px!important}
+.building{top:310px!important;z-index:3}.building:after{content:"";position:absolute;bottom:-15px;left:50%;width:6px;height:55px;background:#fdf4cf;border:2px solid #775c3b;border-radius:3px;z-index:-1}
+.tree{z-index:1}.scene-flower{z-index:0}.player{z-index:8}
+.loop-copy{position:absolute;top:0;width:5400px;height:780px;pointer-events:none}
+.loop-copy .building{pointer-events:auto}
+.biome-label{position:absolute;top:193px;z-index:2;font-weight:900;font-size:32px;letter-spacing:-1px;color:#365c4a;text-shadow:0 3px #e2f3cd;white-space:nowrap;pointer-events:none}
+.biome-label small{display:block;font:700 12px 'DM Mono',monospace;letter-spacing:2px;color:#628874;text-shadow:none;margin-top:8px}
+.mountain{position:absolute;top:90px;width:420px;height:310px;background:linear-gradient(140deg,#b4d6a4,#7eaf9a);clip-path:polygon(0% 100%,42% 17%,56% 48%,71% 6%,100% 100%);opacity:.46;pointer-events:none}
+.bush{position:absolute;width:50px;height:26px;background:#62aa7b;border-radius:50% 50% 4px 4px;box-shadow:15px -9px #7abd88,-18px -5px #7fbf8f;pointer-events:none}
+.scroll-guide{position:absolute;bottom:86px;left:50%;transform:translateX(-50%);z-index:12;background:#264a3de8;color:#fff5d7;border-radius:99px;padding:10px 18px;font-size:11px;font-weight:800;white-space:nowrap;box-shadow:0 5px 20px #244b3b77;pointer-events:none}
+.chapter-map{position:absolute;top:77px;left:50%;transform:translateX(-50%);z-index:12;display:flex;gap:5px;align-items:center;background:#173d37ad;border:1px solid #ffffff47;border-radius:99px;padding:6px;backdrop-filter:blur(9px)}
+.chapter-map button{border:0;border-radius:99px;background:#ffffff20;color:#f7ffea;padding:8px 10px;font:800 11px 'Outfit',sans-serif;cursor:pointer}
+.chapter-map button.active{background:#ffe1a2;color:#3b5342}
+.chapter-map button:hover{background:#f0eadb;color:#354d40}
+.gamehead{top:134px!important}.tip{bottom:135px!important}.instructions{bottom:27px!important}
+.profile,.quests{top:130px!important;max-height:calc(100% - 164px)!important}
+@media(max-width:1100px){.chapter-map{top:73px}.gamehead{display:none!important}.profile,.quests{top:115px!important}}
+@media(max-width:750px){.profile{top:113px!important;max-height:none!important}.quests{top:auto!important;bottom:8px!important;max-height:none!important}.chapter-map{top:69px;width:max-content;max-width:calc(100vw - 15px);overflow-x:auto}.chapter-map button{padding:7px 9px;font-size:10px;flex-shrink:0}.tip{bottom:160px!important}.instructions{bottom:118px!important}.scroll-guide{bottom:212px;left:50%;font-size:9px;padding:7px 12px}.touch{bottom:163px!important}}
+
 </style>
 </head>
 <body>
@@ -133,15 +157,106 @@ function artHouse(id){const a=architecture[id];const castle=id==='experience';co
 (chimney?'<path d="M150 25V7h21v34" fill="'+a.trim+'" stroke="#48584b" stroke-width="5"/>':'')+
 '<rect x="49" y="87" width="31" height="31" rx="4" fill="#b6dce4" stroke="#516357" stroke-width="5"/><path d="M65 89v27M51 102h28" stroke="#eef7da" stroke-width="4"/><rect x="129" y="87" width="31" height="31" rx="4" fill="#b6dce4" stroke="#516357" stroke-width="5"/><path d="M144 89v27M131 102h27" stroke="#eef7da" stroke-width="4"/><path d="M87 142V104q0-17 17-17t17 17v38" fill="'+a.trim+'" stroke="#48584b" stroke-width="5"/><circle cx="114" cy="120" r="3" fill="#f8de91"/><path d="M27 142h160" stroke="#516e56" stroke-width="7" stroke-linecap="round"/><path d="M77 51h57" stroke="#ffe9be" stroke-width="6" stroke-linecap="round" opacity=".6"/><circle cx="20" cy="122" r="9" fill="#74ae75"/><circle cx="191" cy="129" r="12" fill="#75a86f"/></svg>'}
 document.querySelectorAll('.building').forEach(el=>{const glyph=el.querySelector('.glyph');if(glyph)glyph.outerHTML=artHouse(el.dataset.room)});
-const mapLayer=document.getElementById('world');
-for(let i=0;i<85;i++){const n=document.createElement('span');const xx=(i*157+49)%1070,yy=(i*229+37)%745;const closeToRoad=(xx>470&&xx<630)||(yy>315&&yy<455)||(yy>100&&yy<190);if(closeToRoad)continue;n.className='scene-flower';n.style.cssText='left:'+xx+'px;top:'+yy+'px;font-size:'+(10+i%4*2)+'px;transform:rotate('+(i*43%360)+'deg)';n.textContent=['✿','❀','✾','☘','✽'][i%5];mapLayer.appendChild(n)}
-const sign=document.createElement('div');sign.className='sign';sign.style.cssText='left:620px;top:455px';sign.textContent='WELCOME, EXPLORER →';mapLayer.appendChild(sign);
 
-const buildings=[...world.querySelectorAll('.building')].map(e=>({e,id:e.dataset.room,cx:e.offsetLeft+e.offsetWidth/2,cy:e.offsetTop+e.offsetHeight/2}));
-function draw(){const rect=viewport.getBoundingClientRect();scale=Math.max(rect.width/1100,rect.height/780);const offsetX=Math.min(0,Math.max(rect.width-1100*scale,rect.width/2-x*scale));const offsetY=Math.min(0,Math.max(rect.height-780*scale,rect.height/2-y*scale));world.style.transform='translate('+offsetX+'px,'+offsetY+'px) scale('+scale+')';player.style.left=x+'px';player.style.top=y+'px';let best=9999;nearest=null;for(const b of buildings){const d=Math.hypot(x-b.cx,y-b.cy);if(d<best){best=d;nearest=b}}tip.textContent=best<150?'✦ Press E to enter '+nearest.e.querySelector('strong').textContent:'🎮 Move with WASD / arrows · Visit a building!'}
-let prev=performance.now();function tick(t){const dt=Math.min((t-prev)/1000,.05);prev=t;if(!modal.classList.contains('open')){let dx=Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft'));let dy=Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'));if(dx||dy){const mag=Math.hypot(dx,dy);x=Math.max(25,Math.min(1075,x+dx/mag*230*dt));y=Math.max(36,Math.min(755,y+dy/mag*230*dt));player.classList.add('walk')}else player.classList.remove('walk');draw()}requestAnimationFrame(tick)}
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeRoom();return}if(modal.classList.contains('open'))return;const k=e.key.toLowerCase();const writing=/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);if(writing)return;if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k)}if((k==='e'||k==='enter')&&document.activeElement===viewport){e.preventDefault();if(nearest&&Math.hypot(x-nearest.cx,y-nearest.cy)<150)openRoom(nearest.id)}});
-document.addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));window.addEventListener('blur',()=>keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keys.clear()});
+const mapLayer=world;
+const WORLD_W=5400;
+const chapters=[
+{id:'about',name:'Origins',x:500,sub:'THE BEGINNING'},
+{id:'work',name:'Project Guild',x:1370,sub:'REAL WORLD BUILDS'},
+{id:'experience',name:'Career Castle',x:2240,sub:'THE TIMELINE'},
+{id:'skills',name:'Skills Forge',x:3110,sub:'THE TOOLKIT'},
+{id:'archive',name:'Quest Archive',x:3980,sub:'PAST ADVENTURES'},
+{id:'contact',name:'Contact Tavern',x:4850,sub:'NEXT CHAPTER'}
+];
+const chapterNav=document.createElement('nav');chapterNav.className='chapter-map';chapterNav.setAttribute('aria-label','Travel to CV chapters');chapterNav.innerHTML=chapters.map((c,i)=>'<button type="button" data-jump="'+c.id+'" aria-label="Travel to '+c.name+'">'+(i+1)+'. '+c.name+'</button>').join('');viewport.appendChild(chapterNav);
+const scrollGuide=document.createElement('div');scrollGuide.className='scroll-guide';scrollGuide.textContent='← Scroll to explore an endless world →';viewport.appendChild(scrollGuide);
+for(const [i,c] of chapters.entries()){
+const b=world.querySelector('.building[data-room="'+c.id+'"]');
+b.style.left=(c.x-90)+'px';
+b.style.top='310px';
+const label=document.createElement('div');label.className='biome-label';label.style.left=(c.x-145)+'px';label.textContent=c.name;
+const sub=document.createElement('small');sub.textContent=('0'+(i+1))+' / '+c.sub;label.appendChild(sub);world.appendChild(label);
+}
+for(let i=0;i<6;i++){
+const m=document.createElement('div');m.className='mountain';m.style.left=(i*890+150)+'px';m.style.top=(35+(i%3)*17)+'px';world.appendChild(m);
+}
+for(let i=0;i<130;i++){
+const xx=(i*577+99)%WORLD_W,yy=(i*137+13)%750;
+if(yy>470&&yy<680)continue;
+const el=document.createElement('span');
+if(i%4===0){el.className='bush';el.style.left=xx+'px';el.style.top=yy+'px'}
+else{el.className='scene-flower';el.style.left=xx+'px';el.style.top=yy+'px';el.textContent=['✿','❀','✾','☘','✽'][i%5]}
+world.appendChild(el);
+}
+for(let i=0;i<55;i++){
+const t=document.createElement('div');t.className='tree';t.style.left=((i*719+25)%WORLD_W)+'px';t.style.top=(90+(i*139)%350)+'px';world.appendChild(t);
+}
+const oldSign=world.querySelector('.sign');if(oldSign)oldSign.remove();
+const oldFlowers=[...world.querySelectorAll('.scene-flower')].filter(e=>!e.style.left||parseFloat(e.style.left)<1100);
+const playerEl=player;playerEl.remove();world.appendChild(playerEl);
+// Duplicate scenery one world to each side: edges continue without a visual jump.
+const scenery=[...world.children].filter(e=>e!==playerEl&&e.className!=='loop-copy');
+for(const delta of [-WORLD_W,WORLD_W]){
+const copy=document.createElement('div');copy.className='loop-copy';copy.style.left=delta+'px';
+scenery.forEach(el=>{const cloned=el.cloneNode(true);if(cloned.id)cloned.removeAttribute('id');copy.appendChild(cloned)});
+world.appendChild(copy);
+}
+world.querySelectorAll('.loop-copy .building').forEach(b=>b.addEventListener('click',()=>openRoom(b.dataset.room)));
+const buildings=chapters.map(c=>{const e=world.querySelector('.building[data-room="'+c.id+'"]');return {e,id:c.id,cx:c.x,cy:400}});
+let screenX=0;let scrollMomentum=0;
+function wrappedDiff(a,b){let d=(a-b+WORLD_W/2)%WORLD_W;if(d<0)d+=WORLD_W;return d-WORLD_W/2}
+function activeChapter(){let best=Infinity,item=chapters[0];for(const c of chapters){const d=Math.abs(wrappedDiff(x,c.x));if(d<best){best=d;item=c}}return item}
+function draw(){
+const rect=viewport.getBoundingClientRect();
+scale=Math.max(.66,Math.min(1.18,rect.height/790));
+screenX=rect.width/2;
+const ox=screenX-x*scale;
+const oy=(rect.height-780*scale)/2;
+world.style.transform='translate('+ox+'px,'+oy+'px) scale('+scale+')';
+player.style.left=x+'px';player.style.top=y+'px';
+let best=Infinity;nearest=null;
+for(const b of buildings){const dx=wrappedDiff(x,b.cx),dy=y-b.cy;const d=Math.hypot(dx,dy);if(d<best){best=d;nearest=b}}
+tip.textContent=best<210?'✦ Press E to explore '+nearest.e.querySelector('strong').textContent:'✦ Walk sideways · scroll or swipe to explore';
+const current=activeChapter();
+chapterNav.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.jump===current.id));
+}
+function travel(delta){x=((x+delta)%WORLD_W+WORLD_W)%WORLD_W;draw()}
+function jumpTo(id){const c=chapters.find(q=>q.id===id);if(!c)return;const distance=wrappedDiff(c.x,x);travel(distance);y=530;viewport.focus();draw()}
+chapterNav.addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(b)jumpTo(b.dataset.jump)});
+document.querySelectorAll('#questlist [data-room]').forEach(b=>b.addEventListener('contextmenu',e=>e.preventDefault()));
+document.getElementById('reset').onclick=()=>{x=500;y=540;visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
+x=500;y=540;
+let previous=performance.now();
+function tick(t){
+const dt=Math.min((t-previous)/1000,.05);previous=t;
+if(!modal.classList.contains('open')){
+const dx=Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft'));
+const dy=Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'));
+if(dx||dy){travel(dx*350*dt);y=Math.max(365,Math.min(680,y+dy*180*dt));player.classList.add('walk')}
+else{player.classList.remove('walk');if(Math.abs(scrollMomentum)>.3){travel(scrollMomentum*dt);scrollMomentum*=Math.pow(.065,dt)}}
+draw();
+}
+requestAnimationFrame(tick);
+}
+document.addEventListener('keydown',e=>{
+if(e.key==='Escape'){closeRoom();return}
+if(modal.classList.contains('open'))return;
+const k=e.key.toLowerCase();
+if(/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName))return;
+if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k)}
+if(k==='e'&&nearest&&Math.hypot(wrappedDiff(x,nearest.cx),y-nearest.cy)<210){e.preventDefault();openRoom(nearest.id)}
+if(k==='enter'&&document.activeElement===viewport&&nearest&&Math.hypot(wrappedDiff(x,nearest.cx),y-nearest.cy)<210){e.preventDefault();openRoom(nearest.id)}
+});
+document.addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
+window.addEventListener('blur',()=>keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keys.clear()});
+viewport.addEventListener('wheel',e=>{if(modal.classList.contains('open')||e.target.closest('.chapter-map'))return;e.preventDefault();travel((Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY)*.95)}, {passive:false});
+let startTouch=null;
+viewport.addEventListener('touchstart',e=>{if(e.target.closest('button,a,.touch,.chapter-map'))return;startTouch={x:e.touches[0].clientX,y:e.touches[0].clientY}}, {passive:true});
+viewport.addEventListener('touchmove',e=>{if(!startTouch||modal.classList.contains('open'))return;const now=e.touches[0];const dx=now.clientX-startTouch.x;travel(-dx/scale);startTouch={x:now.clientX,y:now.clientY};e.preventDefault()}, {passive:false});
+viewport.addEventListener('touchend',()=>{startTouch=null});
 document.querySelectorAll('[data-dir]').forEach(b=>{const code={left:'a',right:'d',up:'w',down:'s'}[b.dataset.dir];b.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(code);b.setPointerCapture(e.pointerId)});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>b.addEventListener(ev,()=>keys.delete(code)))});
-window.addEventListener('resize',draw);document.getElementById('year').textContent=new Date().getFullYear();paintProgress();draw();requestAnimationFrame(tick);
+window.addEventListener('resize',draw);
+document.getElementById('year').textContent=new Date().getFullYear();
+paintProgress();draw();requestAnimationFrame(tick);
+
 </script></body></html>
