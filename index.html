@@ -165,6 +165,38 @@ body{font-family:Outfit,system-ui,sans-serif}
 .building{top:300px!important}.tip{bottom:155px!important}.scroll-guide{bottom:205px!important}
 }
 
+
+/* 2.5D horizontal parallax + classic contextual game dialogue */
+.viewport-depth{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.depth-sky{z-index:0;background:linear-gradient(180deg,#a2c9db 0%,#e2e4ca 54%,#acd0a8 100%);transition:background 700ms ease}
+.depth-back{z-index:1;opacity:.7;background:linear-gradient(180deg,transparent 42%,#88b6a2 42% 48%,transparent 48%),repeating-linear-gradient(120deg,transparent 0 195px,#7cabb1 195px 240px,transparent 240px 340px);background-size:1800px 100%,1800px 100%;background-repeat:repeat-x;will-change:background-position}
+.depth-mid{z-index:2;opacity:.65;background:linear-gradient(165deg,transparent 0 61%,#75aa95 61% 70%,transparent 70%),repeating-linear-gradient(105deg,transparent 0 120px,#70a18f 120px 170px,transparent 170px 330px);background-size:1200px 100%,1200px 100%;background-repeat:repeat-x;will-change:background-position}
+.depth-clouds{z-index:3;background-image:radial-gradient(ellipse 110px 26px at 85px 125px,#ffffff9a 45%,transparent 46%),radial-gradient(ellipse 90px 20px at 210px 150px,#ffffff80 48%,transparent 49%);background-size:580px 310px;will-change:background-position}
+.game .map{z-index:4}
+.depth-front{z-index:6;background:repeating-linear-gradient(90deg,transparent 0 100px,#3e795638 100px 108px,transparent 108px 215px),linear-gradient(0deg,#4c8e6669 0 19px,transparent 19px);background-size:280px 100%,100% 100%;opacity:.5;will-change:background-position}
+.depth-sky[data-scene="work"]{background:linear-gradient(#9bb6cc,#dce1da 56%,#a4c3aa)}
+.depth-sky[data-scene="experience"]{background:linear-gradient(#b5adcc,#ead8cc 58%,#b9bea9)}
+.depth-sky[data-scene="skills"]{background:linear-gradient(#85c6bf,#cfe8c3 60%,#9bc4a3)}
+.depth-sky[data-scene="archive"]{background:linear-gradient(#c6aec5,#edd7c7 58%,#c5b2aa)}
+.depth-sky[data-scene="contact"]{background:linear-gradient(#84a8c3,#d8d7c4 55%,#a1bdaf)}
+.modal{position:fixed!important;inset:auto 15px 21px 15px!important;z-index:30!important;display:block!important;visibility:hidden;opacity:0;transform:translateY(25px);transition:transform .18s steps(4,end),opacity .18s steps(4,end),visibility .18s;pointer-events:none!important;background:none!important;backdrop-filter:none!important;padding:0!important;overflow:visible!important}
+.modal.open{visibility:visible;opacity:1;transform:translateY(0)}
+.modalpanel{position:relative;width:min(860px,calc(100% - 24px))!important;max-height:min(39vh,340px)!important;overflow-y:auto!important;margin:0 auto!important;background:#fbf6df!important;color:#283b3c!important;border:5px solid #31484b!important;outline:4px solid #e7c47c;outline-offset:2px;border-radius:3px!important;box-shadow:0 11px 0 #243c3fb0,0 18px 34px #1b373d88!important;padding:14px 22px 26px!important;pointer-events:auto!important;scrollbar-color:#9ba99a #f1ebd3}
+.modalhead{position:sticky;top:-14px;z-index:2;background:#fbf6df;border-bottom:3px solid #d1d9c6;align-items:center!important;padding:7px 0 10px!important;margin-bottom:10px!important}
+.modalhead h2{font-size:19px!important;letter-spacing:0!important;line-height:1.2;margin:3px 0 0!important}
+.modal .eyebrow{font:800 10px 'DM Mono',monospace!important;letter-spacing:1px!important;color:#557c71!important}
+.modal .close{background:#e9d8a4!important;border:2px solid #52695d!important;border-radius:2px!important;color:#344e4e!important;font:800 11px 'DM Mono',monospace!important;padding:8px 10px!important;white-space:nowrap}
+.modalpanel p,.modalpanel li{font-size:13px!important;line-height:1.55!important}
+.modalpanel .entry{padding:9px 0!important}.modalpanel .entry strong{font-size:15px!important}
+.modalpanel .motto{font-size:12px!important;padding:9px 12px!important;border-radius:2px!important}
+.modalpanel .linkrow a{border-radius:2px!important;background:#e8e3c3!important;font-size:11px!important}
+.tip{display:none!important}.scroll-guide{display:none!important}
+.instructions{z-index:20!important;left:18px!important;bottom:26px!important;right:auto!important;transform:none!important;font-size:11px!important}
+.dialog-hint{position:absolute;left:18px;bottom:7px;z-index:4;font:800 10px 'DM Mono',monospace;color:#6c7669}
+.modalpanel{padding-bottom:29px!important}
+@media(max-width:750px){.modal{inset:auto 8px 132px 8px!important}.modalpanel{width:100%!important;max-height:min(34vh,270px)!important;padding:11px 13px 26px!important;border-width:4px!important}.modalhead{top:-11px;padding:6px 0 8px!important}.modalhead h2{font-size:16px!important}.modalpanel p,.modalpanel li{font-size:12px!important}.instructions{display:none!important}}
+@media(prefers-reduced-motion:reduce){.modal{transition:none!important}.depth-sky{transition:none!important}}
+
 </style>
 </head>
 <body>
@@ -201,7 +233,7 @@ body{font-family:Outfit,system-ui,sans-serif}
 </div><div class="progress"><span id="count">0 / 6 sections viewed</span><div class="progressbar"><span id="progressfill"></span></div></div><p class="intro" style="font-size:12px;margin-bottom:0">The full professional CV and detailed case studies are always one click away — no interaction required.</p></div></aside>
 </div><div class="floathelp">✦ Interactive design, professional experience. All experience and case studies are preserved in the <a href="resume.html" style="color:#ffe29c">complete CV</a>.</div><div class="footer">Made with care by Vũ Quang Thịnh · <span id="year"></span> · <a href="https://www.linkedin.com/in/vuquangthinh">LinkedIn</a> · <a href="https://www.npmjs.com/~vuquangthinh">npm</a></div>
 </div>
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalpanel"><div class="modalhead"><div><div class="eyebrow" id="modalLabel">Section details</div><h2 id="modalTitle"></h2></div><button class="close" type="button" id="close" aria-label="Close dialog">✕ Close</button></div><div id="modalContent"></div><div class="linkrow"><a href="resume.html">Full CV & case studies ↗</a></div></div></div>
+<div class="modal" id="modal" role="region" aria-label="Nearby portfolio information" aria-labelledby="modalTitle"><div class="modalpanel"><div class="modalhead"><div><div class="eyebrow" id="modalLabel">Section details</div><h2 id="modalTitle"></h2></div><button class="close" type="button" id="close" aria-label="Close dialog">✕ Close</button></div><div id="modalContent"></div><div class="linkrow"><a href="resume.html">Full CV & case studies ↗</a></div><div class="dialog-hint">MOVE AWAY TO CLOSE · ESC TO DISMISS</div></div></div>
 <script>
 const rooms={
 about:{title:"About Me",label:"BACKGROUND",html:'<div class="motto">“I turn difficult business problems into reliable, production-ready software.”</div><p>Vũ Quang Thịnh is a senior software engineer based in Hanoi, Vietnam. Working professionally since 2012, I build across product frontend, backend systems, architecture, infrastructure, and blockchain.</p><p>I have worked with international teams and delivered products in healthcare, fintech, analytics, Web3, gaming, and publishing. My focus is on system reliability, maintainability, pragmatic design and end-to-end delivery.</p><div class="tags"><span class="tag">Full-stack</span><span class="tag">System design</span><span class="tag">Distributed systems</span><span class="tag">Production delivery</span></div>'},
@@ -214,9 +246,29 @@ contact:{title:"Contact",label:"GET IN TOUCH",html:'<p>Open to discussing full-s
 const modal=document.getElementById('modal'),world=document.getElementById('world'),viewport=document.getElementById('viewport'),player=document.getElementById('player'),tip=document.getElementById('tip');let x=550,y=420,scale=1,keys=new Set(),visited=new Set();let nearest=null,lastFocus=null;
 try{const saved=JSON.parse(localStorage.getItem('thinhquest-visited')||'[]');visited=new Set(saved.filter(k=>Object.hasOwn(rooms,k)))}catch(e){}
 function paintProgress(){document.getElementById('count').textContent=visited.size+' / 6 sections viewed';document.getElementById('progressfill').style.width=(visited.size/6*100)+'%';document.querySelectorAll('[data-check]').forEach(e=>e.textContent=visited.has(e.dataset.check)?'✓':'○')}
-function openRoom(id){if(!rooms[id])return;lastFocus=document.activeElement;document.getElementById('modalTitle').textContent=rooms[id].title;document.getElementById('modalLabel').textContent=rooms[id].label;document.getElementById('modalContent').innerHTML=rooms[id].html;modal.classList.add('open');document.body.style.overflow='hidden';keys.clear();visited.add(id);try{localStorage.setItem('thinhquest-visited',JSON.stringify([...visited]))}catch(e){}paintProgress();document.getElementById('close').focus()}
-function closeRoom(){modal.classList.remove('open');document.body.style.overflow='';if(lastFocus&&lastFocus.focus)lastFocus.focus()}
-document.getElementById('close').onclick=closeRoom;modal.addEventListener('click',e=>{if(e.target===modal)closeRoom()});document.querySelectorAll('[data-room]').forEach(e=>e.addEventListener('click',()=>openRoom(e.dataset.room)));
+
+let activeRoom=null;
+let suppressedRoom=null;
+function openRoom(id){
+ if(!rooms[id]||activeRoom===id)return;
+ activeRoom=id;
+ suppressedRoom=null;
+ document.getElementById('modalTitle').textContent=rooms[id].title;
+ document.getElementById('modalLabel').textContent=rooms[id].label;
+ document.getElementById('modalContent').innerHTML=rooms[id].html;
+ document.getElementById('modalContent').scrollTop=0;
+ modal.querySelector('.modalpanel').scrollTop=0;
+ modal.classList.add('open');
+ visited.add(id);
+ try{localStorage.setItem('thinhquest-visited',JSON.stringify([...visited]))}catch(e){}
+ paintProgress();
+}
+function closeRoom(suppress=false){
+ if(suppress&&activeRoom)suppressedRoom=activeRoom;
+ activeRoom=null;modal.classList.remove('open');
+}
+document.getElementById('close').onclick=()=>closeRoom(true);
+document.querySelectorAll('[data-room]').forEach(e=>e.addEventListener('click',()=>openRoom(e.dataset.room)));
 document.getElementById('reset').onclick=()=>{x=550;y=420;visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
 
 /* Hand-drawn vector village assets. All illustration remains sharp at any screen size. */
@@ -325,6 +377,21 @@ zone.innerHTML='<div class="sun"></div><div class="hills far"></div><div class="
 environment.appendChild(zone);
 }
 world.insertBefore(environment,world.firstChild);
+
+const depth={};
+for(const [name,klass] of [['sky','depth-sky'],['back','depth-back'],['mid','depth-mid'],['clouds','depth-clouds'],['front','depth-front']]){
+ const el=document.createElement('div');el.className='viewport-depth '+klass;
+ viewport.insertBefore(el,world);depth[name]=el;
+}
+viewport.appendChild(depth.front);
+let unwrappedX=500;
+function parallaxPaint(){
+ const px=unwrappedX*scale;
+ depth.back.style.backgroundPosition=(-px*.16)+'px 0, '+(-px*.16)+'px 0';
+ depth.mid.style.backgroundPosition=(-px*.38)+'px 0, '+(-px*.38)+'px 0';
+ depth.clouds.style.backgroundPosition=(-px*.08)+'px 0';
+ depth.front.style.backgroundPosition=(-px*1.28)+'px 0, 0 0';
+}
 const mapLayer=world;
 const WORLD_W=5400;
 const chapters=[
@@ -380,34 +447,43 @@ screenX=rect.width/2;
 const ox=screenX-x*scale;
 const oy=(rect.height-780*scale)/2;
 world.style.transform='translate('+ox+'px,'+oy+'px) scale('+scale+')';
+parallaxPaint();
 player.style.left=x+'px';player.style.top=y+'px';
 let best=Infinity;nearest=null;
 for(const b of buildings){const dx=wrappedDiff(x,b.cx),dy=y-b.cy;const d=Math.hypot(dx,dy);if(d<best){best=d;nearest=b}}
 tip.textContent=best<210?'Press E to view '+nearest.e.querySelector('strong').textContent:'Scroll or swipe horizontally to browse sections';
 const current=activeChapter();
 chapterNav.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.jump===current.id));
+
+depth.sky.dataset.scene=current.id;
+const closeEnough=nearest&&Math.hypot(wrappedDiff(x,nearest.cx),y-nearest.cy)<250;
+if(closeEnough){
+ if(nearest.id!==suppressedRoom)openRoom(nearest.id);
+}else{
+ if(activeRoom)closeRoom(false);
+ suppressedRoom=null;
 }
-function travel(delta){x=((x+delta)%WORLD_W+WORLD_W)%WORLD_W;draw()}
+
+}
+function travel(delta){unwrappedX+=delta;x=((unwrappedX%WORLD_W)+WORLD_W)%WORLD_W;draw()}
 function jumpTo(id){const c=chapters.find(q=>q.id===id);if(!c)return;const distance=wrappedDiff(c.x,x);travel(distance);y=530;viewport.focus();draw()}
 chapterNav.addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(b)jumpTo(b.dataset.jump)});
 document.querySelectorAll('#questlist [data-room]').forEach(b=>b.addEventListener('contextmenu',e=>e.preventDefault()));
-document.getElementById('reset').onclick=()=>{x=500;y=540;visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
+document.getElementById('reset').onclick=()=>{x=500;unwrappedX=500;y=540;closeRoom(false);visited.clear();try{localStorage.removeItem('thinhquest-visited')}catch(e){}paintProgress();draw();viewport.focus()};
 x=500;y=540;
 let previous=performance.now();
+
 function tick(t){
-const dt=Math.min((t-previous)/1000,.05);previous=t;
-if(!modal.classList.contains('open')){
-const dx=Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft'));
-const dy=Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'));
-if(dx||dy){travel(dx*350*dt);y=Math.max(365,Math.min(680,y+dy*180*dt));player.classList.add('walk')}
-else{player.classList.remove('walk');if(Math.abs(scrollMomentum)>.3){travel(scrollMomentum*dt);scrollMomentum*=Math.pow(.065,dt)}}
-draw();
-}
-requestAnimationFrame(tick);
+ const dt=Math.min((t-previous)/1000,.05);previous=t;
+ const dx=Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft'));
+ const dy=Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'));
+ if(dx||dy){travel(dx*350*dt);y=Math.max(365,Math.min(680,y+dy*180*dt));player.classList.add('walk')}
+ else{player.classList.remove('walk');if(Math.abs(scrollMomentum)>.3){travel(scrollMomentum*dt);scrollMomentum*=Math.pow(.065,dt)}}
+ draw();
+ requestAnimationFrame(tick);
 }
 document.addEventListener('keydown',e=>{
-if(e.key==='Escape'){closeRoom();return}
-if(modal.classList.contains('open'))return;
+if(e.key==='Escape'){closeRoom(true);return}
 const k=e.key.toLowerCase();
 if(/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName))return;
 if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k)}
@@ -416,10 +492,10 @@ if(k==='enter'&&document.activeElement===viewport&&nearest&&Math.hypot(wrappedDi
 });
 document.addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
 window.addEventListener('blur',()=>keys.clear());document.addEventListener('visibilitychange',()=>{if(document.hidden)keys.clear()});
-viewport.addEventListener('wheel',e=>{if(modal.classList.contains('open')||e.target.closest('.chapter-map'))return;e.preventDefault();travel((Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY)*.95)}, {passive:false});
+viewport.addEventListener('wheel',e=>{if(e.target.closest('.modalpanel,.chapter-map'))return;e.preventDefault();travel((Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY)*.95)}, {passive:false});
 let startTouch=null;
 viewport.addEventListener('touchstart',e=>{if(e.target.closest('button,a,.touch,.chapter-map'))return;startTouch={x:e.touches[0].clientX,y:e.touches[0].clientY}}, {passive:true});
-viewport.addEventListener('touchmove',e=>{if(!startTouch||modal.classList.contains('open'))return;const now=e.touches[0];const dx=now.clientX-startTouch.x;travel(-dx/scale);startTouch={x:now.clientX,y:now.clientY};e.preventDefault()}, {passive:false});
+viewport.addEventListener('touchmove',e=>{if(!startTouch)return;const now=e.touches[0];const dx=now.clientX-startTouch.x;travel(-dx/scale);startTouch={x:now.clientX,y:now.clientY};e.preventDefault()}, {passive:false});
 viewport.addEventListener('touchend',()=>{startTouch=null});
 document.querySelectorAll('[data-dir]').forEach(b=>{const code={left:'a',right:'d',up:'w',down:'s'}[b.dataset.dir];b.addEventListener('pointerdown',e=>{e.preventDefault();keys.add(code);b.setPointerCapture(e.pointerId)});['pointerup','pointercancel','lostpointercapture'].forEach(ev=>b.addEventListener(ev,()=>keys.delete(code)))});
 window.addEventListener('resize',draw);
