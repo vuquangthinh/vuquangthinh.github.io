@@ -1,0 +1,1142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vũ Quang Thịnh — Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Senior software engineer in Hanoi. Backend, frontend, infrastructure, fintech, distributed systems and Web3."
+    />
+    <meta name="author" content="Vũ Quang Thịnh" />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="canonical" href="https://vuquangthinh.github.io/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0f1b;
+        --bg-2: #111827;
+        --panel: rgba(17, 24, 39, 0.82);
+        --panel-strong: #101827;
+        --panel-soft: rgba(148, 163, 184, 0.06);
+        --line: rgba(148, 163, 184, 0.16);
+        --line-strong: rgba(148, 163, 184, 0.28);
+        --text: #edf2ff;
+        --muted: #a6b0c3;
+        --muted-2: #7d8aa3;
+        --accent: #73f0c8;
+        --accent-2: #88a8ff;
+        --accent-3: #c084fc;
+        --shadow: rgba(10, 15, 27, 0.7);
+        --card-radius: 26px;
+        --container: min(1180px, calc(100% - 32px));
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(115, 240, 200, 0.12), transparent 24%),
+          radial-gradient(circle at top right, rgba(136, 168, 255, 0.12), transparent 28%),
+          linear-gradient(180deg, #090d16 0%, #0a0f1b 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      p, ul, li, h1, h2, h3 { margin-top: 0; }
+      ul { padding-left: 1.2rem; }
+
+      header.top {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background: rgba(10, 15, 27, 0.64);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .top-inner,
+      .container,
+      footer {
+        width: var(--container);
+        margin: 0 auto;
+      }
+
+      .top-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.82rem;
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .brand-mark {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 0 18px rgba(115, 240, 200, 0.7);
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+
+      nav a {
+        font-size: 0.92rem;
+        color: var(--muted);
+        transition: color 180ms ease;
+      }
+
+      nav a:hover { color: var(--text); }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .lang-switch {
+        appearance: none;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.02);
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 9px 12px;
+        font-size: 0.76rem;
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.08em;
+        cursor: pointer;
+      }
+
+      .pdf-link, .button-primary, .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        font-weight: 600;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .pdf-link,
+      .button-secondary {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, rgba(115, 240, 200, 0.18), rgba(136, 168, 255, 0.18));
+        border: 1px solid rgba(115, 240, 200, 0.35);
+        color: var(--text);
+        box-shadow: 0 10px 30px rgba(136, 168, 255, 0.16);
+      }
+
+      .pdf-link:hover,
+      .button-primary:hover,
+      .button-secondary:hover {
+        transform: translateY(-1px);
+      }
+
+      main {
+        padding-bottom: 40px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+        align-items: center;
+        gap: 46px;
+        padding: 72px 0 40px;
+      }
+
+      .eyebrow {
+        font-family: "DM Mono", monospace;
+        font-size: 0.8rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 6vw, 5.3rem);
+        line-height: 0.94;
+        letter-spacing: -0.075em;
+        margin-bottom: 18px;
+      }
+
+      h1 .sub {
+        display: block;
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      .intro {
+        max-width: 710px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        margin-bottom: 30px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px 16px;
+        margin-bottom: 18px;
+      }
+
+      .secondary-link {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        color: var(--muted-2);
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-family: "DM Mono", monospace;
+      }
+
+      .portrait-card {
+        position: relative;
+        background: linear-gradient(180deg, rgba(115, 240, 200, 0.12), rgba(136, 168, 255, 0.06));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px var(--shadow);
+      }
+
+      .portrait-card::before {
+        content: "";
+        position: absolute;
+        inset: 18px 18px auto auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(136,168,255,0.35), transparent 66%);
+        filter: blur(20px);
+      }
+
+      .portrait-card img {
+        width: 100%;
+        aspect-ratio: 1 / 1.18;
+        object-fit: cover;
+        display: block;
+      }
+
+      .portrait-card .caption {
+        display: grid;
+        gap: 6px;
+        padding: 18px 20px 22px;
+        border-top: 1px solid var(--line);
+        background: rgba(10, 15, 27, 0.84);
+      }
+
+      .portrait-card .caption strong {
+        font-size: 1.02rem;
+      }
+
+      .portrait-card .caption span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .section {
+        padding: 42px 0 24px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 22px;
+        margin-bottom: 26px;
+      }
+
+      .section-head .num {
+        font-family: "DM Mono", monospace;
+        font-size: 0.82rem;
+        letter-spacing: 0.12em;
+        color: var(--accent);
+        text-transform: uppercase;
+      }
+
+      .section-head h2 {
+        font-size: clamp(2.2rem, 4vw, 3.1rem);
+        letter-spacing: -0.07em;
+        margin: 0;
+      }
+
+      .section-head p {
+        margin: 0;
+        max-width: 620px;
+        color: var(--muted);
+      }
+
+      .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .feature-card {
+        position: relative;
+        display: block;
+        min-height: 330px;
+        background: linear-gradient(180deg, rgba(17,24,39,0.96), rgba(13,18,28,0.95));
+        border: 1px solid var(--line);
+        border-radius: var(--card-radius);
+        overflow: hidden;
+        padding: 20px 20px 18px;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(115, 240, 200, 0.5);
+        box-shadow: 0 25px 55px rgba(0,0,0,0.25);
+      }
+
+      .feature-art {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+        margin-bottom: 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(255,255,255,0.05);
+        background: linear-gradient(135deg, rgba(136,168,255,0.16), rgba(115,240,200,0.12));
+        font-size: 0.76rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-family: "DM Mono", monospace;
+        color: var(--text);
+      }
+
+      .feature-tag {
+        display: inline-flex;
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.02);
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      .feature-card h3 {
+        margin: 0 0 10px;
+        font-size: clamp(1.8rem, 2.2vw, 2.3rem);
+        letter-spacing: -0.06em;
+      }
+
+      .feature-card p {
+        color: var(--muted);
+        margin-bottom: 18px;
+      }
+
+      .feature-card .stack {
+        display: inline-block;
+        font-size: 0.82rem;
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .detail-link {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 16px;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .archive-list {
+        display: grid;
+        gap: 0;
+        background: rgba(255,255,255,0.01);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        overflow: hidden;
+      }
+
+      .archive-item {
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr) minmax(200px, 260px);
+        gap: 22px;
+        align-items: start;
+        padding: 22px 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      .archive-item:first-child { border-top: 0; }
+
+      .archive-item time {
+        color: var(--muted);
+        font-family: "DM Mono", monospace;
+        font-size: 0.85rem;
+      }
+
+      .archive-item h3 {
+        margin: 0 0 8px;
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
+        letter-spacing: -0.045em;
+      }
+
+      .archive-item p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .archive-item .stack {
+        color: var(--text);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-family: "DM Mono", monospace;
+        text-align: right;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 20px;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 140px minmax(0, 1fr);
+        gap: 26px;
+        padding: 18px 0 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .timeline-item time {
+        color: var(--muted);
+        font-family: "DM Mono", monospace;
+        font-size: 0.84rem;
+      }
+
+      .timeline-item h3 {
+        margin: 0 0 10px;
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        letter-spacing: -0.05em;
+      }
+
+      .timeline-item p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+        gap: 26px;
+      }
+
+      .about-copy {
+        display: grid;
+        gap: 18px;
+        color: var(--muted);
+      }
+
+      .skills {
+        display: grid;
+        gap: 18px;
+      }
+
+      .skill-group {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px 18px;
+      }
+
+      .skill-group span {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .skill-group p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .contact-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 30px 0 58px;
+        border-top: 1px solid var(--line);
+      }
+
+      .contact-cta p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 620px;
+      }
+
+      .contact-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+        padding: 16px 0 40px;
+      }
+
+      .case-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background: rgba(5, 8, 14, 0.72);
+        backdrop-filter: blur(12px);
+        padding: 48px 16px;
+        overflow-y: auto;
+      }
+
+      .case-modal:target {
+        display: block;
+      }
+
+      .case-bg {
+        position: absolute;
+        inset: 0;
+      }
+
+      .case-sheet {
+        position: relative;
+        width: min(800px, 100%);
+        margin: 0 auto;
+        background: linear-gradient(180deg, rgba(21, 29, 42, 0.96), rgba(14, 18, 30, 0.96));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 24px 24px 22px;
+        box-shadow: 0 30px 120px rgba(0,0,0,0.45);
+        max-height: calc(100vh - 96px);
+        overflow-y: auto;
+      }
+
+      .case-close {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 7px 12px;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .case-sheet small {
+        display: inline-block;
+        margin-bottom: 8px;
+        color: var(--accent);
+        font-family: "DM Mono", monospace;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .case-sheet h2 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        letter-spacing: -0.06em;
+      }
+
+      .case-lead {
+        color: var(--text);
+        font-size: 1.06rem;
+      }
+
+      .case-sheet h3 {
+        margin-top: 18px;
+        font-size: 1.1rem;
+      }
+
+      .case-sheet ul {
+        color: var(--muted);
+      }
+
+      .case-sheet code {
+        display: block;
+        margin-top: 20px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid var(--line);
+        font-family: "DM Mono", monospace;
+        color: var(--text);
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .about-grid,
+        .featured-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .archive-item {
+          grid-template-columns: 1fr;
+        }
+
+        .archive-item .stack {
+          text-align: left;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .contact-cta {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .top-inner {
+          min-height: 68px;
+        }
+
+        .actions .lang-switch {
+          display: none;
+        }
+
+        .hero {
+          padding-top: 54px;
+        }
+
+        .section-head {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .timeline-item {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <div class="top-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark"></span>
+          <span>Vũ Quang Thịnh</span>
+        </a>
+        <nav>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="actions">
+          <button class="lang-switch" type="button" aria-label="Language switch">EN / VI</button>
+          <a class="pdf-link" href="data:application/pdf;base64,PCFkb2N0eXBlIGh0bWw+VnUtUXVhbmcgVGjhu4tOSBDV1JUSU5ETy5wZGY=" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="container">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior software engineer</p>
+            <h1>
+              I build software
+              <span class="sub">across the stack.</span>
+            </h1>
+            <p class="intro">
+              Backend, frontend, infrastructure and system design. Recent work includes fintech platforms,
+              distributed systems and Web3 products. I enjoy turning ambiguous business problems into reliable,
+              measurable software products.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#work">Selected work →</a>
+              <a class="button-secondary" href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
+            </div>
+            <div class="hero-meta">
+              <span>Full-stack</span>
+              <span>System design</span>
+              <span>Infra</span>
+            </div>
+          </div>
+
+          <figure class="portrait-card">
+            <img src="assets/images/resume-profile.png" alt="Vũ Quang Thịnh" />
+            <figcaption class="caption">
+              <strong>Software engineer</strong>
+              <span>Professional since 2012</span>
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <section id="work" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="num">01</span>
+            <h2>Selected work</h2>
+            <p>A few projects where I worked directly on implementation, architecture or production delivery.</p>
+          </header>
+
+          <div class="featured-grid">
+            <a class="feature-card" href="#case-ambusun">
+              <div class="feature-art">Healthcare / RCM</div>
+              <span class="feature-tag">Fullstack / Reporting / AI</span>
+              <h3>AmbuSun</h3>
+              <p>
+                Healthcare revenue cycle management platform focused on denials, payer follow-up, KPI reporting,
+                analytics and AI-assisted workflows for billing teams.
+              </p>
+              <span class="stack">Node.js · React · PostgreSQL · AI Chat</span>
+              <span class="detail-link">View case study →</span>
+            </a>
+
+            <a class="feature-card" href="#case-quantizero">
+              <div class="feature-art">Data / API</div>
+              <span class="feature-tag">Fintech / Analytics</span>
+              <h3>Quantizero</h3>
+              <p>Financial analytics and trading-signal system with FastAPI services, React dashboards and k3s deployment.</p>
+              <span class="stack">Python · FastAPI · React · TypeScript · k3s</span>
+              <span class="detail-link">View case study →</span>
+            </a>
+
+            <a class="feature-card" href="#case-impt">
+              <div class="feature-art">Web / Web3</div>
+              <span class="feature-tag">Web2 / Web3</span>
+              <h3>IMPT</h3>
+              <p>Mobile and web product with Expo, Next.js and Solidity smart-contract integration.</p>
+              <span class="stack">Expo · Next.js · Solidity · Tenderly</span>
+              <span class="detail-link">View case study →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="num">02</span>
+            <h2>Project archive</h2>
+            <p>Earlier work across Web, blockchain, fintech and intelligent systems.</p>
+          </header>
+
+          <div class="archive-list">
+            <div class="archive-item">
+              <time>2021 — 2023</time>
+              <div>
+                <h3>DarkPlay / DarenFT</h3>
+                <p>Blockchain gaming platform: backend APIs, Web3 integration, marketplace and launch contracts.</p>
+              </div>
+              <div class="stack">Next.js · Go · Solidity · React</div>
+            </div>
+
+            <div class="archive-item">
+              <time>2023</time>
+              <div>
+                <h3>Untangled Finance</h3>
+                <p>DeFi product: Solidity smart contracts and Vue.js frontend integration.</p>
+              </div>
+              <div class="stack">Vue.js · Solidity</div>
+            </div>
+
+            <div class="archive-item">
+              <time>2022</time>
+              <div>
+                <h3>H3ROVERSE</h3>
+                <p>NFT and marketplace contracts, OpenSea scripts and React frontend implementation.</p>
+              </div>
+              <div class="stack">Solidity · React · Unity</div>
+            </div>
+
+            <div class="archive-item">
+              <time>2017 — 2021</time>
+              <div>
+                <h3>Zmooz Stories</h3>
+                <p>Interactive publishing platform with APIs, format conversion, social integrations and a custom WYSIWYG editor.</p>
+              </div>
+              <div class="stack">React · LoopBack · Python · GCP</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="num">03</span>
+            <h2>Experience</h2>
+          </header>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <time>2022 — now</time>
+              <div>
+                <h3>Senior software engineer · Independent</h3>
+                <p>Full-stack and system engineering across Python, Node.js, React, infrastructure and Solidity.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>2015 — 2021</time>
+              <div>
+                <h3>Senior software engineer · Agiletech</h3>
+                <p>Node.js product development, blockchain applications and internal technical training.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>2014 — 2015</time>
+              <div>
+                <h3>Senior software developer · Freelancer</h3>
+                <p>PHP, CodeIgniter, Yii, WordPress and custom web systems for clients.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <time>2012 — 2014</time>
+              <div>
+                <h3>Software developer · Muasam3D</h3>
+                <p>Full-stack development while studying at Hanoi Open University.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="num">04</span>
+            <h2>About</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I have worked professionally in software since 2012. My work covers backend services, frontend
+                applications, system design and infrastructure. I have also built blockchain applications and smart contracts.
+              </p>
+              <p>
+                I usually work across more than one layer of a product: architecture, implementation, deployment,
+                performance debugging and production support. This includes working directly with business logic,
+                analytics, APIs and operational workflows.
+              </p>
+              <p>
+                I enjoy taking ambiguous business problems and turning them into resilient, measurable software systems that balance speed, maintenance and long-term quality.
+              </p>
+            </div>
+
+            <div class="skills">
+              <div class="skill-group">
+                <span>Backend</span>
+                <p>Python · FastAPI · Node.js · NestJS · Express.js · Go · PHP · GraphQL</p>
+              </div>
+              <div class="skill-group">
+                <span>Frontend</span>
+                <p>React · Next.js · Vue · React Native · Expo · TypeScript</p>
+              </div>
+              <div class="skill-group">
+                <span>Data / Infra</span>
+                <p>PostgreSQL · MySQL · MongoDB · Redis · RabbitMQ · Docker · Kubernetes · k3s · GCP · AWS</p>
+              </div>
+              <div class="skill-group">
+                <span>Blockchain</span>
+                <p>Solidity · Hardhat · OpenZeppelin · Tenderly · Indexers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="contact-cta">
+          <p>Available for software engineering, architecture and product work.</p>
+          <div class="contact-links">
+            <a class="button-secondary" href="mailto:quangthinh.dev@gmail.com">quangthinh.dev@gmail.com</a>
+            <a class="secondary-link" href="https://github.com/vuquangthinh" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="secondary-link" href="https://www.linkedin.com/in/vuquangthinh" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="secondary-link" href="https://www.npmjs.com/~vuquangthinh" target="_blank" rel="noreferrer">npm</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="container">
+      <span>Vũ Quang Thịnh — HANOI</span>
+      <span id="year"></span>
+    </footer>
+
+    <section id="case-ambusun" class="case-modal">
+      <a class="case-bg" href="#work" aria-label="Close"></a>
+      <article class="case-sheet">
+        <a class="case-close" href="#work">Close</a>
+        <small>Healthcare / RCM</small>
+        <h2>AmbuSun | RCM Services</h2>
+
+        <div>
+          <p class="case-lead">
+            AmbuSun is a healthcare revenue cycle management platform focused on helping providers streamline
+            claims, denials, payer follow-up, reimbursement workflows and revenue visibility. It brings together
+            operational reporting, claim management and AI-assisted support for billing teams.
+          </p>
+
+          <h3>Overview</h3>
+          <p>
+            AmbuSun helps healthcare organizations improve financial performance by reducing claim delays,
+            managing denial lifecycles and accelerating reimbursement cycles. The platform supports end-to-end
+            revenue operations from patient access and billing through collections and payer follow-up.
+          </p>
+
+          <h3>My role</h3>
+          <p>
+            I worked as a Fullstack developer building and evolving the reporting, denial management and AI Chat
+            modules. My responsibilities included product workflows, backend APIs, data models, dashboard logic,
+            UI implementation, and operational features used by revenue cycle teams.
+          </p>
+
+          <h3>What I built</h3>
+          <ul>
+            <li>Denial management workflows for tracking, prioritizing and resolving claim denials.</li>
+            <li>Reporting modules for KPI dashboards, aging buckets, payer performance and operational visibility.</li>
+            <li>AI Chat features to help users quickly search claim data, summarize denial cases and support agent workflows.</li>
+            <li>Admin and operational tools for status tracking, case ownership, escalation and audit trails.</li>
+            <li>Data integrations and analytics layers to support decision-making across claims, payment and collections.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Mô tả ngắn gọn</h3>
+          <p>
+            AmbuSun là nền tảng quản lý doanh thu y tế (RCM) giúp các cơ sở chăm sóc sức khỏe tối ưu hóa quy
+            trình claim, denial, theo dõi nhà cung cấp thanh toán và tăng hiệu quả thu hồi doanh thu. Nền tảng
+            kết hợp báo cáo vận hành, quản lý denial và AI Chat để hỗ trợ đội ngũ billing, revenue cycle và support.
+          </p>
+          <p>
+            Tôi làm Fullstack developer, xây dựng và phát triển các module reporting và quản lý denial, đồng thời
+            tích hợp AI Chat hỗ trợ xử lý câu hỏi, tóm tắt hồ sơ denial và hỗ trợ nhân viên vận hành làm việc hiệu quả hơn.
+          </p>
+        </div>
+
+        <code>Node.js · React · PostgreSQL · Reporting · Denial Management · AI Chat · RCM</code>
+      </article>
+    </section>
+
+    <section id="case-quantizero" class="case-modal">
+      <a class="case-bg" href="#work" aria-label="Close"></a>
+      <article class="case-sheet">
+        <a class="case-close" href="#work">Close</a>
+        <small>Fintech / analytics</small>
+        <h2>Quantizero</h2>
+
+        <p class="case-lead">
+          Quantizero is a financial analytics and trading-signal platform built to translate market data into
+          actionable alpha signals for backtesting, monitoring and operational decision support.
+        </p>
+
+        <div>
+          <h3>Overview</h3>
+          <p>
+            The platform brings together market data ingestion, signal generation, dashboard reporting and service
+            orchestration for a fast-moving fintech workflow. It was designed to support both analytics and daily
+            trading operations while keeping the infrastructure lean and maintainable.
+          </p>
+
+          <h3>My role</h3>
+          <p>
+            I worked across backend engineering, service design and frontend dashboard development. My work included
+            building the API layer with Python and FastAPI, designing data flows for analytics jobs, and implementing
+            React-based views for operational monitoring and signal review.
+          </p>
+
+          <h3>What I built</h3>
+          <ul>
+            <li>FastAPI services for data collection, signal processing and reporting endpoints.</li>
+            <li>Dashboard UI for charting, summary KPIs, signal status and trading insights.</li>
+            <li>Deployment setup on k3s with containerized service orchestration and environment isolation.</li>
+            <li>Operational monitoring logic to keep analytics jobs and service health visible to the team.</li>
+            <li>Data model and API contracts to support future expansion into more market feeds and strategy modules.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Why it mattered</h3>
+          <p>
+            The project required balancing speed with reliability: signals had to be generated quickly enough to be useful,
+            while the system also needed to stay transparent and manageable in production. The architecture focused on
+            clean service boundaries, API consistency and straightforward monitoring so the product could evolve without
+            constant rework.
+          </p>
+        </div>
+
+        <code>Python · FastAPI · React · TypeScript · k3s · Financial Analytics · Trading Signals</code>
+      </article>
+    </section>
+
+    <section id="case-impt" class="case-modal">
+      <a class="case-bg" href="#work" aria-label="Close"></a>
+      <article class="case-sheet">
+        <a class="case-close" href="#work">Close</a>
+        <small>Web2 / Web3</small>
+        <h2>IMPT</h2>
+
+        <p class="case-lead">
+          IMPT is a cross-platform consumer product that blends web, mobile and blockchain interactions into a single
+          user-facing experience centered on sustainability, digital engagement and smart-contract flows.
+        </p>
+
+        <div>
+          <h3>Overview</h3>
+          <p>
+            The product required a modern frontend stack and reliable blockchain integration to support both user-facing
+            transactions and backend coordination. It combined product UX, contract interaction and production support in
+            one continuous delivery cycle.
+          </p>
+
+          <h3>My role</h3>
+          <p>
+            I worked on app feature development, cross-platform coordination and blockchain integration support. This
+            included building frontend flows for user journeys, wiring smart-contract interactions and helping with launch
+            stability and production debugging.
+          </p>
+
+          <h3>What I built</h3>
+          <ul>
+            <li>Frontend features for mobile-friendly product flows and product pages using Expo and Next.js.</li>
+            <li>Smart-contract integration support for wallet interactions, transaction states and contract calls.</li>
+            <li>Production debugging across app and backend behavior during release cycles.</li>
+            <li>Feature implementation that connected product experience with blockchain event flows.</li>
+            <li>Operational support for rollout coordination, QA pass and contract-related issue triage.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Result</h3>
+          <p>
+            The project gave me strong experience combining product delivery with blockchain conventions, where UX quality,
+            contract reliability and release readiness all had to work together. It reinforced my ability to build across
+            product layers while keeping the system practical and production-focused.
+          </p>
+        </div>
+
+        <code>Expo · Next.js · Solidity · Tenderly · Web3 UX · Production Support</code>
+      </article>
+    </section>
+
+    <script>
+      const langButton = document.querySelector('.lang-switch');
+      let currentLang = 'en';
+
+      const translations = {
+        en: {
+          navWork: 'Work',
+          navExperience: 'Experience',
+          navAbout: 'About',
+          navResume: 'Resume',
+          heroEyebrow: 'Senior software engineer',
+          heroTitle: 'I build software',
+          heroSubtitle: 'across the stack.',
+          heroIntro: 'Backend, frontend, infrastructure and system design. Recent work includes fintech platforms, distributed systems and Web3 products. I enjoy turning ambiguous business problems into reliable, measurable software products.',
+          heroCta: 'Selected work →',
+          metaFullstack: 'Full-stack',
+          metaSystemDesign: 'System design',
+          metaInfra: 'Infra',
+          portraitRole: 'Software engineer',
+          portraitSince: 'Professional since 2012'
+        },
+        vi: {
+          navWork: 'Công việc',
+          navExperience: 'Kinh nghiệm',
+          navAbout: 'Giới thiệu',
+          navResume: 'CV',
+          heroEyebrow: 'Kỹ sư phần mềm cấp cao',
+          heroTitle: 'Tôi xây dựng phần mềm',
+          heroSubtitle: 'trên nhiều lớp công nghệ.',
+          heroIntro: 'Backend, frontend, hạ tầng và thiết kế hệ thống. Công việc gần đây bao gồm nền tảng fintech, hệ thống phân tán và sản phẩm Web3. Tôi thích biến các vấn đề nghiệp vụ mơ hồ thành các sản phẩm phần mềm đáng tin cậy và có thể đo lường được.',
+          heroCta: 'Dự án đã làm →',
+          metaFullstack: 'Đa lớp',
+          metaSystemDesign: 'Thiết kế hệ thống',
+          metaInfra: 'Hạ tầng',
+          portraitRole: 'Kỹ sư phần mềm',
+          portraitSince: 'Làm việc từ năm 2012'
+        }
+      };
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks[0].textContent = translations[lang].navWork;
+        navLinks[1].textContent = translations[lang].navExperience;
+        navLinks[2].textContent = translations[lang].navAbout;
+
+        document.querySelector('.pdf-link').textContent = translations[lang].navResume;
+        document.querySelector('.eyebrow').textContent = translations[lang].heroEyebrow;
+        document.querySelector('h1').innerHTML = `${translations[lang].heroTitle}<span class="sub">${translations[lang].heroSubtitle}</span>`;
+        document.querySelector('.intro').textContent = translations[lang].heroIntro;
+        document.querySelector('.button-primary').textContent = translations[lang].heroCta;
+        document.querySelectorAll('.hero-meta span')[0].textContent = translations[lang].metaFullstack;
+        document.querySelectorAll('.hero-meta span')[1].textContent = translations[lang].metaSystemDesign;
+        document.querySelectorAll('.hero-meta span')[2].textContent = translations[lang].metaInfra;
+        document.querySelector('.portrait-card .caption strong').textContent = translations[lang].portraitRole;
+        document.querySelector('.portrait-card .caption span').textContent = translations[lang].portraitSince;
+
+        langButton.textContent = lang === 'en' ? 'EN / VI' : 'VI / EN';
+        langButton.setAttribute('aria-label', lang === 'en' ? 'Switch to Vietnamese' : 'Chuyển sang tiếng Anh');
+      }
+
+      langButton.addEventListener('click', () => {
+        applyLanguage(currentLang === 'en' ? 'vi' : 'en');
+      });
+
+      applyLanguage(currentLang);
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
