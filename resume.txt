@@ -49,7 +49,7 @@ OTHER PROJECTS
 VitaminSpy — advertising analytics; Lonely — web application; SwapExchange — Solidity/Truffle; H3ROVERSE — NFTs; Fina (DatXanh) — fintech APIs; Luxstay — OTA calendars and Stripe; Fleet Management / BeApp; UrSmiles; The Smart Light; Freshfoods.vn.
 
 TECHNICAL SKILLS
-Backend: Python, FastAPI, Go, C++, Node.js, NestJS, Express, LoopBack 4, PHP
+Backend: Python, FastAPI, Go, C++, Node.js, NestJS, Express, LoopBack 4, PHP, WordPress, Drupal
 Frontend: TypeScript, React, Next.js, React Native, Vue
 Blockchain: Solidity, EVM
 Data & AI: PostgreSQL, ClickHouse, MongoDB, Redis, GraphQL, GenAI, RAG, MQL5
