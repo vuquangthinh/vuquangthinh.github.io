@@ -1,7 +1,7 @@
-VU QUANG THINH
+VU QUANG THINH (Tony Vu)
 Forward Deployed Engineer | Product Engineer | Senior Software Engineer
 Hanoi, Vietnam | +84 39 570 8005 | quangthinh.dev@gmail.com
-https://vuquangthinh.github.io | https://github.com/vuquangthinh
+https://vuquangthinh.github.io | https://github.com/vuquangthinh | https://www.linkedin.com/in/vuquangthinh
 
 PROFILE
 13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack.
