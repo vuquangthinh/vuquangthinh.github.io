@@ -1,0 +1,63 @@
+VU QUANG THINH
+Forward Deployed Engineer | Product Engineer | Senior Software Engineer
+Hanoi, Vietnam | +84 39 570 8005 | quangthinh.dev@gmail.com
+https://vuquangthinh.github.io | https://github.com/vuquangthinh
+
+PROFILE
+13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack.
+
+PROFESSIONAL EXPERIENCE
+2022–Present | Senior Software Engineer — Freelance / Contract
+2015–2021 | Senior Software Engineer — Agiletech
+2014–2015 | Senior Software Developer — Freelance
+2012–2014 | Software Developer — Muasam3D (Part-time)
+
+SELECTED PROJECTS
+AmbuSun RCM | Product Engineer | 01/2026–10/2026 | Team: 12
+Reporting, denial management, AI chat; backend APIs, data models, dashboards and revenue operations workflows.
+Tech: Python, TypeScript, Next.js, PostgreSQL, GenAI, RAG, Google Cloud Run
+
+Quantizero | Product Engineer | 05/2024–12/2025 | Team: 4
+Semi-HFT features, financial analytics services and trading signals, interactive dashboards, k3s operations.
+Tech: Python, C++, MQL5, TypeScript, React, PostgreSQL, ClickHouse, k3s
+
+Untangled Finance | Protocol Engineer | 09/2023–12/2024 | Team: 8
+Yield protocol functionality, Solidity smart contract business logic, TypeScript Web3 integration.
+Tech: TypeScript, Solidity
+
+IMPT | Product Engineer | 05/2022–12/2024 | Team: 4
+Expo/React Native mobile application, Next.js components, Solidity smart contracts and Web3 integration.
+Tech: TypeScript, React Native, Next.js, MongoDB, Solidity
+
+Knightwar — The Holy Trio | Blockchain Engineer | 10/2021–12/2021 | Team: 12
+NFT marketplace/farming smart contracts, unit tests, Node.js blockchain event indexer with PostgreSQL.
+Tech: Node.js, Solidity, React
+
+DarePlay / DareNFT | Product Engineer | 06/2021–05/2022 | Team: 15
+Marketplace, staking/farming and launch contracts, backend APIs for blockchain indexers, React integration.
+Tech: Go, Node.js, Solidity, React
+
+MetaSoftware | Fullstack Developer | 04/2020–06/2021 | Team: 4
+BI platform with custom QNR language, C++ and TypeScript GraphQL services.
+Tech: C++, TypeScript, GraphQL, QNR
+
+ZMOOZ | Fullstack Developer | 04/2020–08/2022 | Team: 8
+Story-video platform and Python automation for generating stories from news websites.
+Tech: TypeScript, LoopBack 4, React, PostgreSQL, Python
+
+OTHER PROJECTS
+VitaminSpy — advertising analytics; Lonely — web application; SwapExchange — Solidity/Truffle; H3ROVERSE — NFTs; Fina (DatXanh) — fintech APIs; Luxstay — OTA calendars and Stripe; Fleet Management / BeApp; UrSmiles; The Smart Light; Freshfoods.vn.
+
+TECHNICAL SKILLS
+Backend: Python, FastAPI, Go, C++, Node.js, NestJS, Express, LoopBack 4, PHP
+Frontend: TypeScript, React, Next.js, React Native, Vue
+Blockchain: Solidity, EVM
+Data & AI: PostgreSQL, ClickHouse, MongoDB, Redis, GraphQL, GenAI, RAG, MQL5
+Infrastructure: k3s, Docker, Google Cloud Run, AWS, CI/CD
+
+EDUCATION & RECOGNITION
+Hanoi Open University — Graduated 2015
+ACM-ICPC (2015); Third Prize, Vietnamese Student Informatics Olympiad (2015); MOS Certificate
+
+LANGUAGES
+Vietnamese — Native | English — Intermediate
