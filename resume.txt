@@ -45,8 +45,12 @@ ZMOOZ | Fullstack Developer | 04/2020–08/2022 | Team: 8
 Story-video platform and Python automation for generating stories from news websites.
 Tech: TypeScript, LoopBack 4, React, PostgreSQL, Python
 
-OTHER PROJECTS
-VitaminSpy — advertising analytics; Lonely — web application; SwapExchange — Solidity/Truffle; H3ROVERSE — NFTs; Fina (DatXanh) — fintech APIs; Luxstay — OTA calendars and Stripe; Fleet Management / BeApp; UrSmiles; The Smart Light; Freshfoods.vn.
+OTHER PROJECTS / EARLIER ENGAGEMENTS
+Luxstay — Host + Client (2018): Laravel/Lumen backend; third-party OTA booking calendar and Stripe integration.
+The Smart Light (2018): E-learning platform; PHP backend and Laravel Blade interface development. Laravel, jQuery, Vue, MySQL, Nginx.
+UrSmiles (2017): Dental booking platform; Express/Sequelize API and database schema, React Native frontend, API integration and junior developer mentoring.
+Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. CosmJS, CosmWasm, TypeScript.
+VitaminSpy — advertising analytics; Lonely — web application; SwapExchange — Solidity/Truffle; H3ROVERSE — NFTs; Fina (DatXanh) — fintech APIs; Fleet Management / BeApp; Freshfoods.vn.
 
 TECHNICAL SKILLS
 Backend: Python, FastAPI, Go, C++, Node.js, NestJS, Express, LoopBack 4, PHP, WordPress, Drupal
