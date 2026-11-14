@@ -47,7 +47,7 @@ Tech: TypeScript, LoopBack 4, React, PostgreSQL, Python
 
 OTHER PROJECTS / EARLIER ENGAGEMENTS
 Muasam3D (2012–2014): Part-time full-stack web development while studying. Technologies not specified in CV.
-LiveTV: Additional project; role, dates and technologies to be confirmed.
+LiveTV: Website for watching live television channels and films online. Role, dates and technologies to be confirmed.
 Luxstay — Host + Client (2018): Laravel/Lumen backend; third-party OTA booking calendar and Stripe integration.
 The Smart Light (2018): E-learning platform; PHP backend and Laravel Blade interface development. Laravel, jQuery, Vue, MySQL, Nginx.
 UrSmiles (2017): Dental booking platform; Express/Sequelize API and database schema, React Native frontend, API integration and junior developer mentoring.
