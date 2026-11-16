@@ -34,7 +34,7 @@ NFT marketplace/farming smart contracts, unit tests, Node.js blockchain event in
 Tech: Node.js, Solidity, React
 
 DarePlay / DareNFT | Product Engineer | 06/2021–05/2022 | Team: 15
-Marketplace, staking/farming and launch contracts, backend APIs for blockchain indexers, React integration.
+Built the NFT 2.0 protocol; developed marketplace, staking/farming and launch contracts, blockchain indexer APIs and React integration.
 Tech: Go, Node.js, Solidity, React
 
 MetaSoftware | Fullstack Developer | 04/2020–06/2021 | Team: 4
