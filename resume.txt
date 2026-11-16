@@ -51,6 +51,7 @@ LiveTV: Website for watching live television channels and films online. Tech: Wo
 Luxstay — Host + Client (2018): Laravel/Lumen backend; third-party OTA booking calendar and Stripe integration.
 The Smart Light (2018): E-learning platform; PHP backend and Laravel Blade interface development. Laravel, jQuery, Vue, MySQL, Nginx.
 UrSmiles (2017): Dental booking platform; Express/Sequelize API and database schema, React Native frontend, API integration and junior developer mentoring.
+Oraichain Oracle: Oraichain ecosystem oracle infrastructure and blockchain-to-external-data integration. Specific responsibilities and implementation technologies to be confirmed.
 Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. CosmJS, CosmWasm, TypeScript.
 MAX AI Agent: Frontend and backend developer; implemented wallet connector integrations with Oraichain (ORAI) and Solana chains.
 Fringe Finance (Fringe.fi): Decentralized crypto-backed lending and borrowing protocol. Tech: React.js, Solidity, Node.js. Website: https://fringe.fi.
