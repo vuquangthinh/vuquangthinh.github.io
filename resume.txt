@@ -51,6 +51,7 @@ LiveTV: Website for watching live television channels and films online. Tech: Wo
 Luxstay — Host + Client (2018): Laravel/Lumen backend; third-party OTA booking calendar and Stripe integration.
 The Smart Light (2018): E-learning platform; PHP backend and Laravel Blade interface development. Laravel, jQuery, Vue, MySQL, Nginx.
 UrSmiles (2017): Dental booking platform; Express/Sequelize API and database schema, React Native frontend, API integration and junior developer mentoring.
+Oraichain (Onsite, 12/01/2021): Orai IDE and Oraichain Oracle projects.
 Oraichain Oracle: Blockchain oracle infrastructure in the Oraichain ecosystem. Tech: Cosmos SDK, Starport, Oraichain Oracle.
 Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. CosmJS, CosmWasm, TypeScript.
 MAX AI Agent: Frontend and backend developer; implemented wallet connector integrations with Oraichain (ORAI) and Solana chains.
