@@ -676,7 +676,7 @@
         </nav>
         <div class="actions">
           <button class="lang-switch" type="button" aria-label="Language switch">EN / VI</button>
-          <a class="pdf-link" href="data:application/pdf;base64,PCFkb2N0eXBlIGh0bWw+VnUtUXVhbmcgVGjhu4tOSBDV1JUSU5ETy5wZGY=" target="_blank" rel="noreferrer">Resume</a>
+          <button class="pdf-link" id="pdf-download" type="button">Resume</button>
         </div>
       </div>
     </header>
@@ -1138,5 +1138,23 @@
       applyLanguage(currentLang);
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+  <script>
+(function(){
+function pdfEscape(s){return s.replace(/[\\()]/g,m=>'\\'+m)}
+function ascii(s){return s.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[\u2013\u2014]/g,'-').replace(/[\u2018\u2019]/g,"'").replace(/[^\x20-\x7e]/g,' ')}
+function wrap(s,max){const out=[];for(const raw of s.split('\n')){if(!raw.trim()){out.push('');continue}let line='';for(const word of ascii(raw).split(/\s+/)){if((line+' '+word).trim().length>max&&line){out.push(line);line=word}else line+=(line?' ':'')+word}out.push(line)}return out}
+function createPdf(txt){
+ const lines=wrap(txt,94),pages=[];for(let i=0;i<lines.length;i+=55)pages.push(lines.slice(i,i+55));
+ const objs=[null,'<< /Type /Catalog /Pages 2 0 R >>',null,'<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>'];
+ const kids=[];for(const page of pages){const pageId=objs.length,streamId=pageId+1;kids.push(pageId+' 0 R');objs.push('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents '+streamId+' 0 R >>');const body='BT /F1 9 Tf 12 TL 42 755 Td '+page.map((l,i)=>(i?'T* ':'')+'('+pdfEscape(l)+') Tj').join('\n')+' ET';objs.push('<< /Length '+body.length+' >>\nstream\n'+body+'\nendstream')}
+ objs[2]='<< /Type /Pages /Kids ['+kids.join(' ')+'] /Count '+kids.length+' >>';
+ let data='%PDF-1.4\n',offsets=[0];for(let i=1;i<objs.length;i++){offsets[i]=data.length;data+=i+' 0 obj\n'+objs[i]+'\nendobj\n'}
+ const xref=data.length;data+='xref\n0 '+objs.length+'\n0000000000 65535 f \n';for(let i=1;i<objs.length;i++)data+=String(offsets[i]).padStart(10,'0')+' 00000 n \n';data+='trailer\n<< /Size '+objs.length+' /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+ return new Blob([data],{type:'application/pdf'})
+}
+async function downloadPdf(btn){const original=btn.textContent;btn.disabled=true;btn.textContent='Preparing PDF...';try{const response=await fetch('/resume.txt',{cache:'no-store'});if(!response.ok)throw new Error('Resume unavailable');const blob=createPdf(await response.text());const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Vu_Quang_Thinh_Resume.pdf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000)}catch(e){alert('Could not generate PDF. Please use the text version.')}finally{btn.disabled=false;btn.textContent=original}}
+for(const id of ['pdf-download','pdf-download-footer']){const b=document.getElementById(id);if(b)b.addEventListener('click',()=>downloadPdf(b))}
+})();
+</script>
   </body>
 </html>
