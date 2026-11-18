@@ -65,13 +65,13 @@ Responsibilities:
 Tech: Tailwind CSS (UI styling) · TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python
 
 ADDITIONAL PROJECTS / EARLIER ENGAGEMENTS
-Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | 12 Jan 2021 | Onsite | Project
+Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | 12 Jan 2021 | 3 months onsite | Project
 Responsibilities:
 • Implemented wallet connections and smart-contract query/execution integrations.
 • Built ORAI transfers, multi-send transactions, fee allowance workflows, and Oraichain RPC/LCD integration.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
 
-Oraichain Oracle | Full-stack Developer | 12 Jan 2021 | Onsite | Project
+Oraichain Oracle | Full-stack Developer | 12 Jan 2021 | 3 months onsite | Project
 Responsibilities:
 • Worked across frontend and backend on Oraichain blockchain oracle infrastructure.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
