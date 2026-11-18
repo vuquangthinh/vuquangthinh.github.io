@@ -45,19 +45,70 @@ ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Story-video platform and Python automation for generating stories from news websites.
 Tech: TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python
 
-OTHER PROJECTS / EARLIER ENGAGEMENTS
-Role across all projects below: Full-stack Developer.
-Muasam3D (2012–2014): Part-time full-stack web development while studying. Technologies not specified in CV.
-LiveTV: Website for watching live television channels and films online. Tech: WordPress (PHP CMS), Adobe Flash Media Server. Dates to be confirmed.
-Luxstay — Host + Client (2018): PHP (Laravel framework)/PHP (Lumen framework) backend; third-party OTA booking calendar and Stripe integration.
-The Smart Light (2018): E-learning platform; PHP backend and PHP (Laravel framework) Blade interface development. Node.js (backend), PHP (Laravel framework), jQuery, Vue.js (web UI framework), MySQL, Nginx.
-UrSmiles (2017): Dental booking platform; Node.js (backend, Express.js framework)/Sequelize API and database schema, React Native (mobile app framework) frontend, API integration and junior developer mentoring.
-Oraichain (Onsite, 12/01/2021): Orai IDE and Oraichain Oracle projects.
-Oraichain Oracle: Blockchain oracle infrastructure in the Oraichain ecosystem. Tech: Cosmos SDK, Starport, Oraichain Oracle.
-Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. Node.js (backend, TypeScript), CosmJS, CosmWasm.
-MAX AI Agent: Full-stack Developer; implemented wallet connector integrations with Oraichain (ORAI) and Solana chains.
-Fringe Finance (Fringe.fi): Decentralized crypto-backed lending and borrowing protocol. Tech: React.js (web UI library), Solidity, Node.js (backend). Website: https://fringe.fi.
-VitaminSpy — advertising analytics: Node.js (backend, TypeScript, NestJS framework), React.js (Next.js framework), RabbitMQ, MongoDB (NoSQL database); Lonely — web application: Node.js (backend, TypeScript, NestJS framework), PostgreSQL (SQL database) / Supabase, React.js (Vite build tool); SwapExchange — Node.js (backend), React.js, Solidity/Truffle; H3ROVERSE — Node.js (backend), React.js, NFTs; Fina (DatXanh) — Node.js (backend), React.js (Next.js framework), fintech APIs; Fleet Management / BeApp — Node.js (backend, Express.js framework), React.js (web UI library); Freshfoods.vn.
+ADDITIONAL PROJECTS / EARLIER ENGAGEMENTS
+Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | 12/01/2021 | Onsite | Project
+Developer tooling and blockchain integration for Oraichain: wallet connections, smart contract query/execution, ORAI transfers, multi-send transactions, fee allowances, and RPC/LCD integration.
+Tech: Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
+
+Oraichain Oracle | Full-stack Developer | 12/01/2021 | Onsite | Project
+Blockchain oracle infrastructure in the Oraichain ecosystem, built with Cosmos SDK and Starport.
+Tech: Cosmos SDK · Starport · Oraichain Oracle
+
+Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
+Part-time full-stack web development while studying. Listed in the professional experience timeline.
+Tech: Programming languages and frameworks not yet specified
+
+LiveTV | Full-stack Developer | Project
+Website for watching live television channels and films online. Dates to be confirmed.
+Tech: WordPress (PHP CMS) · Adobe Flash Media Server
+
+Luxstay — Host + Client | Full-stack Developer | 2018 | Project
+Backend development with PHP (Laravel framework) / PHP (Lumen framework), integration with third-party OTA booking calendars and Stripe payments.
+Tech: PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
+
+The Smart Light | Full-stack Developer | 2018 | Project
+Developed PHP backend features with another PHP engineer and translated interface designs into PHP (Laravel framework) Blade views.
+Tech: Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
+
+UrSmiles | Full-stack Developer | 2017 | Project
+Designed backend APIs and database schema with Node.js (backend, Express.js framework) / Sequelize; implemented React Native (mobile app framework) screens from Zeplin designs, connected APIs, and mentored a junior mobile developer.
+Tech: Node.js (backend, Express.js framework) · Sequelize · React Native (mobile app framework) · Axios
+
+VitaminSpy | Full-stack Developer | Project
+Advertising analytics platform.
+Tech: Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
+
+Lonely | Full-stack Developer | Project
+Full-stack web application.
+Tech: Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
+
+SwapExchange | Full-stack Developer | Project
+Uniswap V2 fork: updated contract deployment scripts and adapted the React.js frontend for the product brand; Node.js backend development.
+Tech: Node.js (backend) · Solidity · Truffle · React.js (web UI library)
+
+MAX AI Agent | Full-stack Developer | Project
+Frontend and backend development, including wallet connector integration for Oraichain (ORAI) and Solana.
+Tech: Oraichain (ORAI) · Solana · Wallet connectors; programming languages and frameworks not yet specified
+
+Fringe Finance (Fringe.fi) | Full-stack Developer | Project
+Decentralized lending and borrowing protocol enabling users to access liquidity using crypto assets as collateral.
+Tech: React.js (web UI library) · Solidity · Node.js (backend, JavaScript runtime)
+
+H3ROVERSE | Full-stack Developer | Project
+Implemented NFT and marketplace contracts, OpenSea listing scripts, and React.js interfaces from product designs; Node.js backend development.
+Tech: Node.js (backend) · Solidity · React.js (web UI library)
+
+Fina (DatXanh) | Full-stack Developer | Project
+Developed Node.js backend APIs, MariaDB database schema, and React.js / Next.js frontend features for Dat Xanh Group.
+Tech: Node.js (backend) · MariaDB · React.js (Next.js framework)
+
+Fleet Management / BeApp | Full-stack Developer | Project
+Built React.js interfaces and Node.js / Express.js backend APIs for fleet and facility management, including booking-calendar synchronization.
+Tech: React.js (web UI library) · Node.js (backend, Express.js framework)
+
+Freshfoods.vn | Full-stack Developer | Project
+Developed an e-commerce website and English landing site; designed the PHP / Yii2 database layer and implemented the web UI from designs.
+Tech: PHP (Yii2 framework) · WordPress (PHP CMS)
 
 TECHNICAL SKILLS
 Backend: Python, Python (FastAPI framework), Go, C++, Node.js (backend, JavaScript runtime), Node.js (backend, TypeScript, NestJS framework), Node.js (backend, Express.js framework), Node.js (backend, TypeScript, LoopBack 4 framework), PHP, WordPress (PHP CMS), Drupal (PHP CMS)

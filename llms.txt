@@ -33,3 +33,29 @@ Email: quangthinh.dev@gmail.com
 Project role clarification: Vu Quang Thinh worked as a Full-stack Developer / Engineer on every project listed in this portfolio, including projects with protocol, blockchain, or product specializations.
 
 Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai IDE / Oraichain Tooling, The Smart Light, SwapExchange, H3ROVERSE, Fina (DatXanh), AmbuSun RCM, ZMOOZ, UrSmiles, Lonely, Fringe Finance and Fleet Management / BeApp.
+
+## Complete project roles and technology stacks
+- Orai IDE / Oraichain Tooling | Role: Full-stack Engineer · Cosmos / CosmWasm Integration | Tech stack: Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
+- AmbuSun RCM | Role: Full-stack Engineer · Product Engineer | Tech stack: Python · Node.js (backend) · TypeScript · React.js (Next.js framework) · PostgreSQL (SQL database) · GenAI · RAG · Google Cloud Run
+- Quantizero | Role: Full-stack Engineer · Product Engineer | Tech stack: Node.js (backend) · Python · C++ · MQL5 · React.js (web UI library) · PostgreSQL (SQL database) · ClickHouse · k3s
+- Untangled Finance | Role: Full-stack Engineer · Protocol Engineer | Tech stack: Node.js (backend, TypeScript) · TypeScript · Solidity
+- IMPT | Role: Full-stack Engineer · Product Engineer | Tech stack: Node.js (backend, TypeScript) · TypeScript · React Native (mobile app framework) · React.js (Next.js framework) · MongoDB (NoSQL database) · Solidity
+- DarePlay / DareNFT | Role: Full-stack Engineer · Product Engineer | Tech stack: Go · Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
+- Knightwar — The Holy Trio | Role: Full-stack Engineer · Blockchain Engineer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
+- MetaSoftware | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript) · C++ · TypeScript · GraphQL · QNR
+- ZMOOZ | Role: Full-stack Developer | Tech stack: TypeScript · Node.js (backend, TypeScript, LoopBack 4 framework) · React.js (web UI library) · PostgreSQL (SQL database) · Python
+- Oraichain Oracle | Role: Full-stack Developer | Tech stack: Cosmos SDK · Starport · Oraichain Oracle
+- Muasam3D | Role: Full-stack Developer | Tech stack: Programming languages and frameworks not yet specified
+- LiveTV | Role: Full-stack Developer | Tech stack: WordPress (PHP CMS) · Adobe Flash Media Server
+- Luxstay — Host + Client | Role: Full-stack Developer | Tech stack: PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
+- The Smart Light | Role: Full-stack Developer | Tech stack: Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
+- UrSmiles | Role: Full-stack Developer | Tech stack: Node.js (backend, Express.js framework) · Sequelize · React Native (mobile app framework) · Axios
+- VitaminSpy | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
+- Lonely | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
+- SwapExchange | Role: Full-stack Developer | Tech stack: Node.js (backend) · Solidity · Truffle · React.js (web UI library)
+- MAX AI Agent | Role: Full-stack Developer | Tech stack: Oraichain (ORAI) · Solana · Wallet connectors; programming languages and frameworks not yet specified
+- Fringe Finance (Fringe.fi) | Role: Full-stack Developer | Tech stack: React.js (web UI library) · Solidity · Node.js (backend, JavaScript runtime)
+- H3ROVERSE | Role: Full-stack Developer | Tech stack: Node.js (backend) · Solidity · React.js (web UI library)
+- Fina (DatXanh) | Role: Full-stack Developer | Tech stack: Node.js (backend) · MariaDB · React.js (Next.js framework)
+- Fleet Management / BeApp | Role: Full-stack Developer | Tech stack: React.js (web UI library) · Node.js (backend, Express.js framework)
+- Freshfoods.vn | Role: Full-stack Developer | Tech stack: PHP (Yii2 framework) · WordPress (PHP CMS)
