@@ -85,3 +85,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Fina (DatXanh): Developed Node.js backend APIs and MariaDB database schema. Delivered React / Next.js frontend features for Dat Xanh Group.
 - Fleet Management / BeApp: Built React interfaces and Express / Node.js APIs for fleet and facility management. Implemented booking-calendar synchronization.
 - Freshfoods.vn: Developed an e-commerce site and English landing site. Designed the PHP / Yii2 database layer and implemented the web interface from design files.
+
+## Languages
+- Vietnamese: Native.
+- English: Upper-intermediate; able to work directly with clients and communicate in one-on-one meetings.
