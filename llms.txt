@@ -29,3 +29,5 @@ Backend systems; distributed systems; product frontend; data infrastructure; clo
 
 ## Contact
 Email: quangthinh.dev@gmail.com
+
+Project role clarification: Vu Quang Thinh worked as a Full-stack Developer / Engineer on every project listed in this portfolio, including projects with protocol, blockchain, or product specializations.
