@@ -12,7 +12,7 @@ pdfmetrics.registerFont(TTFont('CVRegular','/usr/share/fonts/truetype/dejavu/Dej
 pdfmetrics.registerFont(TTFont('CVBold','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'))
 styles=getSampleStyleSheet()
 styles['Title'].fontName='CVBold'
-styles.add(ParagraphStyle(name='CVBody',fontName='CVRegular',fontSize=8.7,leading=12,spaceAfter=4))
+styles.add(ParagraphStyle(name='CVBody',fontName='CVRegular',fontSize=8.7,leading=11.5,spaceAfter=3))
 styles.add(ParagraphStyle(name='CVTech',parent=styles['CVBody'],textColor=HexColor('#46576a')))
 styles.add(ParagraphStyle(name='CVJob',parent=styles['CVBody'],fontName='CVBold',spaceBefore=7))
 styles.add(ParagraphStyle(name='CVSection',fontName='CVBold',fontSize=11,leading=15,textColor=HexColor('#185781'),spaceBefore=14,spaceAfter=8,keepWithNext=True))

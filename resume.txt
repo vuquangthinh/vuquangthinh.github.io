@@ -39,7 +39,7 @@ Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS fram
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 BI platform with custom QNR language, C++ and TypeScript GraphQL services.
-Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR
+Tech: Material UI (React component library) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Story-video platform and Python automation for generating stories from news websites.

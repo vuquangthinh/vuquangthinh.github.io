@@ -42,7 +42,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - IMPT | Role: Full-stack Engineer · Product Engineer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend, TypeScript) · TypeScript · React Native (mobile app framework) · React.js (Next.js framework) · MongoDB (NoSQL database) · Solidity
 - DarePlay / DareNFT | Role: Full-stack Engineer · Product Engineer | Tech stack: Tailwind CSS (UI styling) · Go · Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
 - Knightwar — The Holy Trio | Role: Full-stack Engineer · Blockchain Engineer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
-- MetaSoftware | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend, TypeScript) · C++ · TypeScript · React.js (frontend web library) · GraphQL · QNR
+- MetaSoftware | Role: Full-stack Developer | Tech stack: Material UI (React component library) · Node.js (backend, TypeScript) · C++ · TypeScript · React.js (frontend web library) · GraphQL · QNR
 - ZMOOZ | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · TypeScript · Node.js (backend, TypeScript, LoopBack 4 framework) · React.js (web UI library) · PostgreSQL (SQL database) · Python
 - Oraichain Oracle | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
 - Muasam3D | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
