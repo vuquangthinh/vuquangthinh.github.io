@@ -107,7 +107,7 @@ Tech: Mobile: React Native · UI: NativeBase (React Native component library) ·
 
 VitaminSpy | Full-stack Developer | Project
 Responsibilities:
-• Worked across backend services and frontend interfaces for an advertising analytics platform.
+• Built crawler agents and an ETL data pipeline to analyze advertisements from competitors in the same industry.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
 
 Lonely | Full-stack Developer | Project

@@ -76,7 +76,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Luxstay — Host + Client: Developed PHP / Laravel / Lumen backend services for the home-sharing platform. Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
 - The Smart Light: Developed PHP backend features with another PHP engineer. Converted product interface designs into Laravel Blade / Vue.js web views and developed React Native mobile functionality.
 - UrSmiles: Designed Express / Sequelize backend APIs and database schema. Implemented React Native screens from Zeplin designs and connected them to backend APIs. Mentored a junior mobile developer.
-- VitaminSpy: Worked across backend services and frontend interfaces for an advertising analytics platform.
+- VitaminSpy: Built crawler agents and an ETL data pipeline to analyze advertisements from competitors in the same industry.
 - Lonely: Developed backend services and frontend interfaces for the web application.
 - SwapExchange: Updated smart-contract deployment scripts for a Uniswap V2 fork. Adapted the React frontend to the product brand and developed Node.js backend functionality.
 - MAX AI Agent: Developed frontend and backend functionality, including Python / FastAPI services with a TEE server. Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
