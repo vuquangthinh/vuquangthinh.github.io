@@ -45,7 +45,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - MetaSoftware | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript) · C++ · TypeScript · React.js (frontend web library) · GraphQL · QNR
 - ZMOOZ | Role: Full-stack Developer | Tech stack: TypeScript · Node.js (backend, TypeScript, LoopBack 4 framework) · React.js (web UI library) · PostgreSQL (SQL database) · Python
 - Oraichain Oracle | Role: Full-stack Developer | Tech stack: Cosmos SDK · Starport · Oraichain Oracle
-- Muasam3D | Role: Full-stack Developer | Tech stack: Programming languages and frameworks not yet specified
+- Muasam3D | Role: Full-stack Developer | Tech stack: Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
 - LiveTV | Role: Full-stack Developer | Tech stack: WordPress (PHP CMS) · Adobe Flash Media Server
 - Luxstay — Host + Client | Role: Full-stack Developer | Tech stack: PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
 - The Smart Light | Role: Full-stack Developer | Tech stack: Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
@@ -53,7 +53,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - VitaminSpy | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
 - Lonely | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
 - SwapExchange | Role: Full-stack Developer | Tech stack: Node.js (backend) · Solidity · Truffle · React.js (web UI library)
-- MAX AI Agent | Role: Full-stack Developer | Tech stack: Oraichain (ORAI) · Solana · Wallet connectors; programming languages and frameworks not yet specified
+- MAX AI Agent | Role: Full-stack Developer | Tech stack: Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors
 - Fringe Finance (Fringe.fi) | Role: Full-stack Developer | Tech stack: React.js (web UI library) · Solidity · Node.js (backend, JavaScript runtime)
 - H3ROVERSE | Role: Full-stack Developer | Tech stack: Node.js (backend) · Solidity · React.js (web UI library)
 - Fina (DatXanh) | Role: Full-stack Developer | Tech stack: Node.js (backend) · MariaDB · React.js (Next.js framework)

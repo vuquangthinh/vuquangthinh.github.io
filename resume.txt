@@ -56,7 +56,7 @@ Tech: Cosmos SDK · Starport · Oraichain Oracle
 
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
 Part-time full-stack web development while studying. Listed in the professional experience timeline.
-Tech: Programming languages and frameworks not yet specified
+Tech: Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
 
 LiveTV | Full-stack Developer | Project
 Website for watching live television channels and films online. Dates to be confirmed.
@@ -88,7 +88,7 @@ Tech: Node.js (backend) · Solidity · Truffle · React.js (web UI library)
 
 MAX AI Agent | Full-stack Developer | Project
 Frontend and backend development, including wallet connector integration for Oraichain (ORAI) and Solana.
-Tech: Oraichain (ORAI) · Solana · Wallet connectors; programming languages and frameworks not yet specified
+Tech: Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors
 
 Fringe Finance (Fringe.fi) | Full-stack Developer | Project
 Decentralized lending and borrowing protocol enabling users to access liquidity using crypto assets as collateral.
