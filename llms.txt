@@ -77,7 +77,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - The Smart Light: Developed PHP backend features with another PHP engineer. Converted product interface designs into Laravel Blade / Vue.js web views and developed React Native mobile functionality.
 - UrSmiles: Designed Express / Sequelize backend APIs and database schema. Implemented React Native screens from Zeplin designs and connected them to backend APIs. Mentored a junior mobile developer.
 - VitaminSpy: Built crawler agents and an ETL data pipeline to analyze advertisements from competitors in the same industry.
-- Lonely: Developed backend services and frontend interfaces for the web application.
+- Lonely: Built APIs, backend services, and the user interface for a Telegram Mini App.
 - SwapExchange: Updated smart-contract deployment scripts for a Uniswap V2 fork. Adapted the React frontend to the product brand and developed Node.js backend functionality.
 - MAX AI Agent: Developed frontend and backend functionality, including Python / FastAPI services with a TEE server. Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
 - Fringe Finance (Fringe.fi): Worked across Node.js backend and React frontend functionality for a decentralized crypto-backed lending and borrowing protocol.

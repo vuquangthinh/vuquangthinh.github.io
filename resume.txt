@@ -112,7 +112,7 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framewor
 
 Lonely | Full-stack Developer | Project
 Responsibilities:
-• Developed backend services and frontend interfaces for the web application.
+• Built APIs, backend services, and the user interface for a Telegram Mini App.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
 
 SwapExchange | Full-stack Developer | Project
