@@ -8,14 +8,14 @@ Location: Hanoi, Vietnam (GMT+7)
 ## Summary
 Vũ Quang Thịnh is a senior software engineer and full-stack systems builder with 13+ years of professional experience. His work spans product engineering, backend platforms, frontend applications, infrastructure, fintech, blockchain/Web3, mobile apps, data pipelines, and developer tooling.
 
-He specializes in taking ambiguous or difficult product and system problems and turning them into production software. His stack includes Python, FastAPI, Node.js, NestJS, Go, React, Next.js, TypeScript, PostgreSQL, MongoDB, Redis, Docker, Kubernetes/k3s, Solidity, Hardhat, and OpenZeppelin.
+He specializes in taking ambiguous or difficult product and system problems and turning them into production software. His stack includes Python, Python (FastAPI framework), Node.js (JavaScript runtime), Node.js (TypeScript, NestJS framework), Go, React.js (web UI library), React.js (Next.js framework), TypeScript, PostgreSQL (SQL database), MongoDB (NoSQL database), Redis, Docker, Kubernetes/k3s, Solidity, Hardhat, and OpenZeppelin.
 
 ## Selected work
-- Quantizero — high-performance financial analytics and trading-signal platform using Python/FastAPI, React, TypeScript and k3s.
-- IMPT — mobile-first Web2/Web3 product using Expo, Next.js, Solidity, Slither and Tenderly.
-- DarePlay — blockchain gaming platform spanning APIs, marketplace flows, smart contracts and Web3 integration across Node.js, Python and Go.
-- Knight War — blockchain event indexer synchronized with PostgreSQL plus marketplace and NFT-farming smart contracts.
-- VitaminSpy — ad-intelligence product using NestJS, Next.js, RabbitMQ, PostgreSQL and MongoDB.
+- Quantizero — high-performance financial analytics and trading-signal platform using Python/Python (FastAPI framework), React.js (web UI library), TypeScript and k3s.
+- IMPT — mobile-first Web2/Web3 product using Expo, React.js (Next.js framework), Solidity, Slither and Tenderly.
+- DarePlay — blockchain gaming platform spanning APIs, marketplace flows, smart contracts and Web3 integration across Node.js (JavaScript runtime), Python and Go.
+- Knight War — blockchain event indexer synchronized with PostgreSQL (SQL database) plus marketplace and NFT-farming smart contracts.
+- VitaminSpy — ad-intelligence product using Node.js (TypeScript, NestJS framework), React.js (Next.js framework), RabbitMQ, PostgreSQL (SQL database) and MongoDB.
 - Zmooz Stories — interactive publishing and content tooling with a custom WYSIWYG editor, content conversion and social integrations.
 
 ## Experience
