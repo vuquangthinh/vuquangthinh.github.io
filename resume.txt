@@ -22,8 +22,8 @@ Semi-HFT features, financial analytics services and trading signals, interactive
 Tech: Node.js (backend, TypeScript), Python, C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
-Yield protocol functionality, Solidity smart contract business logic, TypeScript Web3 integration.
-Tech: Node.js (backend, TypeScript), TypeScript, Solidity
+Yield protocol functionality, Solidity smart contract business logic, TypeScript Web3 integration, and Vue.js frontend development.
+Tech: Node.js (backend, TypeScript), Vue.js (frontend web framework), Solidity
 
 IMPT | Full-stack Product Engineer | 05/2022–12/2024 | Team: 4
 Expo/React Native (mobile app framework) mobile application, React.js (Next.js framework) components, Solidity smart contracts and Web3 integration.
@@ -39,7 +39,7 @@ Tech: Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (w
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 BI platform with custom QNR language, C++ and TypeScript GraphQL services.
-Tech: Node.js (backend, TypeScript), C++, TypeScript, GraphQL, QNR
+Tech: Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Story-video platform and Python automation for generating stories from news websites.

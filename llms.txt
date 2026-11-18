@@ -38,11 +38,11 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Orai IDE / Oraichain Tooling | Role: Full-stack Engineer · Cosmos / CosmWasm Integration | Tech stack: Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
 - AmbuSun RCM | Role: Full-stack Engineer · Product Engineer | Tech stack: Python · Node.js (backend) · TypeScript · React.js (Next.js framework) · PostgreSQL (SQL database) · GenAI · RAG · Google Cloud Run
 - Quantizero | Role: Full-stack Engineer · Product Engineer | Tech stack: Node.js (backend) · Python · C++ · MQL5 · React.js (web UI library) · PostgreSQL (SQL database) · ClickHouse · k3s
-- Untangled Finance | Role: Full-stack Engineer · Protocol Engineer | Tech stack: Node.js (backend, TypeScript) · TypeScript · Solidity
+- Untangled Finance | Role: Full-stack Engineer · Protocol Engineer | Tech stack: Node.js (backend, TypeScript) · Vue.js (frontend web framework) · Solidity
 - IMPT | Role: Full-stack Engineer · Product Engineer | Tech stack: Node.js (backend, TypeScript) · TypeScript · React Native (mobile app framework) · React.js (Next.js framework) · MongoDB (NoSQL database) · Solidity
 - DarePlay / DareNFT | Role: Full-stack Engineer · Product Engineer | Tech stack: Go · Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
 - Knightwar — The Holy Trio | Role: Full-stack Engineer · Blockchain Engineer | Tech stack: Node.js (backend, TypeScript, NestJS framework) · Solidity · React.js (web UI library)
-- MetaSoftware | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript) · C++ · TypeScript · GraphQL · QNR
+- MetaSoftware | Role: Full-stack Developer | Tech stack: Node.js (backend, TypeScript) · C++ · TypeScript · React.js (frontend web library) · GraphQL · QNR
 - ZMOOZ | Role: Full-stack Developer | Tech stack: TypeScript · Node.js (backend, TypeScript, LoopBack 4 framework) · React.js (web UI library) · PostgreSQL (SQL database) · Python
 - Oraichain Oracle | Role: Full-stack Developer | Tech stack: Cosmos SDK · Starport · Oraichain Oracle
 - Muasam3D | Role: Full-stack Developer | Tech stack: Programming languages and frameworks not yet specified
