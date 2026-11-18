@@ -32,7 +32,7 @@ Email: quangthinh.dev@gmail.com
 
 Project role clarification: Vu Quang Thinh worked as a Full-stack Developer / Engineer on every project listed in this portfolio, including projects with protocol, blockchain, or product specializations.
 
-Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai IDE / Oraichain Tooling, The Smart Light, SwapExchange, H3ROVERSE, Fina (DatXanh), AmbuSun RCM, ZMOOZ, UrSmiles, Lonely, Fringe Finance and Fleet Management / BeApp.
+Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai IDE / Oraichain Tooling, SwapExchange, H3ROVERSE, Fina (DatXanh), AmbuSun RCM, ZMOOZ, UrSmiles, Lonely, Fringe Finance and Fleet Management / BeApp.
 
 ## Complete project roles and technology stacks
 - Orai IDE / Oraichain Tooling | Role: Full-stack Engineer · Cosmos / CosmWasm Integration | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
@@ -45,11 +45,11 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - MetaSoftware | Role: Full-stack Developer | Tech stack: Material UI (React component library) · Node.js (backend, TypeScript) · C++ · TypeScript · React.js (frontend web library) · GraphQL · QNR
 - ZMOOZ | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · TypeScript · Node.js (backend, TypeScript, LoopBack 4 framework) · React.js (web UI library) · PostgreSQL (SQL database) · Python
 - Oraichain Oracle | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
-- Muasam3D | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
-- LiveTV | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · WordPress (PHP CMS) · Adobe Flash Media Server
+- Muasam3D | Role: Full-stack Developer | Tech stack: Bootstrap 3 (UI framework) · Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
+- LiveTV | Role: Full-stack Developer | Tech stack: WordPress (PHP CMS) · Adobe Flash Media Server
 - Luxstay — Host + Client | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
-- The Smart Light | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
-- UrSmiles | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, Express.js framework) · Sequelize · React Native (mobile app framework) · Axios
+- The Smart Light | Role: Full-stack Developer | Tech stack: Web: PHP (Laravel framework), Blade, jQuery, Vue.js, Tailwind CSS (UI styling) · Mobile: React Native · Database: MySQL · Server: Nginx
+- UrSmiles | Role: Full-stack Developer | Tech stack: Mobile: React Native · UI: NativeBase (React Native component library) · Backend: Node.js (Express.js framework) · Sequelize · Axios
 - VitaminSpy | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
 - Lonely | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
 - SwapExchange | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · Truffle · React.js (web UI library)
@@ -74,7 +74,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Muasam3D: Delivered part-time full-stack web development while studying, using Drupal and jQuery.
 - LiveTV: Worked across frontend and backend on a website for live television and online films.
 - Luxstay — Host + Client: Developed PHP / Laravel / Lumen backend services for the home-sharing platform. Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
-- The Smart Light: Developed PHP backend features with another PHP engineer. Converted product interface designs into Laravel Blade / Vue.js views and contributed Node.js backend development.
+- The Smart Light: Developed PHP backend features with another PHP engineer. Converted product interface designs into Laravel Blade / Vue.js web views and developed React Native mobile functionality.
 - UrSmiles: Designed Express / Sequelize backend APIs and database schema. Implemented React Native screens from Zeplin designs and connected them to backend APIs. Mentored a junior mobile developer.
 - VitaminSpy: Worked across backend services and frontend interfaces for an advertising analytics platform.
 - Lonely: Developed backend services and frontend interfaces for the web application.

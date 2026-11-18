@@ -84,7 +84,7 @@ Tech: Bootstrap 3 (UI framework) · Drupal (PHP CMS) · jQuery (JavaScript front
 LiveTV | Full-stack Developer | Project
 Responsibilities:
 • Worked across frontend and backend on a website for live television and online films.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · WordPress (PHP CMS) · Adobe Flash Media Server
+Tech: WordPress (PHP CMS) · Adobe Flash Media Server
 
 Luxstay — Host + Client | Full-stack Developer | 2018 | Project
 Responsibilities:
@@ -95,15 +95,15 @@ Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Larav
 The Smart Light | Full-stack Developer | 2018 | Project
 Responsibilities:
 • Developed PHP backend features with another PHP engineer.
-• Converted product interface designs into Laravel Blade / Vue.js views and contributed Node.js backend development.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
+• Converted product interface designs into Laravel Blade / Vue.js web views and developed React Native mobile functionality.
+Tech: Web: PHP (Laravel framework), Blade, jQuery, Vue.js, Tailwind CSS (UI styling) · Mobile: React Native · Database: MySQL · Server: Nginx
 
 UrSmiles | Full-stack Developer | 2017 | Project
 Responsibilities:
 • Designed Express / Sequelize backend APIs and database schema.
 • Implemented React Native screens from Zeplin designs and connected them to backend APIs.
 • Mentored a junior mobile developer.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, Express.js framework) · Sequelize · React Native (mobile app framework) · Axios
+Tech: Mobile: React Native · UI: NativeBase (React Native component library) · Backend: Node.js (Express.js framework) · Sequelize · Axios
 
 VitaminSpy | Full-stack Developer | Project
 Responsibilities:
