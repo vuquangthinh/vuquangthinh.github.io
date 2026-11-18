@@ -14,100 +14,146 @@ PROFESSIONAL EXPERIENCE
 
 SELECTED PROJECTS
 AmbuSun RCM | Full-stack Product Engineer | 01/2026–10/2026 | Team: 12
-Reporting, denial management, AI chat; backend APIs, data models, dashboards and revenue operations workflows.
+Responsibilities:
+• Developed reporting, denial management, and AI chat modules.
+• Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
 Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, RAG, Google Cloud Run
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
-Semi-HFT features, financial analytics services and trading signals, interactive dashboards, k3s operations.
+Responsibilities:
+• Developed semi-HFT features, financial analytics services, and trading signals.
+• Built FastAPI endpoints and data flows for analytics jobs, plus React dashboards for charting, KPIs, signal status, and operational monitoring.
+• Deployed containerized workloads on k3s and implemented service-health monitoring.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python, C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
-Yield protocol functionality, Solidity smart contract business logic, TypeScript Web3 integration, and Vue.js frontend development.
+Responsibilities:
+• Designed and developed yield protocol functionality and improved smart-contract business logic.
+• Developed and deployed Solidity smart contracts, TypeScript Web3 integrations, Node.js backend functionality, and Vue.js frontend integration.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Vue.js (frontend web framework), Solidity
 
 IMPT | Full-stack Product Engineer | 05/2022–12/2024 | Team: 4
-Expo/React Native (mobile app framework) mobile application, React.js (Next.js framework) components, Solidity smart contracts and Web3 integration.
+Responsibilities:
+• Built Expo / React Native mobile application features and React / Next.js web components.
+• Developed Solidity smart contracts and integrated wallet interactions, transaction states, and contract calls.
+• Debugged application/backend behavior and supported release QA, rollout coordination, and contract-related issue triage.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), TypeScript, React Native (mobile app framework), React.js (Next.js framework), MongoDB (NoSQL database), Solidity
 
 Knightwar — The Holy Trio | Full-stack / Blockchain Engineer | 10/2021–12/2021 | Team: 12
-NFT marketplace/farming smart contracts, unit tests, Node.js (backend, JavaScript runtime) blockchain event indexer with PostgreSQL.
+Responsibilities:
+• Developed NFT marketplace and farming smart contracts and their unit tests.
+• Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported Web3 frontend integration.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library)
 
 DarePlay / DareNFT | Full-stack Product Engineer | 06/2021–05/2022 | Team: 15
-Built the NFT 2.0 protocol; developed marketplace, staking/farming and launch contracts, blockchain indexer APIs and React.js (web UI library) integration.
+Responsibilities:
+• Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad, and IGO workflows.
+• Developed backend APIs interfacing with blockchain indexers and supported React / Web3 frontend integration.
 Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library)
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
-BI platform with custom QNR language, C++ and TypeScript GraphQL services.
+Responsibilities:
+• Developed business-intelligence / questionnaire platform functionality using C++, TypeScript, and the custom QNR language.
+• Built Apollo GraphQL backend services and implemented React interfaces from Figma designs.
 Tech: Material UI (React component library) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
-Story-video platform and Python automation for generating stories from news websites.
+Responsibilities:
+• Designed the story data format and built APIs, conversion pipelines, and social publishing integrations.
+• Implemented a custom WYSIWYG editor and React frontend functionality.
+• Built Python automation to generate stories from news websites.
 Tech: Tailwind CSS (UI styling) · TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python
 
 ADDITIONAL PROJECTS / EARLIER ENGAGEMENTS
 Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | 12/01/2021 | Onsite | Project
-Developer tooling and blockchain integration for Oraichain: wallet connections, smart contract query/execution, ORAI transfers, multi-send transactions, fee allowances, and RPC/LCD integration.
+Responsibilities:
+• Implemented wallet connections and smart-contract query/execution integrations.
+• Built ORAI transfers, multi-send transactions, fee allowance workflows, and Oraichain RPC/LCD integration.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD
 
 Oraichain Oracle | Full-stack Developer | 12/01/2021 | Onsite | Project
-Blockchain oracle infrastructure in the Oraichain ecosystem, built with Cosmos SDK and Starport.
+Responsibilities:
+• Worked across frontend and backend on Oraichain blockchain oracle infrastructure.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
 
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
-Part-time full-stack web development while studying. Listed in the professional experience timeline.
+Responsibilities:
+• Delivered part-time full-stack web development while studying, using Drupal and jQuery.
 Tech: Tailwind CSS (UI styling) · Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
 
 LiveTV | Full-stack Developer | Project
-Website for watching live television channels and films online. Dates to be confirmed.
+Responsibilities:
+• Worked across frontend and backend on a website for live television and online films.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · WordPress (PHP CMS) · Adobe Flash Media Server
 
 Luxstay — Host + Client | Full-stack Developer | 2018 | Project
-Backend development with PHP (Laravel framework) / PHP (Lumen framework), integration with third-party OTA booking calendars and Stripe payments.
+Responsibilities:
+• Developed PHP / Laravel / Lumen backend services for the home-sharing platform.
+• Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
 
 The Smart Light | Full-stack Developer | 2018 | Project
-Developed PHP backend features with another PHP engineer and translated interface designs into PHP (Laravel framework) Blade views.
+Responsibilities:
+• Developed PHP backend features with another PHP engineer.
+• Converted product interface designs into Laravel Blade / Vue.js views and contributed Node.js backend development.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend) · PHP (Laravel framework) · Blade · jQuery · Vue.js (web UI framework) · MySQL · Nginx
 
 UrSmiles | Full-stack Developer | 2017 | Project
-Designed backend APIs and database schema with Node.js (backend, Express.js framework) / Sequelize; implemented React Native (mobile app framework) screens from Zeplin designs, connected APIs, and mentored a junior mobile developer.
+Responsibilities:
+• Designed Express / Sequelize backend APIs and database schema.
+• Implemented React Native screens from Zeplin designs and connected them to backend APIs.
+• Mentored a junior mobile developer.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, Express.js framework) · Sequelize · React Native (mobile app framework) · Axios
 
 VitaminSpy | Full-stack Developer | Project
-Advertising analytics platform.
+Responsibilities:
+• Worked across backend services and frontend interfaces for an advertising analytics platform.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
 
 Lonely | Full-stack Developer | Project
-Full-stack web application.
+Responsibilities:
+• Developed backend services and frontend interfaces for the web application.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
 
 SwapExchange | Full-stack Developer | Project
-Uniswap V2 fork: updated contract deployment scripts and adapted the React.js frontend for the product brand; Node.js backend development.
+Responsibilities:
+• Updated smart-contract deployment scripts for a Uniswap V2 fork.
+• Adapted the React frontend to the product brand and developed Node.js backend functionality.
 Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · Truffle · React.js (web UI library)
 
 MAX AI Agent | Full-stack Developer | Project
-Frontend and backend development, including wallet connector integration for Oraichain (ORAI) and Solana.
+Responsibilities:
+• Developed frontend and backend functionality, including Python / FastAPI services with a TEE server.
+• Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors
 
 Fringe Finance (Fringe.fi) | Full-stack Developer | Project
-Decentralized lending and borrowing protocol enabling users to access liquidity using crypto assets as collateral.
+Responsibilities:
+• Worked across Node.js backend and React frontend functionality for a decentralized crypto-backed lending and borrowing protocol.
 Tech: Tailwind CSS (UI styling) · React.js (web UI library) · Solidity · Node.js (backend, JavaScript runtime)
 
 H3ROVERSE | Full-stack Developer | Project
-Implemented NFT and marketplace contracts, OpenSea listing scripts, and React.js interfaces from product designs; Node.js backend development.
+Responsibilities:
+• Implemented NFT and marketplace contracts and OpenSea listing scripts.
+• Converted product designs into React interfaces and contributed Node.js backend development.
 Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · React.js (web UI library)
 
 Fina (DatXanh) | Full-stack Developer | Project
-Developed Node.js backend APIs, MariaDB database schema, and React.js / Next.js frontend features for Dat Xanh Group.
+Responsibilities:
+• Developed Node.js backend APIs and MariaDB database schema.
+• Delivered React / Next.js frontend features for Dat Xanh Group.
 Tech: Ant Design (React UI component library) · Node.js (backend) · MariaDB · React.js (Next.js framework)
 
 Fleet Management / BeApp | Full-stack Developer | Project
-Built React.js interfaces and Node.js / Express.js backend APIs for fleet and facility management, including booking-calendar synchronization.
+Responsibilities:
+• Built React interfaces and Express / Node.js APIs for fleet and facility management.
+• Implemented booking-calendar synchronization.
 Tech: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework)
 
 Freshfoods.vn | Full-stack Developer | Project
-Developed an e-commerce website and English landing site; designed the PHP / Yii2 database layer and implemented the web UI from designs.
+Responsibilities:
+• Developed an e-commerce site and English landing site.
+• Designed the PHP / Yii2 database layer and implemented the web interface from design files.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Yii2 framework) · WordPress (PHP CMS)
 
 TECHNICAL SKILLS

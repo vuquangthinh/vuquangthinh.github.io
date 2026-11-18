@@ -59,3 +59,29 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Fina (DatXanh) | Role: Full-stack Developer | Tech stack: Ant Design (React UI component library) · Node.js (backend) · MariaDB · React.js (Next.js framework)
 - Fleet Management / BeApp | Role: Full-stack Developer | Tech stack: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework)
 - Freshfoods.vn | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Yii2 framework) · WordPress (PHP CMS)
+
+## Personal responsibilities by project
+- Orai IDE / Oraichain Tooling: Implemented wallet connections and smart-contract query/execution integrations. Built ORAI transfers, multi-send transactions, fee allowance workflows, and Oraichain RPC/LCD integration.
+- AmbuSun RCM: Developed reporting, denial management, and AI chat modules. Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
+- Quantizero: Developed semi-HFT features, financial analytics services, and trading signals. Built FastAPI endpoints and data flows for analytics jobs, plus React dashboards for charting, KPIs, signal status, and operational monitoring. Deployed containerized workloads on k3s and implemented service-health monitoring.
+- Untangled Finance: Designed and developed yield protocol functionality and improved smart-contract business logic. Developed and deployed Solidity smart contracts, TypeScript Web3 integrations, Node.js backend functionality, and Vue.js frontend integration.
+- IMPT: Built Expo / React Native mobile application features and React / Next.js web components. Developed Solidity smart contracts and integrated wallet interactions, transaction states, and contract calls. Debugged application/backend behavior and supported release QA, rollout coordination, and contract-related issue triage.
+- DarePlay / DareNFT: Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad, and IGO workflows. Developed backend APIs interfacing with blockchain indexers and supported React / Web3 frontend integration.
+- Knightwar — The Holy Trio: Developed NFT marketplace and farming smart contracts and their unit tests. Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported Web3 frontend integration.
+- MetaSoftware: Developed business-intelligence / questionnaire platform functionality using C++, TypeScript, and the custom QNR language. Built Apollo GraphQL backend services and implemented React interfaces from Figma designs.
+- ZMOOZ: Designed the story data format and built APIs, conversion pipelines, and social publishing integrations. Implemented a custom WYSIWYG editor and React frontend functionality. Built Python automation to generate stories from news websites.
+- Oraichain Oracle: Worked across frontend and backend on Oraichain blockchain oracle infrastructure.
+- Muasam3D: Delivered part-time full-stack web development while studying, using Drupal and jQuery.
+- LiveTV: Worked across frontend and backend on a website for live television and online films.
+- Luxstay — Host + Client: Developed PHP / Laravel / Lumen backend services for the home-sharing platform. Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
+- The Smart Light: Developed PHP backend features with another PHP engineer. Converted product interface designs into Laravel Blade / Vue.js views and contributed Node.js backend development.
+- UrSmiles: Designed Express / Sequelize backend APIs and database schema. Implemented React Native screens from Zeplin designs and connected them to backend APIs. Mentored a junior mobile developer.
+- VitaminSpy: Worked across backend services and frontend interfaces for an advertising analytics platform.
+- Lonely: Developed backend services and frontend interfaces for the web application.
+- SwapExchange: Updated smart-contract deployment scripts for a Uniswap V2 fork. Adapted the React frontend to the product brand and developed Node.js backend functionality.
+- MAX AI Agent: Developed frontend and backend functionality, including Python / FastAPI services with a TEE server. Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
+- Fringe Finance (Fringe.fi): Worked across Node.js backend and React frontend functionality for a decentralized crypto-backed lending and borrowing protocol.
+- H3ROVERSE: Implemented NFT and marketplace contracts and OpenSea listing scripts. Converted product designs into React interfaces and contributed Node.js backend development.
+- Fina (DatXanh): Developed Node.js backend APIs and MariaDB database schema. Delivered React / Next.js frontend features for Dat Xanh Group.
+- Fleet Management / BeApp: Built React interfaces and Express / Node.js APIs for fleet and facility management. Implemented booking-calendar synchronization.
+- Freshfoods.vn: Developed an e-commerce site and English landing site. Designed the PHP / Yii2 database layer and implemented the web interface from design files.
