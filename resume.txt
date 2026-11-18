@@ -19,15 +19,15 @@ Tech: Python, Node.js (backend), TypeScript, React.js (Next.js framework), Postg
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
 Semi-HFT features, financial analytics services and trading signals, interactive dashboards, k3s operations.
-Tech: Python, C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
+Tech: Node.js (backend, TypeScript), Python, C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
 Yield protocol functionality, Solidity smart contract business logic, TypeScript Web3 integration.
-Tech: TypeScript, Solidity
+Tech: Node.js (backend, TypeScript), TypeScript, Solidity
 
 IMPT | Full-stack Product Engineer | 05/2022–12/2024 | Team: 4
 Expo/React Native (mobile app framework) mobile application, React.js (Next.js framework) components, Solidity smart contracts and Web3 integration.
-Tech: TypeScript, React Native (mobile app framework), React.js (Next.js framework), MongoDB (NoSQL database), Solidity
+Tech: Node.js (backend, TypeScript), TypeScript, React Native (mobile app framework), React.js (Next.js framework), MongoDB (NoSQL database), Solidity
 
 Knightwar — The Holy Trio | Full-stack / Blockchain Engineer | 10/2021–12/2021 | Team: 12
 NFT marketplace/farming smart contracts, unit tests, Node.js (backend, JavaScript runtime) blockchain event indexer with PostgreSQL.
@@ -39,7 +39,7 @@ Tech: Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (w
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 BI platform with custom QNR language, C++ and TypeScript GraphQL services.
-Tech: C++, TypeScript, GraphQL, QNR
+Tech: Node.js (backend, TypeScript), C++, TypeScript, GraphQL, QNR
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Story-video platform and Python automation for generating stories from news websites.
@@ -50,14 +50,14 @@ Role across all projects below: Full-stack Developer.
 Muasam3D (2012–2014): Part-time full-stack web development while studying. Technologies not specified in CV.
 LiveTV: Website for watching live television channels and films online. Tech: WordPress (PHP CMS), Adobe Flash Media Server. Dates to be confirmed.
 Luxstay — Host + Client (2018): PHP (Laravel framework)/PHP (Lumen framework) backend; third-party OTA booking calendar and Stripe integration.
-The Smart Light (2018): E-learning platform; PHP backend and PHP (Laravel framework) Blade interface development. PHP (Laravel framework), jQuery, Vue.js (web UI framework), MySQL, Nginx.
+The Smart Light (2018): E-learning platform; PHP backend and PHP (Laravel framework) Blade interface development. Node.js (backend), PHP (Laravel framework), jQuery, Vue.js (web UI framework), MySQL, Nginx.
 UrSmiles (2017): Dental booking platform; Node.js (backend, Express.js framework)/Sequelize API and database schema, React Native (mobile app framework) frontend, API integration and junior developer mentoring.
 Oraichain (Onsite, 12/01/2021): Orai IDE and Oraichain Oracle projects.
 Oraichain Oracle: Blockchain oracle infrastructure in the Oraichain ecosystem. Tech: Cosmos SDK, Starport, Oraichain Oracle.
-Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. CosmJS, CosmWasm, TypeScript.
+Orai IDE / Oraichain tooling: Cosmos/CosmWasm wallet and contract integration, ORAI transfers, multi-send transactions and fee allowance workflows. Node.js (backend, TypeScript), CosmJS, CosmWasm.
 MAX AI Agent: Full-stack Developer; implemented wallet connector integrations with Oraichain (ORAI) and Solana chains.
 Fringe Finance (Fringe.fi): Decentralized crypto-backed lending and borrowing protocol. Tech: React.js (web UI library), Solidity, Node.js (backend). Website: https://fringe.fi.
-VitaminSpy — advertising analytics: Node.js (backend, TypeScript, NestJS framework), React.js (Next.js framework), RabbitMQ, MongoDB (NoSQL database); Lonely — web application: Node.js (backend, TypeScript, NestJS framework), PostgreSQL (SQL database) / Supabase, React.js (Vite build tool); SwapExchange — Solidity/Truffle; H3ROVERSE — NFTs; Fina (DatXanh) — fintech APIs; Fleet Management / BeApp — Node.js (backend, Express.js framework), React.js (web UI library); Freshfoods.vn.
+VitaminSpy — advertising analytics: Node.js (backend, TypeScript, NestJS framework), React.js (Next.js framework), RabbitMQ, MongoDB (NoSQL database); Lonely — web application: Node.js (backend, TypeScript, NestJS framework), PostgreSQL (SQL database) / Supabase, React.js (Vite build tool); SwapExchange — Node.js (backend), React.js, Solidity/Truffle; H3ROVERSE — Node.js (backend), React.js, NFTs; Fina (DatXanh) — Node.js (backend), React.js (Next.js framework), fintech APIs; Fleet Management / BeApp — Node.js (backend, Express.js framework), React.js (web UI library); Freshfoods.vn.
 
 TECHNICAL SKILLS
 Backend: Python, Python (FastAPI framework), Go, C++, Node.js (backend, JavaScript runtime), Node.js (backend, TypeScript, NestJS framework), Node.js (backend, Express.js framework), Node.js (backend, TypeScript, LoopBack 4 framework), PHP, WordPress (PHP CMS), Drupal (PHP CMS)
