@@ -73,7 +73,7 @@ Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (b
 
 Oraichain Oracle | Full-stack Developer | 12 Jan 2021 | 3 months onsite | Project
 Responsibilities:
-• Worked across frontend and backend on Oraichain blockchain oracle infrastructure.
+• Researched and extended Cosmos to support oracle requests to AI services.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
 
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project

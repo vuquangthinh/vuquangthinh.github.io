@@ -70,7 +70,7 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - Knightwar — The Holy Trio: Developed NFT marketplace and farming smart contracts and their unit tests. Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported Web3 frontend integration.
 - MetaSoftware: Developed business-intelligence / questionnaire platform functionality using C++, TypeScript, and the custom QNR language. Built Apollo GraphQL backend services and implemented React interfaces from Figma designs.
 - ZMOOZ: Designed the story data format and built APIs, conversion pipelines, and social publishing integrations. Implemented a custom WYSIWYG editor and React frontend functionality. Built Python automation to generate stories from news websites.
-- Oraichain Oracle: Worked across frontend and backend on Oraichain blockchain oracle infrastructure.
+- Oraichain Oracle: Researched and extended Cosmos to support oracle requests to AI services.
 - Muasam3D: Delivered part-time full-stack web development while studying, using Drupal and jQuery.
 - LiveTV: Worked across frontend and backend on a website for live television and online films.
 - Luxstay — Host + Client: Developed PHP / Laravel / Lumen backend services for the home-sharing platform. Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
