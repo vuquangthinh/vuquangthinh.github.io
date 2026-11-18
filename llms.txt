@@ -56,6 +56,6 @@ Node.js backend work is also included in Untangled Finance, MetaSoftware, Orai I
 - MAX AI Agent | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors
 - Fringe Finance (Fringe.fi) | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (web UI library) · Solidity · Node.js (backend, JavaScript runtime)
 - H3ROVERSE | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · React.js (web UI library)
-- Fina (DatXanh) | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · Node.js (backend) · MariaDB · React.js (Next.js framework)
-- Fleet Management / BeApp | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (web UI library) · Node.js (backend, Express.js framework)
+- Fina (DatXanh) | Role: Full-stack Developer | Tech stack: Ant Design (React UI component library) · Node.js (backend) · MariaDB · React.js (Next.js framework)
+- Fleet Management / BeApp | Role: Full-stack Developer | Tech stack: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework)
 - Freshfoods.vn | Role: Full-stack Developer | Tech stack: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Yii2 framework) · WordPress (PHP CMS)

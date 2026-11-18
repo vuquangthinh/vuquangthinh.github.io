@@ -100,11 +100,11 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · React.js (we
 
 Fina (DatXanh) | Full-stack Developer | Project
 Developed Node.js backend APIs, MariaDB database schema, and React.js / Next.js frontend features for Dat Xanh Group.
-Tech: Tailwind CSS (UI styling) · Node.js (backend) · MariaDB · React.js (Next.js framework)
+Tech: Ant Design (React UI component library) · Node.js (backend) · MariaDB · React.js (Next.js framework)
 
 Fleet Management / BeApp | Full-stack Developer | Project
 Built React.js interfaces and Node.js / Express.js backend APIs for fleet and facility management, including booking-calendar synchronization.
-Tech: Tailwind CSS (UI styling) · React.js (web UI library) · Node.js (backend, Express.js framework)
+Tech: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework)
 
 Freshfoods.vn | Full-stack Developer | Project
 Developed an e-commerce website and English landing site; designed the PHP / Yii2 database layer and implemented the web UI from designs.
