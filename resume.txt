@@ -13,10 +13,13 @@ PROFESSIONAL EXPERIENCE
 2012–2014 | Software Developer — Muasam3D (Part-time)
 
 SELECTED PROJECTS
+Project engagements may overlap with the employment and contract timeline above.
+
 AmbuSun RCM | Full-stack Product Engineer | 01/2026–10/2026 | Team: 12
 Responsibilities:
 • Developed reporting, denial management, and AI chat modules.
 • Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
+• Built prompt-generated charts and diagrams with interactive UI filters.
 Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, RAG, Google Cloud Run
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
@@ -24,7 +27,7 @@ Responsibilities:
 • Developed semi-HFT features, financial analytics services, and trading signals.
 • Built FastAPI endpoints and data flows for analytics jobs, plus React dashboards for charting, KPIs, signal status, and operational monitoring.
 • Deployed containerized workloads on k3s and implemented service-health monitoring.
-Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python, C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
+Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python (FastAPI framework), C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
 Responsibilities:
@@ -43,7 +46,7 @@ Knightwar — The Holy Trio | Full-stack / Blockchain Engineer | 10/2021–12/20
 Responsibilities:
 • Developed NFT marketplace and farming smart contracts and their unit tests.
 • Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported Web3 frontend integration.
-Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library)
+Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), PostgreSQL (SQL database)
 
 DarePlay / DareNFT | Full-stack Product Engineer | 06/2021–05/2022 | Team: 15
 Responsibilities:
@@ -55,14 +58,16 @@ MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 Responsibilities:
 • Developed business-intelligence / questionnaire platform functionality using C++, TypeScript, and the custom QNR language.
 • Built Apollo GraphQL backend services and implemented React interfaces from Figma designs.
-Tech: Material UI (React component library) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR
+• Built a collaborative Quill.js / Yjs editor with a custom AST parser for code-to-dashboard workflows.
+Tech: Material UI (React component library) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), GraphQL, QNR, Quill.js, Yjs
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Responsibilities:
 • Designed the story data format and built APIs, conversion pipelines, and social publishing integrations.
 • Implemented a custom WYSIWYG editor and React frontend functionality.
 • Built Python automation to generate stories from news websites.
-Tech: Tailwind CSS (UI styling) · TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python
+• Implemented client-side video conversion with FFmpeg.wasm and used AWS EC2 / RDS infrastructure.
+Tech: Tailwind CSS (UI styling) · TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python, FFmpeg.wasm, AWS EC2, AWS RDS
 
 ADDITIONAL PROJECTS / EARLIER ENGAGEMENTS
 Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | Started 12 Jan 2021 | 3 months onsite | Project
@@ -79,7 +84,7 @@ Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
 Responsibilities:
 • Delivered part-time full-stack web development while studying, using Drupal and jQuery.
-Tech: Bootstrap 3 (UI framework) · Drupal (PHP CMS) · jQuery (JavaScript frontend library) · Node.js (backend)
+Tech: Bootstrap 3 (UI framework) · Drupal (PHP CMS) · jQuery (JavaScript frontend library)
 
 LiveTV | Full-stack Developer | Project
 Responsibilities:
@@ -157,11 +162,14 @@ Responsibilities:
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Yii2 framework) · WordPress (PHP CMS)
 
 TECHNICAL SKILLS
-Backend: Python, Python (FastAPI framework), Go, C++, Node.js (backend, JavaScript runtime), Node.js (backend, TypeScript, NestJS framework), Node.js (backend, Express.js framework), Node.js (backend, TypeScript, LoopBack 4 framework), PHP, WordPress (PHP CMS), Drupal (PHP CMS)
-Frontend: React.js (TypeScript, web UI library), React.js (Next.js framework), React Native (mobile app framework), Vue.js (web UI framework)
-Blockchain: Solidity, EVM
-Data & AI: PostgreSQL (SQL database), ClickHouse, MongoDB (NoSQL database), Redis, GraphQL, GenAI, RAG, MQL5
-Infrastructure: k3s, Docker, Google Cloud Run, AWS, CI/CD
+Backend & APIs: Node.js (JavaScript/TypeScript; NestJS, Express.js, LoopBack 4), Python (FastAPI), Go, C++, PHP (Laravel, Lumen, Yii2), GraphQL
+Frontend & Mobile: React.js (TypeScript; Next.js), React Native, Vue.js, jQuery
+UI & CMS: Tailwind CSS, Material UI, Ant Design, Bootstrap 3, NativeBase, WordPress (PHP), Drupal (PHP)
+Blockchain: Solidity, EVM, Cosmos SDK, CosmWasm
+Databases: PostgreSQL, MySQL, MariaDB, ClickHouse, MongoDB, Redis
+AI & Data: Generative AI, RAG, ETL pipelines
+Trading: MQL5
+Infrastructure: k3s, Docker, Google Cloud Run, AWS (EC2, RDS), CI/CD
 
 EDUCATION & RECOGNITION
 Hanoi Open University — Graduated 2015
