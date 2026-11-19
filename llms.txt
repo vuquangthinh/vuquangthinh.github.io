@@ -27,7 +27,7 @@ Responsibilities:
 • Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
 • Built prompt-generated charts and diagrams with interactive UI filters.
 • Used Playwright for end-to-end (E2E) testing.
-Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, Claude Agent SDK, RAG, Google Cloud Run, TanStack Query (useQuery; data fetching and server-state management), Playwright (E2E testing)
+Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, Claude Agent SDK, RAG (pgvector extension for PostgreSQL), Google Cloud Run, Terraform, Google Cloud Build (CI/CD), TanStack Query (useQuery; data fetching and server-state management), Playwright (E2E testing)
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
 Responsibilities:
@@ -60,7 +60,7 @@ Responsibilities:
 • Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad, and IGO workflows.
 • Developed backend APIs interfacing with blockchain indexers and supported React / Web3 frontend integration.
 • Used Playwright for end-to-end (E2E) testing.
-Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s), Playwright (E2E testing)
+Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s), Playwright (E2E testing), TypeORM, SQLAlchemy, GORM
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 Responsibilities:
@@ -87,7 +87,8 @@ Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (b
 Oraichain Oracle | Full-stack Developer | Started 12 Jan 2021 | 3 months onsite | Project
 Responsibilities:
 • Researched and extended Cosmos to support oracle requests to AI services.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle
+• Set up a Docker Swarm cluster on Amazon EC2.
+Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle · Docker Swarm · AWS EC2
 
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
 Responsibilities:
@@ -121,7 +122,7 @@ Tech: Mobile: React Native · UI: NativeBase (React Native component library) ·
 VitaminSpy | Full-stack Developer | Project
 Responsibilities:
 • Built crawler agents and an ETL data pipeline to analyze advertisements from competitors in the same industry.
-Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework)
+Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · RabbitMQ · MongoDB (NoSQL database) · React.js (Next.js framework) · PostgreSQL (SQL database, accessed via TypeORM)
 
 Lonely | Full-stack Developer | Project
 Responsibilities:
@@ -138,7 +139,7 @@ MAX AI Agent | Full-stack Developer | Project
 Responsibilities:
 • Developed frontend and backend functionality, including Python / FastAPI services with a TEE server.
 • Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors
+Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors · RAG (Chroma vector database)
 
 Fringe Finance (Fringe.fi) | Full-stack Developer | Project
 Responsibilities:
@@ -153,15 +154,15 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · React.js (we
 
 Fina (DatXanh) | Full-stack Developer | Project
 Responsibilities:
-• Developed Node.js backend APIs and MariaDB database schema.
+• Developed Node.js / NestJS backend APIs and PostgreSQL database schema using TypeORM.
 • Delivered React / Next.js frontend features for Dat Xanh Group.
-Tech: Ant Design (React UI component library) · Node.js (backend) · MariaDB · React.js (Next.js framework)
+Tech: Ant Design (React UI component library) · Node.js (NestJS backend framework) · TypeORM · PostgreSQL (SQL database) · React.js (Next.js framework)
 
 Fleet Management / BeApp | Full-stack Developer | Project
 Responsibilities:
 • Built React interfaces and Express / Node.js APIs for fleet and facility management.
 • Implemented booking-calendar synchronization.
-Tech: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework)
+Tech: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework) · Sequelize
 
 Freshfoods.vn | Full-stack Developer | Project
 Responsibilities:
@@ -175,10 +176,10 @@ Frontend & Mobile: React.js (TypeScript; Next.js), React Native, Vue.js, jQuery,
 UI & CMS: Tailwind CSS, Material UI, Ant Design, Bootstrap 3, NativeBase, WordPress (PHP), Drupal (PHP)
 Blockchain: Solidity, EVM, Cosmos SDK, CosmWasm
 Databases: PostgreSQL, MySQL, MariaDB, ClickHouse, MongoDB, Redis
-AI & Data: Generative AI, Claude Agent SDK, RAG, ETL pipelines
+AI & Data: Generative AI, Claude Agent SDK, RAG (pgvector, Chroma), ETL pipelines
 Testing: Jest, Playwright
 Trading: MQL5
-Infrastructure: Kubernetes (K8s), k3s, Terraform, Docker, Google Cloud Run, AWS (EC2, RDS), CI/CD
+Infrastructure: Kubernetes (K8s), k3s, Terraform, Docker, Docker Swarm, Google Cloud Run, Google Cloud Build (CI/CD), AWS (EC2, RDS), CI/CD
 
 EDUCATION & RECOGNITION
 Hanoi Open University — Graduated 2015
