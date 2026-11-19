@@ -37,6 +37,8 @@ while i<len(lines):
   while i<len(lines) and lines[i].strip():
    if lines[i]!='Responsibilities:':block.append(Paragraph(markup(lines[i]),styles['CVTech'] if lines[i].startswith('Tech:') else styles['CVBody']))
    i+=1
+  if flow and isinstance(flow[-1], Paragraph) and flow[-1].style.name=='CVSection':
+   block.insert(0,flow.pop())
   flow.append(KeepTogether(block));continue
  flow.append(Paragraph(markup(line),style));i+=1
 
