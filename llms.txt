@@ -22,17 +22,19 @@ Project engagements may overlap with the employment and contract timeline above.
 
 AmbuSun RCM | Full-stack Product Engineer | 01/2026–10/2026 | Team: 12
 Responsibilities:
-• Developed reporting, denial management, and AI chat modules.
+• Developed LLM-powered AI Chat features using generative AI and Claude Agent SDK.
+• Developed reporting and denial management modules.
 • Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
 • Built prompt-generated charts and diagrams with interactive UI filters.
-Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, RAG, Google Cloud Run, TanStack Query (useQuery; data fetching and server-state management)
+• Used Playwright for end-to-end (E2E) testing.
+Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, Claude Agent SDK, RAG, Google Cloud Run, TanStack Query (useQuery; data fetching and server-state management), Playwright (E2E testing)
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
 Responsibilities:
 • Developed semi-HFT features, financial analytics services, and trading signals.
 • Built FastAPI endpoints and data flows for analytics jobs, plus React dashboards for charting, KPIs, signal status, and operational monitoring.
 • Deployed containerized workloads on k3s and implemented service-health monitoring.
-Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python (FastAPI framework), C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s
+Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python (FastAPI framework), C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s, Jest, Playwright (testing)
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
 Responsibilities:
@@ -57,7 +59,8 @@ DarePlay / DareNFT | Full-stack Product Engineer | 06/2021–05/2022 | Team: 15
 Responsibilities:
 • Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad, and IGO workflows.
 • Developed backend APIs interfacing with blockchain indexers and supported React / Web3 frontend integration.
-Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s)
+• Used Playwright for end-to-end (E2E) testing.
+Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s), Playwright (E2E testing)
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 Responsibilities:
@@ -172,7 +175,8 @@ Frontend & Mobile: React.js (TypeScript; Next.js), React Native, Vue.js, jQuery,
 UI & CMS: Tailwind CSS, Material UI, Ant Design, Bootstrap 3, NativeBase, WordPress (PHP), Drupal (PHP)
 Blockchain: Solidity, EVM, Cosmos SDK, CosmWasm
 Databases: PostgreSQL, MySQL, MariaDB, ClickHouse, MongoDB, Redis
-AI & Data: Generative AI, RAG, ETL pipelines
+AI & Data: Generative AI, Claude Agent SDK, RAG, ETL pipelines
+Testing: Jest, Playwright
 Trading: MQL5
 Infrastructure: Kubernetes (K8s), k3s, Terraform, Docker, Google Cloud Run, AWS (EC2, RDS), CI/CD
 
