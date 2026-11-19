@@ -82,7 +82,7 @@ Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integrat
 Responsibilities:
 • Implemented wallet connections and smart-contract query/execution integrations.
 • Built ORAI transfers, multi-send transactions, fee allowance workflows, and Oraichain RPC/LCD integration.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD · AWS (frontend hosting)
+Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD · Amazon S3 + CloudFront (static frontend hosting)
 
 Oraichain Oracle | Full-stack Developer | Started 12 Jan 2021 | 3 months onsite | Project
 Responsibilities:
