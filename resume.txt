@@ -4,13 +4,7 @@ Hanoi, Vietnam | +84 39 570 8005 | quangthinh.dev@gmail.com
 https://vuquangthinh.github.io | https://github.com/vuquangthinh | https://www.linkedin.com/in/vuquangthinh
 
 PROFILE
-13+ years in software engineering across healthcare, fintech, blockchain and data. Hands-on React Native mobile development, from implementing screens and integrating APIs to release QA and rollout. Built React.js web interfaces and Go backends. Worked directly with clients and stakeholders as a solo or key technical lead while staying hands-on in implementation.
-
-REACT NATIVE MOBILE EXPERIENCE
-IMPT: Built React Native features with Expo for a Web3 app and helped test and roll out releases across mobile and web.
-Luxstay: Contributed to the React Native app for hosts and guests, alongside React.js on web and Laravel/Lumen on the backend.
-UrSmiles: Built React Native screens from Zeplin with NativeBase, wired them to Express.js APIs using Axios, and mentored a junior mobile developer.
-The Smart Light: Built React Native features for the e-learning app, alongside the Laravel Blade / Vue.js web interface.
+13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Built Go backends for blockchain products, React Native mobile features, and React.js web interfaces for analytics and operational workflows. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack. Collaborated with peers and more junior contributors while remaining hands-on in implementation.
 
 PROFESSIONAL EXPERIENCE
 2022–Present | Senior Software Engineer — Freelance / Contract
@@ -48,8 +42,8 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Vue.js (fronte
 IMPT | Full-stack Product Engineer | 05/2022–12/2024 | Team: 4
 Context: Environmental-impact Web3 product spanning mobile, web and smart-contract experiences.
 Responsibilities:
-• Guided full-stack implementation across mobile, web and smart-contract integration; supported QA, release rollout and application/backend issue triage.
-• Built mobile features in React Native with Expo and web components with React.js / Next.js.
+• Guided implementation across mobile, web and smart-contract integration. Supported release QA and rollout, and triaged app and backend issues.
+• Developed React Native mobile features with Expo for the Web3 app and built React.js / Next.js components for its web counterpart.
 • Developed Solidity smart contracts and integrated wallet interactions, transaction states and contract calls into the product.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), TypeScript, React Native (mobile app framework), React.js (Next.js framework), MongoDB (NoSQL database), Solidity, TanStack Query (useQuery; data fetching and server-state management)
 
