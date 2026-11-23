@@ -4,7 +4,13 @@ Hanoi, Vietnam | +84 39 570 8005 | quangthinh.dev@gmail.com
 https://vuquangthinh.github.io | https://github.com/vuquangthinh | https://www.linkedin.com/in/vuquangthinh
 
 PROFILE
-13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Built Go backends for blockchain products, React Native mobile features, and React.js web interfaces for analytics and operational workflows. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack. Collaborated with peers and more junior contributors while remaining hands-on in implementation.
+13+ years in software engineering across healthcare, fintech, blockchain and data. Hands-on React Native mobile development, from implementing screens and integrating APIs to release QA and rollout. Built React.js web interfaces and Go backends. Worked directly with clients and stakeholders as a solo or key technical lead while staying hands-on in implementation.
+
+REACT NATIVE MOBILE EXPERIENCE
+IMPT: Built React Native features with Expo for a Web3 app and helped test and roll out releases across mobile and web.
+Luxstay: Contributed to the React Native app for hosts and guests, alongside React.js on web and Laravel/Lumen on the backend.
+UrSmiles: Built React Native screens from Zeplin with NativeBase, wired them to Express.js APIs using Axios, and mentored a junior mobile developer.
+The Smart Light: Built React Native features for the e-learning app, alongside the Laravel Blade / Vue.js web interface.
 
 PROFESSIONAL EXPERIENCE
 2022–Present | Senior Software Engineer — Freelance / Contract
