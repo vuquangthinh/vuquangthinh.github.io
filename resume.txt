@@ -4,7 +4,7 @@ Hanoi, Vietnam | +84 39 570 8005 | quangthinh.dev@gmail.com
 https://vuquangthinh.github.io | https://github.com/vuquangthinh | https://www.linkedin.com/in/vuquangthinh
 
 PROFILE
-13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack. Collaborated with peers and more junior contributors while remaining hands-on in implementation.
+13+ years of experience building production web platforms, financial analytics systems, healthcare applications, and blockchain products. Built Go backends for blockchain products, React Native mobile features, and React.js web interfaces for analytics and operational workflows. Worked directly with clients and stakeholders as a solo or key technical lead, translating business needs into practical engineering solutions and delivering across the stack. Collaborated with peers and more junior contributors while remaining hands-on in implementation.
 
 PROFESSIONAL EXPERIENCE
 2022–Present | Senior Software Engineer — Freelance / Contract
@@ -18,21 +18,18 @@ Project engagements may overlap with the employment and contract timeline above.
 AmbuSun RCM | Full-stack Product Engineer | 01/2026–10/2026 | Team: 12
 Context: Healthcare revenue cycle management platform for reporting, denial management and AI-assisted workflows.
 Responsibilities:
-• Provided hands-on technical direction and implementation across AI chat, reporting, backend APIs and dashboards.
-• Developed LLM-powered AI Chat features using generative AI and Claude Agent SDK.
-• Developed reporting and denial management modules.
-• Implemented backend APIs, data models, dashboards, and revenue operations workflows supporting claim visibility and denial follow-up.
-• Built prompt-generated charts and diagrams with interactive UI filters.
-• Used Playwright for end-to-end (E2E) testing.
+• Guided and implemented the full-stack delivery of reporting, denial management and AI Chat, from product workflows and data models to APIs and dashboards.
+• Built React.js / Next.js dashboards for claim visibility and denial follow-up. Used TanStack Query to fetch and manage server data.
+• Implemented an AI Chat experience with Claude Agent SDK and PostgreSQL/pgvector retrieval. Built React interfaces that display prompt-generated charts and diagrams with interactive filters.
+• Covered user-facing flows with Playwright end-to-end tests.
 Tech: Tailwind CSS (UI styling) · Python, Node.js (backend), TypeScript, React.js (Next.js framework), PostgreSQL (SQL database), GenAI, Claude Agent SDK, RAG (pgvector extension for PostgreSQL), Google Cloud Run, Terraform, Google Cloud Build (CI/CD), TanStack Query (useQuery; data fetching and server-state management), Playwright (E2E testing)
 
 Quantizero | Full-stack Product Engineer | 05/2024–12/2025 | Team: 4
 Context: Financial analytics and trading platform with semi-HFT features and trading signals.
 Responsibilities:
-• Provided hands-on technical direction and implementation across analytics services, trading features and dashboard integration.
-• Developed semi-HFT features, financial analytics services, and trading signals.
-• Built FastAPI endpoints and data flows for analytics jobs, plus React dashboards for charting, KPIs, signal status, and operational monitoring.
-• Deployed containerized workloads on k3s and implemented service-health monitoring.
+• Guided and implemented full-stack delivery for trading signals, semi-HFT features and financial analytics.
+• Built React.js / TypeScript dashboards for analytics charts, KPIs, signal status and operational monitoring.
+• Developed Python / FastAPI endpoints and data flows for analytics jobs, and deployed containerized services on k3s with service-health monitoring.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Python (FastAPI framework), C++, MQL5, React.js (TypeScript, web UI library), PostgreSQL (SQL database), ClickHouse, k3s, Jest, Playwright (testing)
 
 Untangled Finance | Full-stack / Protocol Engineer | 09/2023–12/2024 | Team: 8
@@ -45,59 +42,58 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), Vue.js (fronte
 IMPT | Full-stack Product Engineer | 05/2022–12/2024 | Team: 4
 Context: Environmental-impact Web3 product spanning mobile, web and smart-contract experiences.
 Responsibilities:
-• Provided hands-on technical direction across mobile, web and smart-contract integration, including release QA and application/backend issue triage.
-• Built Expo / React Native mobile application features and React / Next.js web components.
-• Developed Solidity smart contracts and integrated wallet interactions, transaction states, and contract calls.
-• Debugged application/backend behavior and supported release QA, rollout coordination, and contract-related issue triage.
+• Guided full-stack implementation across mobile, web and smart-contract integration; supported QA, release rollout and application/backend issue triage.
+• Built mobile features in React Native with Expo and web components with React.js / Next.js.
+• Developed Solidity smart contracts and integrated wallet interactions, transaction states and contract calls into the product.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript), TypeScript, React Native (mobile app framework), React.js (Next.js framework), MongoDB (NoSQL database), Solidity, TanStack Query (useQuery; data fetching and server-state management)
 
 Knightwar — The Holy Trio | Full-stack / Blockchain Engineer | 10/2021–12/2021 | Team: 12
 Context: Blockchain gaming project with NFT marketplace and farming functionality.
 Responsibilities:
-• Developed NFT marketplace and farming smart contracts and their unit tests.
-• Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported Web3 frontend integration.
+• Developed and unit-tested the NFT marketplace and farming smart contracts.
+• Built a Node.js blockchain event indexer synchronized with PostgreSQL and supported integration with the React.js Web3 frontend.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), PostgreSQL (SQL database), TanStack Query (useQuery; data fetching and server-state management)
 
 DarePlay / DareNFT | Full-stack Product Engineer | 06/2021–05/2022 | Team: 15
 Context: NFT gaming infrastructure spanning marketplace, staking, farming and launch workflows.
 Responsibilities:
-• Provided hands-on technical direction and implementation across NFT protocols, smart contracts, indexer-facing backend APIs and React / Web3 integration.
-• Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad, and IGO workflows.
-• Developed backend APIs interfacing with blockchain indexers and supported React / Web3 frontend integration.
-• Used Playwright for end-to-end (E2E) testing.
-Tech: Tailwind CSS (UI styling) · Go, Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s), Playwright (E2E testing), TypeORM, SQLAlchemy, GORM
+• Guided and implemented delivery across NFT protocols, indexer-facing backend APIs and React.js / Web3 integration.
+• Built the NFT 2.0 protocol and Solidity contracts for marketplace, staking, farming, launchpad and initial game offering (IGO) workflows.
+• Developed APIs that interfaced with blockchain indexers on a Go and Node.js / NestJS backend stack; supported React.js integration with Web3 workflows.
+• Used Playwright for end-to-end testing.
+Tech: Tailwind CSS (UI styling) · Go (Golang, backend), Node.js (backend, TypeScript, NestJS framework), Solidity, React.js (web UI library), TanStack Query (useQuery; data fetching and server-state management), AWS EC2, Terraform, Kubernetes (K8s), Playwright (E2E testing), TypeORM, SQLAlchemy, GORM (Go ORM)
 
 MetaSoftware | Full-stack Developer | 04/2020–06/2021 | Team: 4
 Context: Business-intelligence and questionnaire platform using the custom QNR language.
 Responsibilities:
-• Developed business-intelligence / questionnaire platform functionality using C++, TypeScript, and the custom QNR language.
-• Built Apollo GraphQL backend services and implemented React interfaces from Figma designs.
-• Built a collaborative Quill.js / Yjs editor with a custom AST parser for code-to-dashboard workflows.
+• Developed business intelligence and questionnaire features using C++, TypeScript and the custom QNR language.
+• Translated Figma designs into React.js interfaces with Material UI and implemented Apollo GraphQL backend services.
+• Built a collaborative React-based editor with Quill.js and Yjs, and a custom abstract syntax tree (AST) parser that turned QNR code into dashboards.
 Tech: Material UI (React component library) · Node.js (backend, TypeScript), C++, TypeScript, React.js (frontend web library), Apollo GraphQL, QNR, Quill.js, Yjs
 
 ZMOOZ | Full-stack Developer | 04/2020–08/2022 | Team: 8
 Context: Story-video creation platform with a visual editor and automated social publishing.
 Responsibilities:
-• Designed the story data format and built APIs, conversion pipelines, and social publishing integrations.
-• Implemented a custom WYSIWYG editor and React frontend functionality using UmiJS hooks and Ant Design.
-• Built Python automation to generate stories from news websites.
-• Implemented client-side video conversion with FFmpeg.wasm and used AWS EC2 / RDS infrastructure.
+• Designed the story data format and built backend APIs, conversion pipelines and social publishing integrations.
+• Built a React.js visual story editor with UmiJS hooks and Ant Design, including in-browser video conversion with FFmpeg.wasm.
+• Built Python automation that generated stories from news websites and worked with AWS EC2 and RDS infrastructure.
 Tech: Ant Design (React UI component library) · TypeScript, Node.js (backend, TypeScript, LoopBack 4 framework), React.js (web UI library), PostgreSQL (SQL database), Python, FFmpeg.wasm, AWS EC2, AWS RDS, UmiJS hooks
 
 ADDITIONAL PROJECTS / EARLIER ENGAGEMENTS
 Orai IDE / Oraichain Tooling | Full-stack Engineer · Cosmos / CosmWasm Integration | Started 12 Jan 2021 | 3 months onsite | Project
 Context: Developer tooling and blockchain integration workflows for the Oraichain ecosystem.
 Responsibilities:
-• Implemented wallet connections and smart-contract query/execution integrations.
-• Built ORAI transfers, multi-send transactions, fee allowance workflows, and Oraichain RPC/LCD integration.
+• Implemented wallet connection, smart-contract queries and execution for the React.js developer interface.
+• Built ORAI transfers, multi-send transactions and fee allowance workflows; integrated Oraichain RPC/LCD endpoints.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Node.js (backend, TypeScript) · CosmJS · CosmWasm · TypeScript · Oraichain RPC/LCD · Amazon S3 + CloudFront (static frontend hosting)
 
 Oraichain Oracle | Full-stack Developer | Started 12 Jan 2021 | 3 months onsite | Project
 Context: Blockchain oracle infrastructure connecting Cosmos-based requests with AI services.
 Responsibilities:
-• Researched and extended Cosmos to support oracle requests to AI services.
+• Researched and extended Cosmos SDK in Go to support blockchain oracle requests to AI services.
+• Worked on the oracle backend using Go and Gin.
 • Set up a Docker Swarm cluster on Amazon EC2.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Cosmos SDK · Starport · Oraichain Oracle · Docker Swarm · AWS EC2
+Tech: Go (Golang, backend) · Gin (Go web framework) · Cosmos SDK · Starport · Docker Swarm · AWS EC2 · React.js (web UI) · Tailwind CSS
 
 Muasam3D | Full-stack Developer | 2012–2014 | Part-time | Project
 Context: Drupal-based website; part-time development engagement while studying.
@@ -114,23 +110,22 @@ Tech: WordPress (PHP CMS) · Adobe Flash Media Server
 Luxstay — Host + Client | Full-stack Developer | 2018 | Project
 Context: Home-sharing platform serving hosts and guests.
 Responsibilities:
-• Developed PHP / Laravel / Lumen backend services for the home-sharing platform.
-• Integrated third-party OTA booking calendars and Stripe payments; contributed frontend development.
-Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Laravel framework) · PHP (Lumen framework) · OTA calendar · Stripe
+• Contributed to the React Native mobile app and React.js web interface for the host and guest sides of the home-sharing platform.
+• Developed PHP backend services with Laravel and Lumen; integrated third-party booking calendars and Stripe payments.
+Tech: React Native (mobile) · React.js (web) · Tailwind CSS (web UI) · PHP (Laravel, Lumen) · OTA booking calendars · Stripe
 
 The Smart Light | Full-stack Developer | 2018 | Project
 Context: E-learning product with web and mobile applications.
 Responsibilities:
-• Developed PHP backend features with another PHP engineer.
-• Converted product interface designs into Laravel Blade / Vue.js web views and developed React Native mobile functionality.
+• Built React Native mobile features for the e-learning product.
+• Converted interface designs into Laravel Blade / Vue.js web views and developed PHP backend features alongside another PHP engineer.
 Tech: Web: PHP (Laravel framework), Blade, jQuery, Vue.js, Tailwind CSS (UI styling) · Mobile: React Native · Database: MySQL · Server: Nginx
 
 UrSmiles | Full-stack Developer | 2017 | Project
 Context: Dental and healthcare mobile application with supporting backend services.
 Responsibilities:
-• Designed Express / Sequelize backend APIs and database schema.
-• Implemented React Native screens from Zeplin designs and connected them to backend APIs.
-• Mentored a junior mobile developer.
+• Translated Zeplin designs into React Native screens using NativeBase and connected those screens to backend APIs with Axios.
+• Designed Express.js / Sequelize APIs and the database schema; mentored a junior mobile developer.
 Tech: Mobile: React Native · UI: NativeBase (React Native component library) · Backend: Node.js (Express.js framework) · Sequelize · Axios
 
 VitaminSpy | Full-stack Developer | Project
@@ -142,7 +137,7 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framewor
 Lonely | Full-stack Developer | Project
 Context: Telegram Mini App with a web interface and supporting backend services.
 Responsibilities:
-• Built APIs, backend services, and the user interface for a Telegram Mini App.
+• Built the React.js / Vite interface for the Telegram Mini App and implemented its NestJS APIs and backend services.
 Tech: Tailwind CSS (UI styling) · Node.js (backend, TypeScript, NestJS framework) · PostgreSQL (SQL database) / Supabase · React.js (web UI library) / Vite
 
 SwapExchange | Full-stack Developer | Project
@@ -155,9 +150,8 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · Truffle · R
 MAX AI Agent | Full-stack Developer | Project
 Context: AI agent application with RAG and wallet integrations for Oraichain and Solana.
 Responsibilities:
-• Provided hands-on technical direction and implementation across frontend, Python / FastAPI services and wallet integration.
-• Developed frontend and backend functionality, including Python / FastAPI services with a TEE server.
-• Implemented wallet connector integrations for Oraichain (ORAI) and Solana.
+• Guided and implemented full-stack delivery across the React.js frontend, Python / FastAPI services and wallet connections.
+• Implemented Oraichain and Solana wallet connectors and worked on FastAPI services backed by a trusted execution environment (TEE) server.
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · Python (FastAPI backend framework) · TEE server (Trusted Execution Environment) · Oraichain (ORAI) · Solana · Wallet connectors · RAG (Chroma vector database)
 
 Fringe Finance (Fringe.fi) | Full-stack Developer | Project
@@ -176,14 +170,14 @@ Tech: Tailwind CSS (UI styling) · Node.js (backend) · Solidity · React.js (we
 Fina (DatXanh) | Full-stack Developer | Project
 Context: Fintech web application for Dat Xanh Group.
 Responsibilities:
-• Developed Node.js / NestJS backend APIs and PostgreSQL database schema using TypeORM.
-• Delivered React / Next.js frontend features for Dat Xanh Group.
+• Built React.js / Next.js frontend features for Dat Xanh Group using Ant Design.
+• Developed NestJS APIs and designed the PostgreSQL schema using TypeORM.
 Tech: Ant Design (React UI component library) · Node.js (NestJS backend framework) · TypeORM · PostgreSQL (SQL database) · React.js (Next.js framework)
 
 Fleet Management / BeApp | Full-stack Developer | Project
 Context: Fleet and facility management application with booking-calendar synchronization.
 Responsibilities:
-• Built React interfaces and Express / Node.js APIs for fleet and facility management.
+• Built React.js / Material UI interfaces and Express.js APIs for fleet and facility management.
 • Implemented booking-calendar synchronization.
 Tech: Material UI (React component library) · React.js (web UI library) · Node.js (backend, Express.js framework) · Sequelize
 
@@ -195,8 +189,8 @@ Responsibilities:
 Tech: Tailwind CSS (UI styling) · React.js (frontend web library) · PHP (Yii2 framework) · WordPress (PHP CMS)
 
 TECHNICAL SKILLS
-Backend & APIs: Node.js (JavaScript/TypeScript; NestJS, Express.js, LoopBack 4), Python (FastAPI), Go, C++, PHP (Laravel, Lumen, Yii2), Apollo GraphQL
-Frontend & Mobile: React.js (TypeScript; Next.js), React Native, Vue.js, jQuery, TanStack Query (useQuery), UmiJS hooks
+Backend & APIs: Node.js (JavaScript/TypeScript; NestJS, Express.js, LoopBack 4), Python (FastAPI), Go (Golang; Gin, GORM), C++, PHP (Laravel, Lumen, Yii2), Apollo GraphQL
+Frontend & Mobile: React.js (TypeScript; Next.js), React Native (Expo, NativeBase), Vue.js, jQuery, TanStack Query (useQuery), UmiJS hooks
 UI & CMS: Tailwind CSS, Material UI, Ant Design, Bootstrap 3, NativeBase, WordPress (PHP), Drupal (PHP)
 Blockchain: Solidity, EVM, Cosmos SDK, CosmWasm
 Databases: PostgreSQL, MySQL, MariaDB, ClickHouse, MongoDB, Redis
